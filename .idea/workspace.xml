@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
-      <change afterPath="$PROJECT_DIR$/images/aMajorScale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cMajorChord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gMajorChord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sweetHomeAlabama.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twistAndShout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/yankeeDoodle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snowPatrol.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/snowPatrol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sweetHomeAlabama.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/sweetHomeAlabama.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twistAndShout.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/twistAndShout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/songs" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,6 +75,9 @@
       <workItem from="1643387858293" duration="432000" />
       <workItem from="1643398136923" duration="121000" />
       <workItem from="1643399252553" duration="5032000" />
+      <workItem from="1643707333551" duration="1858000" />
+      <workItem from="1643709512038" duration="639000" />
+      <workItem from="1643918919167" duration="3628000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
