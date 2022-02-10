@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
-      <change afterPath="$PROJECT_DIR$/images/yankeeDoodle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/aMinorChord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cMajorScale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/eMinorChord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/songs/mine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/songs/speakNow.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snowPatrol.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/snowPatrol.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetHomeAlabama.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/sweetHomeAlabama.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twistAndShout.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/twistAndShout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/songs/snowPatrol.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/snowPatrol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/songs/sweetHomeAlabama.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/sweetHomeAlabama.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/songs/twistAndShout.html" beforeDir="false" afterPath="$PROJECT_DIR$/songs/twistAndShout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,8 @@
       <workItem from="1643399252553" duration="5032000" />
       <workItem from="1643707333551" duration="1858000" />
       <workItem from="1643709512038" duration="639000" />
-      <workItem from="1643918919167" duration="3628000" />
+      <workItem from="1643918919167" duration="4176000" />
+      <workItem from="1644519078080" duration="6228000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
