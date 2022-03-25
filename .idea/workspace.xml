@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
+      <change afterPath="$PROJECT_DIR$/images/cMajorArpeggio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/fMajorChord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/reducedFChord.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson6.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +79,7 @@
       <workItem from="1645535110047" duration="746000" />
       <workItem from="1646240877008" duration="246000" />
       <workItem from="1648243438119" duration="1446000" />
+      <workItem from="1648245013324" duration="3804000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
