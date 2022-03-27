@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
-      <change afterPath="$PROJECT_DIR$/songs/halo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/songs/hurt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/songs/sweetDreams.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/songs/thisIsWhatYouCameFor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bMajorChord.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson7.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dontStopBelievin.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/dontStopBelievin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson8.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/songbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/songbook.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +79,8 @@
       <workItem from="1645535110047" duration="746000" />
       <workItem from="1646240877008" duration="246000" />
       <workItem from="1648243438119" duration="1446000" />
-      <workItem from="1648245013324" duration="7330000" />
+      <workItem from="1648245013324" duration="7628000" />
+      <workItem from="1648320933694" duration="5286000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
