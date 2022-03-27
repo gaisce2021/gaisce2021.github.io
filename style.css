@@ -35,11 +35,13 @@ h1 {
     background-color: #6CADC8;
     color: #FFFEF2;
     font-family: "American Typewriter", "Courier New", Georgia, Verdana;
+    padding-left: 14px;
 }
 
 h2 {
     color: #6CADC8;
     font-family: "American Typewriter", "Courier New", Georgia, Verdana;
+    padding-left: 25px;
 }
 
 a {
