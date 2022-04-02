@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
+      <change afterPath="$PROJECT_DIR$/images/hammerOnExample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pullOffExample.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson9.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson10.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -78,7 +88,7 @@
       <workItem from="1648243438119" duration="1446000" />
       <workItem from="1648245013324" duration="7628000" />
       <workItem from="1648320933694" duration="7155000" />
-      <workItem from="1648505854108" duration="4823000" />
+      <workItem from="1648505854108" duration="8339000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
