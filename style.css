@@ -1,14 +1,23 @@
 nav {
-    background-color: #333;
-    overflow: hidden;
+    display: block;
+    position: fixed;
+    top: 101px;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #333333;
+    border-right: 1px solid #333333;
+    overflow-y: auto;
+    margin-bottom: 0;
 }
 
 nav a {
-    float: left;
-    color: #FFFEF2;
-    text-align: center;
-    padding: 14px 16px;
+    display: block;
+    padding: 16px 25px;
+    border-bottom: 1px solid #333333;
     text-decoration: none;
+    color: #FFFEF2;
+    text-align: left;
     font-size: 17px;
 }
 
@@ -22,25 +31,42 @@ nav a.active {
     color: #FFFEF2;
 }
 
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #333333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #FFFEF2;
+}
+
+header p {
+    text-align: center;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
     background-color: #FFFEF2;
-    font-family: Georgia, Verdana;
+    font-family: Georgia, Verdana, sans-serif;
+    padding-left: 220px;
+    padding-top: 101px;
 }
 
 h1 {
     background-color: #6CADC8;
     color: #FFFEF2;
-    font-family: "American Typewriter", "Courier New", Georgia, Verdana;
+    font-family: "American Typewriter", "Courier New", Georgia, Verdana, sans-serif;
     padding-left: 14px;
 }
 
 h2 {
     color: #6CADC8;
-    font-family: "American Typewriter", "Courier New", Georgia, Verdana;
+    font-family: "American Typewriter", "Courier New", Georgia, Verdana, sans-serif;
     padding-left: 25px;
 }
 
@@ -55,12 +81,13 @@ a:hover {
 }
 
 footer {
-    position:relative;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #333;
     color: #FFFEF2;
+    height: 50px;
 }
 
 footer p {
@@ -84,5 +111,5 @@ main {
 }
 
 pre {
-    font-family: Georgia, Verdana;
+    font-family: Georgia, Verdana, sans-serif;
 }
