@@ -1,0 +1,123 @@
+body {
+    background: #FFFDFA;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 101px;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #FFFDFA;
+    border-right: 1px solid #333333;
+}
+
+nav a{
+    display: block;
+    padding: 16px 25px;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: #FFFDFA;
+}
+
+nav a text{
+    margin-left: 19px;
+    color: #FFFDFA;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.bronze {
+    background:
+    radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #D37731 0%,
+        #D0722C 8%,
+        #E1A375 30%,
+        #D9884C 40%,
+        transparent 80%),
+    radial-gradient(
+        ellipse farthest-corner at left top,
+        #FFFFFF 0%,
+        #EECBB1 8%,
+        #DD9660 25%,
+        #643715 62.5%,
+        #AE6025 100%);
+}
+
+.silver {
+    background:
+            radial-gradient(
+                    ellipse farthest-corner at right bottom,
+                    #CCD0D3 0%,
+                    #7E888E 8%,
+                    #667075 30%,
+                    #7A848B 40%,
+                    transparent 80%),
+            radial-gradient(
+                    ellipse farthest-corner at left top,
+                    #FFFFFF 0%,
+                    #D1D7D7 8%,
+                    #A5B1B1 25%,
+                    #798B8B 62.5%,
+                    #536060 100%);
+}
+
+.gold {
+    background:
+        radial-gradient(
+            ellipse farthest-corner at right bottom,
+            #FEDB37 0%,
+            #FDB931 8%,
+            #9f7928 30%,
+            #8A6E2F 40%,
+            transparent 80%),
+        radial-gradient(
+            ellipse farthest-corner at left top,
+            #FFFFFF 0%,
+            #FFFFAC 8%,
+            #D1B464 25%,
+            #5d4a1f 62.5%,
+            #5d4a1f 100%);
+}
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #333333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #FFFDFA;
+    color: #FFFDFA;
+}
+
+header p {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #FFFDFA;
+}
+
+footer p {
+    text-align: center;
+}
+
+main {
+    top: 101px;
+}
