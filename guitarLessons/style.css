@@ -1,7 +1,7 @@
 nav {
     display: block;
     position: fixed;
-    top: 101px;
+    top: 0;
     left: 0;
     width: 220px;
     height: 100%;
@@ -36,7 +36,7 @@ header {
     height: 100px;
     border-bottom: 1px solid #333333;
     position: fixed;
-    left: 0;
+    left: 101px;
     top: 0;
     width: 100%;
     background-color: #FFFEF2;
