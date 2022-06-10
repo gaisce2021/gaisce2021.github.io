@@ -5,14 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
-      <change afterPath="$PROJECT_DIR$/award.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/binary.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/floralGuitar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trophy.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson1.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson10.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson11.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson12.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson13.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson14.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson15.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson16.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson17.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson18.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson18.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson19.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson2.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson20.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson21.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson22.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson23.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson23.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson24.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson24.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson25.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson26.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson26.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson3.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson4.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson5.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson6.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson7.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson8.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson9.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/songbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/songbook.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +140,9 @@
       <workItem from="1652214473055" duration="5270000" />
       <workItem from="1652948252149" duration="147000" />
       <workItem from="1653173776656" duration="341000" />
-      <workItem from="1653583359487" duration="9967000" />
+      <workItem from="1653583359487" duration="11572000" />
+      <workItem from="1654465940559" duration="20000" />
+      <workItem from="1654858428908" duration="964000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
