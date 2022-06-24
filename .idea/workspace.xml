@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
-      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson19.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson20.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson20.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -60,6 +61,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/orlafoley/Documents/GitHub/gaisce2021.github.io&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -115,7 +117,9 @@
       <workItem from="1653173776656" duration="341000" />
       <workItem from="1653583359487" duration="11572000" />
       <workItem from="1654465940559" duration="20000" />
-      <workItem from="1654858428908" duration="1671000" />
+      <workItem from="1654858428908" duration="2482000" />
+      <workItem from="1654978012043" duration="3789000" />
+      <workItem from="1655420116709" duration="2019000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
