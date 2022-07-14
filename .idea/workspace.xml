@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson24.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson24.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson25.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,7 @@
       <workItem from="1656539968610" duration="494000" />
       <workItem from="1656612282520" duration="14246000" />
       <workItem from="1656972485232" duration="598000" />
-      <workItem from="1657231335117" duration="4577000" />
+      <workItem from="1657231335117" duration="7538000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
