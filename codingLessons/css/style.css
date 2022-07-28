@@ -1,0 +1,169 @@
+@font-face{
+    font-family: Countryside;
+    src: url('../fonts/Countryside.ttf');
+}
+
+@font-face {
+    font-family: Cottage Designer;
+    src: url("../fonts/Cottage Designer.otf");
+}
+
+h1 {
+    color: #3F4F42;
+    font-family: "Cottage Designer", Helvetica, monospace;
+    font-size: 4em;
+}
+
+h2 {
+    color: #89997F;
+    font-family: "Cottage Designer", Helvetica, monospace;
+    font-size: 3em;
+}
+
+h3 {
+    color: #89997F;
+    font-family: "Cottage Designer", Helvetica, monospace;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #CE8F6C;
+}
+
+body {
+    background: #EFE2CA;
+    font-family: "Courier M", "JetBrains Mono", monospace;
+    text-align: justify;
+    font-size: 13pt;
+    margin: 0;
+    color: #332C23;
+}
+
+header {
+    background-image: url(../images/cottagecore.png);
+    -moz-background-image: url(../images/cottagecore.png);
+    -o-background-image: url(../images/cottagecore.png);
+    -webkit-background-image: url(../images/cottagecore.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+header p {
+    font-family: Countryside, Helvetica, monospace;
+    text-align: center;
+    font-size: 4em;
+    color: #914C39;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px #332C23;
+}
+
+main {
+    margin: 20px;
+}
+
+footer {
+    position: relative;
+    background: #3F4F42;
+    text-align: center;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+footer h1 {
+    color: #EFE2CA;
+    text-anchor: middle;
+}
+
+/* Navbar container */
+nav {
+    overflow: hidden;
+    background-color: #332C23;
+    font-family: "Courier M", "JetBrains Mono", monospace;
+}
+
+/* Links inside the navbar */
+nav a {
+    float: left;
+    font-size: 16px;
+    color: #F7F0E4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #F7F0E4;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+nav a:hover, .dropdown:hover {
+    background-color: #914C39;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F7F0E4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #332C23;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #E5BBA3;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.example {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    padding: 10px;
+    background: #A5B2A1;
+}
+
+img {
+    display: inline;
+    right: 0;
+    padding: 8px;
+    background: #914C39;
+}
