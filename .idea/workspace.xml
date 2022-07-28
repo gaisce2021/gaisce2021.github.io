@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/guitarLessons/lessonPlan/lesson25.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson1.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +73,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/guitarLessons/images" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/guitarLessons" />
-      <recent name="$PROJECT_DIR$/guitarLessons/lessonPlan" />
-      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/codingLessons/images" />
+      <recent name="$PROJECT_DIR$/codingLessons/fonts" />
+      <recent name="$PROJECT_DIR$/codingLessons/css" />
+      <recent name="$PROJECT_DIR$/codingLessons/css/webfontkit-20220715-172621" />
+      <recent name="$PROJECT_DIR$/codingLessons" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,7 +123,9 @@
       <workItem from="1656539968610" duration="494000" />
       <workItem from="1656612282520" duration="14246000" />
       <workItem from="1656972485232" duration="598000" />
-      <workItem from="1657231335117" duration="7538000" />
+      <workItem from="1657231335117" duration="44809000" />
+      <workItem from="1658575336857" duration="7988000" />
+      <workItem from="1659002174041" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
