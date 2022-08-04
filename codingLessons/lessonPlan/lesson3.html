@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Site Home</a>
+    <a href="index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+        </div>
+    </div>
+    <a href="lesson8.html">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+    <a href="lesson11.html">Lesson 11</a>
+    <a href="lesson12.html">Lesson 12</a>
+    <a href="lesson13.html">Lesson 13</a>
+    <a href="lesson14.html">Lesson 14</a>
+    <a href="lesson15.html">Lesson 15</a>
+    <a href="lesson16.html">Lesson 16</a>
+    <a href="lesson17.html">Lesson 17</a>
+    <a href="lesson18.html">Lesson 18</a>
+    <a href="lesson19.html">Lesson 19</a>
+    <a href="lesson20.html">Lesson 20</a>
+    <a href="lesson21.html">Lesson 21</a>
+    <a href="lesson22.html">Lesson 22</a>
+    <a href="lesson23.html">Lesson 23</a>
+    <a href="lesson24.html">Lesson 24</a>
+    <a href="lesson25.html">Lesson 25</a>
+    <a href="lesson26.html">Lesson 26</a>
+    <a href="lesson27.html">Lesson 27</a>
+    <a href="lesson28.html">Lesson 28</a>
+    <a href="lesson29.html">Lesson 29</a>
+    <a href="lesson30.html">Lesson 30</a>
+    <a href="lesson31.html">Lesson 31</a>
+    <a href="lesson32.html">Lesson 32</a>
+    <a href="lesson33.html">Lesson 33</a>
+    <a href="lesson34.html">Lesson 34</a>
+    <a href="lesson35.html">Lesson 35</a>
+    <a href="lesson36.html">Lesson 36</a>
+    <a href="lesson37.html">Lesson 37</a>
+    <a href="lesson38.html">Lesson 38</a>
+    <a href="lesson39.html">Lesson 39</a>
+    <a href="lesson40.html">Lesson 40</a>
+    <a href="lesson41.html">Lesson 41</a>
+    <a href="lesson42.html">Lesson 42</a>
+    <a href="lesson43.html">Lesson 43</a>
+    <a href="lesson44.html">Lesson 44</a>
+    <a href="lesson45.html">Lesson 45</a>
+    <a href="lesson46.html">Lesson 46</a>
+    <a href="lesson47.html">Lesson 47</a>
+    <a href="lesson48.html">Lesson 48</a>
+    <a href="lesson49.html">Lesson 49</a>
+    <a href="lesson50.html">Lesson 50</a>
+    <a href="lesson51.html">Lesson 51</a>
+    <a href="lesson52.html">Lesson 52</a>
+</nav>
+
+<main>
+
+    <h1>Strings</h1>
+        <h2>How do I create a string in Python?</h2>
+        <p>
+            Strings are enclosed in quotes. They can be double quotes for a "string" or single quotes for a 'string'.
+            You can use either one you're consistent. You must keep double quotes in pairs and single quotes in pairs.
+            Either is fine but using one of each for the same string causes an error. Last week's example showed <em>
+            name = "George Washington"</em> as an example of a string. We assigned the string value "George Washington"
+            to the variable name.
+        </p>
+
+        <h2>Can I format strings?</h2>
+        <p>
+            Like when typing, you may want to use tabs and jump to a new line. Python has these capabilities too.
+            Simply add \t for tabs and \n for a new line. You must keep \t and \n within the quotation marks.
+        </p>
+
+        <h2>Are there any rules for what can/cannot be put in a string?</h2>
+        <p>
+            You may need to use an apostrophe in a string. But say you've already used single quotes to let Python know
+            you're using a string. You have two options for this. Change the line to something like <em>sentence =
+            "Mary's cat"</em>. Or else you could use <em>sentence = 'Mary\'s cat'</em>. The backslash tells Python that
+            the character after the backslash is a special character.
+        </p>
+
+        <h2>What is string concatenation?</h2>
+        <p>
+            Concatenating strings means joining two or more strings together. One thing to be conscious of is spacing
+            between words when doing this. Let's look at last week's example <em>name = "George Washington"</em>. Let's
+            say we wrote things slightly differently. We may have <em>first_name = "George"</em> and <em>last_name =
+            "Washington"</em>. Trying to concatenate these with <em>first_name + last_name</em> will give us <em>
+            GeorgeWashington</em>. That's not what we want. But <em>first_name + " " + last_name</em> will give us
+            <em>George Washington</em> which is exactly what we want.
+        </p>
+
+    <h1>Code Example</h1>
+    <div class="example" style="padding-bottom: 25px">
+    <div style="padding-right: 25px">
+        <p>
+        Let's try coding this pancake recipe. I'll copy and paste the text below, so you can try formatting it in
+        Python too. As per usual, you can copy and paste the code from the left-hand side of the page. The right-hand
+        side of shows the output of the code. Remember that \n creates a new line and \t is a tab. The print function
+        will print. Each slash shown after the quotes just means that the string continues on the next line. It's a
+        stylistic choice just so each part of the string is on visible on the screen. Here we have used <em>recipe</em>
+        as the variable name. This is good practice as we are using a meaningful name, recipe as our variable, to
+        store our string which contains a pancake recipe.
+        <br><br>
+        <strong>PANCAKES</strong>
+        <br><br>
+        <strong>Ingredients</strong>
+        </p>
+        <ul>
+            <li>100g plain flour</li>
+            <li>2 large eggs</li>
+            <li>300ml milk</li>
+            <li>1 tbsp sunflower oil plus a little extra for frying</li>
+            <li>Lemon wedges, to serve (optional)</li>
+            <li>Caster sugar, to serve (optional)</li>
+        </ul>
+        <br>
+        <p>
+            <strong>Method</strong>
+            <br>
+            Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil and a pinch of salt
+            into a bowl or large jug, then whisk to a smooth batter.
+            <br>
+            Set a medium frying pan over a medium heat and carefully wipe it with some oiled kitchen paper. When hot
+            cook your pancakes for 1 min on each side until golden.
+            <br>
+            Serve with lemon wedges and caster sugar, or your favourite filling.
+        </p>
+    </div>
+        <img style="text-align: right" src="../images/pancakes.png" alt="An aesthetic pancake recipe."
+             height="600" width="auto"/>
+    </div>
+        <div class="example">
+            <div class="grid-item">
+                recipe = "PANCAKES\n\n" \
+                <br>
+                "Ingredients\n" \
+                <br>
+                "\t100g plain flour\n" \
+                <br>
+                "\t2 large eggs\n" \
+                <br>
+                "\t300ml milk\n" \
+                <br>
+                "\t1 tbsp sunflower oil plus a little extra for frying\n" \
+                <br>
+                "\tLemon wedges, to serve (optional)\n" \
+                <br>
+                "\tCaster sugar, to serve (optional)\n\n" \
+                <br>
+                "Method\n" \
+                <br>
+                "Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil " \
+                <br>
+                "and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.\n" \
+                <br>
+                "Set a medium frying pan over a medium heat and carefully wipe it with some oiled kitchen paper. " \
+                <br>
+                "When hot cook your pancakes for 1 min on each side until golden.\n" \
+                <br>
+                "Serve with lemon wedges and caster sugar, or your favourite filling."
+                <br>
+                <br>
+                print(recipe)
+            </div>
+            <div class="grid-item">
+                PANCAKES
+                <br>
+                <br>
+                Ingredients
+                <br>
+                100g plain flour
+                <br>
+                2 large eggs
+                <br>
+                300ml milk
+                <br>
+                1 tbsp sunflower oil plus a little extra for frying
+                <br>
+                Lemon wedges, to serve (optional)
+                <br>
+                Caster sugar, to serve (optional)
+                <br>
+                <br>
+                Method
+                <br>
+                Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.
+                <br>
+                Set a medium frying pan over a medium heat and carefully wipe it with some oiled kitchen paper. When hot cook your pancakes for 1 min on each side until golden.
+                <br>
+                Serve with lemon wedges and caster sugar, or your favourite filling.
+            </div>
+        </div>
+
+    <h1>Inputs</h1>
+    <p>
+        You may want to write a piece of code that asks the user to input a piece of information. Let's look through an
+        easy example of this here. We'll ask the user for their name, capitalise their name and print back their name
+        in all capital letters to them. The <em>input</em> function prompts the person using your program to input a
+        piece of information. This is then saved as a string. Why not try converting your name to all lowercase letters
+        or reverse your name? Hint: you'll need the <em>lower</em> function or to add <em>[::-1]</em> after your name.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>user_name = input("Enter your name: ")
+print("You entered %s" % user_name)
+print("Your name capitalised is %s" % user_name.upper())</pre>
+        </div>
+        <div class="grid-item">
+            <br>
+            Enter your name: Orla<br>
+            You entered Orla<br>
+            Your name capitalised is ORLA
+        </div>
+    </div>
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+
+</body>
+</html>
