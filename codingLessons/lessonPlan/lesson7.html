@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Site Home</a>
+    <a href="index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+        </div>
+    </div>
+    <a href="lesson8.html">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+    <a href="lesson11.html">Lesson 11</a>
+    <a href="lesson12.html">Lesson 12</a>
+    <a href="lesson13.html">Lesson 13</a>
+    <a href="lesson14.html">Lesson 14</a>
+    <a href="lesson15.html">Lesson 15</a>
+    <a href="lesson16.html">Lesson 16</a>
+    <a href="lesson17.html">Lesson 17</a>
+    <a href="lesson18.html">Lesson 18</a>
+    <a href="lesson19.html">Lesson 19</a>
+    <a href="lesson20.html">Lesson 20</a>
+    <a href="lesson21.html">Lesson 21</a>
+    <a href="lesson22.html">Lesson 22</a>
+    <a href="lesson23.html">Lesson 23</a>
+    <a href="lesson24.html">Lesson 24</a>
+    <a href="lesson25.html">Lesson 25</a>
+    <a href="lesson26.html">Lesson 26</a>
+    <a href="lesson27.html">Lesson 27</a>
+    <a href="lesson28.html">Lesson 28</a>
+    <a href="lesson29.html">Lesson 29</a>
+    <a href="lesson30.html">Lesson 30</a>
+    <a href="lesson31.html">Lesson 31</a>
+    <a href="lesson32.html">Lesson 32</a>
+    <a href="lesson33.html">Lesson 33</a>
+    <a href="lesson34.html">Lesson 34</a>
+    <a href="lesson35.html">Lesson 35</a>
+    <a href="lesson36.html">Lesson 36</a>
+    <a href="lesson37.html">Lesson 37</a>
+    <a href="lesson38.html">Lesson 38</a>
+    <a href="lesson39.html">Lesson 39</a>
+    <a href="lesson40.html">Lesson 40</a>
+    <a href="lesson41.html">Lesson 41</a>
+    <a href="lesson42.html">Lesson 42</a>
+    <a href="lesson43.html">Lesson 43</a>
+    <a href="lesson44.html">Lesson 44</a>
+    <a href="lesson45.html">Lesson 45</a>
+    <a href="lesson46.html">Lesson 46</a>
+    <a href="lesson47.html">Lesson 47</a>
+    <a href="lesson48.html">Lesson 48</a>
+    <a href="lesson49.html">Lesson 49</a>
+    <a href="lesson50.html">Lesson 50</a>
+    <a href="lesson51.html">Lesson 51</a>
+    <a href="lesson52.html">Lesson 52</a>
+</nav>
+
+<main>
+
+    <h1>Types of Loops</h1>
+        <p>
+            In Python we deal with two loops - while loops and for loops. Loops can be used to repeat tasks without
+            needing to copy and paste items ad nauseam. While loops continue until a certain condition is met. Then
+            you break out of the loop and continue to the next part of the code. For loops go through an iterable or
+            a range sequentially before breaking out of the loop and moving to the part of the sentence.
+        </p>
+
+    <h2>While Loops</h2>
+        <p>
+            A while loop uses the keyword <em>while</em>. The loop operates while a condition is true and breaks out
+            when it isn't true. One issue you may encounter with loops is infinite loops. With a while loop, the
+            variable you're testing must change. If you're checking for a condition that never changes, the while loop
+            can't break. If you want to print out numbers one by one, you must make sure to increment or decrement the
+            number. Incrementing (increasing the number by a set amount) or decrementing (decreasing the number by a
+            set amount) allows you to change the value of the initial number. Let's look at a few issues and then we
+            can talk through the logic of the code.
+        </p>
+
+    <div class="example">
+        <div class="grid-item">
+                <pre>number = 0
+while number <= 100:
+    print(number)
+    number += 20</pre>
+        </div>
+        <div class="grid-item">
+            0<br>20<br>40<br>
+            60<br>80<br>100<br>
+        </div>
+    </div>
+
+    <p>
+        Here we start with a variable called <em>number</em> that stores the value of 0. The next line of the code
+        asks <em>is this number less than or equal to 100</em> which it is when the code begins running. The indent
+        shows that the code that follows is part of the while loop. We print the number, this shows 0 on the right-hand
+        side which shows the output of the code. The line <em>number += 20</em> increments the number variable. This
+        can also be written <em>number = number + 20</em>. This takes the original value of 0, adds 20 to it and now
+        the new value of <em>number</em> is 20. As this is the last indented statement, we jump back to the start of
+        the while loop. The number variable, which is valued at 20, is still less than or equal to 100. The process
+        repeats and the code prints the numbers in sequence. Let's skip to when <em>number</em> is valued at 100. The
+        while loop repeats and asks <em>is this number less than or equal to 100</em>. The computer finds that 100 is,
+        in fact, equal to 100. The code will print 100. It now increments our number variable, so it's new value is 120.
+        The code returns to the start of the while loop. It asks if 120 is less than or equal to 100. This is false so
+        the loop does not repeat. We break out of the loop and move to the next section of the code. In this program,
+        there's nothing else in this file. The code ends at this point. See if you can understand the logic of the
+        while loop below.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>shopping_list = ['milk', 'eggs', 'cheese', 'bread']
+grocery_item = 0
+while grocery_item < len(shopping_list):
+    print(shopping_list[grocery_item])
+    grocery_item += 1</pre>
+        </div>
+        <div class="grid-item">
+            <br>milk<br>eggs<br>cheese<br>bread
+        </div>
+    </div>
+
+    <p>
+        We start with a shopping list containing four items from last week. We begin at index 0 which, as you should
+        remember from <a href="lesson6.html">last week</a>, is the first item from the list. We print each item and
+        increment our <em>grocery_item</em> variable by one. This allows us to print the items of the list one by one.
+        The condition we're checking against here is the length of the list. Once the index is less than the length of
+        our list, which has four items, this loop will continue. This allows us to count 0, 1, 2, 3 before breaking
+        out of the while loop and moving onto the next section of code.
+    </p>
+
+    <h2>For Loops</h2>
+        <p>
+            For loops, in some languages, are referred to as <em>for each</em>. While loops take some type of counter
+            but for loops don't need counters. A for loop will go through each item in an iterable before moving onto
+            a new piece of code. You can nest for loops in other for loops, and while loops in while loops until your
+            laptop keels over. You can also use other loops, such as if/else loops, in a for loop. Let's look some
+            examples below.
+        </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>shopping_list = ['milk', 'eggs', 'cheese', 'bread']
+for item in shopping_list:
+    print(item)
+            </pre>
+        </div>
+        <div class="grid-item">
+            <br>milk<br>
+            eggs<br>
+            cheese<br>
+            bread
+        </div>
+    </div>
+
+    <p>
+        This example reuses the above shopping list from the while loop example. The code prints the groceries on
+        the list one by one. Note that the while loop required the use of a counter to move to the next index but
+        the for loop does not. Let's try looking at a nested loop in our next example.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>for number in range(0, 10):
+    if number % 2 == 0:
+        print(number)
+            </pre>
+        </div>
+        <div class="grid-item">
+            <br>0<br>
+            2<br>
+            4<br>
+            6<br>
+            8<br>
+        </div>
+    </div>
+
+    <p>
+        The range function in Python takes a start and stop number. The range of numbers here are from 0 to 9 (up to
+        but not including 10). Then we jump into an if-statement. This statement is true when <em>we divide a number
+        by two with no remainder</em>. Any number that two divides into without a remainder is an even number. Of all
+        the following numbers; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9; the even numbers are 0, 2, 4, 6, 8. This is exactly what
+        our code snippet prints out. Note that the print statement is indented twice. This means that it has to meet
+        the requirements in the for loop and the if loop to be printed.
+    </p>
+
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+
+</body>
+</html>
