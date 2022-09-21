@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Added favicon to html pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/images/cottagecore.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/orlafoley/Documents/GitHub/gaisce2021.github.io&quot;,
@@ -129,7 +132,11 @@
       <workItem from="1659379972215" duration="1242000" />
       <workItem from="1659382146300" duration="4521000" />
       <workItem from="1659629787668" duration="10273000" />
-      <workItem from="1659693366560" duration="8207000" />
+      <workItem from="1659693366560" duration="9129000" />
+      <workItem from="1661540478340" duration="1402000" />
+      <workItem from="1661542329155" duration="4645000" />
+      <workItem from="1663747848081" duration="6000" />
+      <workItem from="1663756284481" duration="2059000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
