@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 9 goes live">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 10 goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +136,9 @@
       <workItem from="1661542329155" duration="4645000" />
       <workItem from="1663747848081" duration="6000" />
       <workItem from="1663756284481" duration="5114000" />
+      <workItem from="1664116480660" duration="1874000" />
+      <workItem from="1664140599092" duration="876000" />
+      <workItem from="1664477073757" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -151,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663759967304</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson 10 goes live">
+      <created>1664116590722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664116590722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +182,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added favicon to html pages" />
     <MESSAGE value="Lesson 9 goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 9 goes live" />
+    <MESSAGE value="Lesson 10 goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 10 goes live" />
   </component>
 </project>
