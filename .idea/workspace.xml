@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 11 goes live" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Fixed header picture">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/images/cottagecore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson12.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson12.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +140,7 @@
       <workItem from="1663756284481" duration="5114000" />
       <workItem from="1664116480660" duration="1874000" />
       <workItem from="1664140599092" duration="876000" />
-      <workItem from="1664477073757" duration="7093000" />
+      <workItem from="1664477073757" duration="11935000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -166,7 +170,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664567595864</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson 12, added solution to lesson 11 assignment">
+      <created>1664568014419</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664568014419</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding lessons 11 and 12 to GitHub">
+      <created>1664568040724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664568040724</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed header picture">
+      <created>1664569352883</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664569352883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +214,9 @@
     <MESSAGE value="Lesson 9 goes live" />
     <MESSAGE value="Lesson 10 goes live" />
     <MESSAGE value="Lesson 11 goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 11 goes live" />
+    <MESSAGE value="Lesson 12, added solution to lesson 11 assignment" />
+    <MESSAGE value="Adding lessons 11 and 12 to GitHub" />
+    <MESSAGE value="Fixed header picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed header picture" />
   </component>
 </project>
