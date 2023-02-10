@@ -41,10 +41,10 @@ body {
 }
 
 header {
-    background-image: url(../images/cottagecore.png);
-    -moz-background-image: url(../images/cottagecore.png);
-    -o-background-image: url(../images/cottagecore.png);
-    -webkit-background-image: url(../images/cottagecore.png);
+    background-image: url(../images/cottagecore.webp);
+    -moz-background-image: url(../images/cottagecore.webp);
+    -o-background-image: url(../images/cottagecore.webp);
+    -webkit-background-image: url(../images/cottagecore.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
