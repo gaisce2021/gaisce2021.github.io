@@ -106,7 +106,7 @@
         the functions that you write. You can create a base class such as Animal. Then you can create two
         classes such as Pig and Cow which inherit the attributes and methods from Animal. So far so good,
         right? We covered this in <a href="lesson15.html">lesson 15</a>. Pig and cows are both animals. Nothing
-        new so far. Legs? 4. That's the same. Now let's say we have a method such as <i>makeNoise</i> for the
+        new so far. Legs? 4. That's the same. Now let's say we have a method such as <i>make_noise</i> for the
         animal class. Now let's see polymorphism in action. A cow says "moo" and a pig says "oink". So we'll
         need to print something slightly different for both animals.
     </p>
@@ -127,10 +127,49 @@
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre></pre>
+            <pre>from abc import ABC, abstractmethod
+
+
+class Animal(ABC):
+    def __init__(self, legs):
+        self.legs = legs
+
+    @abstractmethod
+    def make_noise(self):
+        raise NotImplementedError("Subclass must implement this method")
+
+
+class Cow(Animal):
+    def __init__(self, legs=4):
+        super().__init__(4)
+
+    def make_noise(self):
+        return "Moo"
+
+
+class Pig(Animal):
+    def __init__(self, legs=4):
+        super().__init__(legs)
+
+    def make_noise(self):
+        return "Oink"
+
+
+cow = Cow()
+pig = Pig()
+barn = [cow, pig]
+for animal in barn:
+    print(animal.make_noise())</pre>
         </div>
         <div class="grid-item">
-
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br>
+            Moo<br>
+            Oink
         </div>
     </div>
 
