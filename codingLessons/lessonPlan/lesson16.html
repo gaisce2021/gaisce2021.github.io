@@ -137,11 +137,34 @@
     <h2>Lesson 15 Solution</h2>
     <div class="example">
         <div class="grid-item">
-            <pre>
+            <pre>class Siamese(Cat):
+  def __init__(self, name, age, colour):
+    super().__init__(name, age, colour)
+    self.eye_colour = "Blue"
+
+  def describe(self):
+    print(self.name + " has " + self.eye_colour + " eyes and " + self.colour " fur.")
+
+class Bengal(Cat):
+  def __init__(self, name, age, colour):
+    super().__init__(name, age, colour)
+    self.pattern = "Spotted"
+
+  def eat(self):
+    print(self.name + " is eating.")
+
+lucky = Siamese("Lucky", 3, "white")
+lucky.describe()
+fluffy = Bengal("Fluffy", 6, "orange")
+fluffy.eat()
 </pre>
         </div>
         <div class="grid-item">
-
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br>
+Lucky has blue eyes and white fur.<br><br>
+Fluffy is eating.
         </div>
     </div>
 
