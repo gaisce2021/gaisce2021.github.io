@@ -122,7 +122,62 @@
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre></pre>
+            <pre>class Vehicle:
+  def __init__(self, colour, license_code, number_plate):
+    self.colour = colour
+    self.license_code = license_code
+    self.number_plate = number_plate
+
+  def drive(self):
+    print("This vehicle is in motion.")
+
+
+class Motorcycle(Vehicle):
+  def __init__(self, colour, number_plate):
+    super().__init__(colour ,"A" ,number_plate)
+    self.wheels = 2
+
+  def rev(self):
+    print("Vroom vroom!")
+
+
+class Car(Vehicle):
+  def __init__(self, colour, number_plate):
+    super().__init__(colour, "B", number_plate)
+    self.doors = 4
+
+  def honk(self):
+    print("Beep beep!")
+
+
+class Bus(Vehicle):
+  def __init__(self, colour, number_plate):
+    super().__init__(colour, "D", number_plate)
+    self.seats = 40
+    self.availability = 40
+
+    def add_passenger(self):
+        if 0 <= self.availability < self.seats:
+           self.availability -= 1
+            print("Total number of passengers aboard: " + str(self.seats - self.availability))
+        else:
+            print("No seats available, wait for the next bus.")
+
+    def remove_passenger(self):
+        if 0 <= self.availability < self.seats:
+            self.availability += 1
+            print("Total number of passengers aboard: " + str(self.seats - self.availability))
+        else:
+            print("Bus empty!")
+
+
+class Truck(Vehicle):
+  def __init__(self, colour, number_plate):
+    super().__init__(colour, "C", number_plate)
+    self.weight = 4
+                
+  def weight(self):
+    print("This truck is " + str(self.weight) + " tonnes.")</pre>
         </div>
         <div class="grid-item">
 
