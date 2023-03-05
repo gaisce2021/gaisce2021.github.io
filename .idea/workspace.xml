@@ -178,6 +178,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -189,7 +194,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="6e044ea8-4a40-4692-abad-c7cfdf67f70f" />
+        <option name="accountId" value="5e88fa0d-d339-4715-a365-7cfb1e8c265a" />
         <option name="url" value="https://github.com/gaisce2021/gaisce2021.github.io.git" />
       </UrlAndAccount>
     </option>
@@ -303,7 +308,7 @@
       <workItem from="1677539390092" duration="12000" />
       <workItem from="1677610717182" duration="20000" />
       <workItem from="1677948323702" duration="428000" />
-      <workItem from="1678030045334" duration="1240000" />
+      <workItem from="1678030045334" duration="1905000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>

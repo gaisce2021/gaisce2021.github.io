@@ -128,10 +128,36 @@
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre></pre>
+            <pre>class Person:
+  # Constructor takes in values for three attributes
+  def __init__(self, name, age, gender):
+    # Here are the attributes
+    self.name = name
+    self.age = age
+    self.gender = gender
+
+  # Simple methods
+  def introduce(self):
+    print("Hello, my name is " + self.name + ".")
+
+  def birthday(self):
+    self.age += 1
+    print("Happy birthday! I am now " + str(self.age) + " years old.")
+
+alice = Person("Alice", 20, "Female")
+alice.introduce()
+bob = Person("Bob", 18, "Male")
+bob.introduce()
+alice.birthday()
+</pre>
         </div>
         <div class="grid-item">
-
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            Hello, my name is Alice.<br><br>
+            Hello, my name is Bob.<br>
+            Happy birthday! I am now 21 years old.
         </div>
     </div>
 
@@ -139,8 +165,7 @@
     <h2>Lesson 13 Solution</h2>
     <div class="example">
         <div class="grid-item">
-            <pre>
-</pre>
+            <pre></pre>
         </div>
         <div class="grid-item">
 
