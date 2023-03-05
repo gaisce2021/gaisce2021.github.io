@@ -128,7 +128,22 @@
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre></pre>
+            <pre>from abc import ABC, abstractmethod
+
+
+class Animal(ABC):
+    def __init__(self, name, legs):
+        self.name = name
+        self.legs = legs
+
+    @abstractmethod
+    def make_noise(self):
+        raise NotImplementedError("Subclass must implement this method")
+
+    @abstractmethod
+    def eat_food(self):
+        raise NotImplementedError("Subclass must implement this method")
+</pre>
         </div>
         <div class="grid-item">
 
@@ -183,6 +198,10 @@ for animal in barn:
         examples. Let's review a potential solution next week.
     </p>
 </main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
 
 </body>
 </html>
