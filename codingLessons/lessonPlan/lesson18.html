@@ -139,11 +139,39 @@
     <h2>Lesson 17 Solution</h2>
     <div class="example">
         <div class="grid-item">
-            <pre>
-</pre>
+            <pre>class Sheep(Animal):
+    def __init__(self, legs=4):
+        super().__init__(legs)
+
+    def make_noise(self):
+        return "Baa"
+
+
+class Chicken(Animal):
+    def __init__(self, legs=2):
+        super().__init__(legs)
+
+    def make_noise(self):
+        return "Cluck"
+
+
+cow = Cow()
+pig = Pig()
+sheep = Sheep()
+chicken = Chicken()
+barn = [cow, pig, sheep, chicken]
+for animal in barn:
+    print(animal.make_noise())</pre>
         </div>
         <div class="grid-item">
-
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br>
+            Moo<br>
+            Oink<br>
+            Baa<br>
+            Cluck<br>
         </div>
     </div>
 
