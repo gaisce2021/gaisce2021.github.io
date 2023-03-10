@@ -2,9 +2,238 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Text Based Game I</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Site Home</a>
+    <a href="index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+            <a href="lesson8.html">Lesson 8 - Print vs Return</a>
+            <a href="lesson9.html">Lesson 9 - Errors</a>
+            <a href="lesson10.html">Lesson 10 - Dictionaries</a>
+            <a href="lesson11.html">Lesson 11 - Recursion</a>
+            <a href="lesson12.html">Lesson 12 - List Comprehensions</a>
+            <a href="lesson13.html">Lesson 13 - Revision</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Object Oriented Programming
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson14.html">Lesson 14 - Getting Started</a>
+            <a href="lesson15.html">Lesson 15 - Inheritance</a>
+            <a href="lesson16.html">Lesson 16 - Encapsulation</a>
+            <a href="lesson17.html">Lesson 17 - Polymorphism</a>
+            <a href="lesson18.html">Lesson 18 - Abstraction</a>
+            <a href="lesson19.html">Lesson 19 - Text Based Game I</a>
+            <a href="lesson20.html">Lesson 20 - Text Based Game II</a>
+            <a href="lesson21.html">Lesson 21 - Text Based Game III</a>
+            <a href="lesson22.html">Lesson 22 - Text Based Game IV</a>
+            <a href="lesson23.html">Lesson 23</a>
+            <a href="lesson24.html">Lesson 24</a>
+            <a href="lesson25.html">Lesson 25</a>
+            <a href="lesson26.html">Lesson 26</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder A
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson27.html">Lesson 27</a>
+            <a href="lesson28.html">Lesson 28</a>
+            <a href="lesson29.html">Lesson 29</a>
+            <a href="lesson30.html">Lesson 30</a>
+            <a href="lesson31.html">Lesson 31</a>
+            <a href="lesson32.html">Lesson 32</a>
+            <a href="lesson33.html">Lesson 33</a>
+            <a href="lesson34.html">Lesson 34</a>
+            <a href="lesson35.html">Lesson 35</a>
+            <a href="lesson36.html">Lesson 36</a>
+            <a href="lesson37.html">Lesson 37</a>
+            <a href="lesson38.html">Lesson 38</a>
+            <a href="lesson39.html">Lesson 39</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder B
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson40.html">Lesson 40</a>
+            <a href="lesson41.html">Lesson 41</a>
+            <a href="lesson42.html">Lesson 42</a>
+            <a href="lesson43.html">Lesson 43</a>
+            <a href="lesson44.html">Lesson 44</a>
+            <a href="lesson45.html">Lesson 45</a>
+            <a href="lesson46.html">Lesson 46</a>
+            <a href="lesson47.html">Lesson 47</a>
+            <a href="lesson48.html">Lesson 48</a>
+            <a href="lesson49.html">Lesson 49</a>
+            <a href="lesson50.html">Lesson 50</a>
+            <a href="lesson51.html">Lesson 51</a>
+            <a href="lesson52.html">Lesson 52</a>
+        </div>
+    </div>
+</nav>
+<main>
+    <h1>Questions</h1>
+    <h2>What is a text based game?</h2>
+    <p>
+        A text based game is a game without any graphics. People who grew up in the 1980s or 1990s will
+        likely be a little more familiar with these than people who grew up in the 2000s or 2010s.
+    </p>
+    <h2>What kind of game will we be making?</h2>
+    <p>
+        We're going to build a game based on Skyrim. We will create characters and weapons as classes.
+        Today's lesson will involve creating a character class as a blueprint. Next week we will consider
+        all the unique traits of each type of playable character in the game.
+    </p>
+
+    <h1>Code Example</h1>
+    <p>
+        Characters in Skyrim are named by the player, we need a name attribute. Characters start at level 1.
+        Characters in Skyrim can be one of many races. Please see the below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Character:
+    def __init__(self, name, level=1, race, magicka, health, stamina):
+        self.name = name
+        self.race = race
+        self.magicka = magicka
+        self.health = health
+        self.stamina = stamina
+        self.skills = []
+        self.right_hand = False
+        self.left_hand = False
+
+    def equip_weapon(self, hand, weapon):
+        # hand is either "right" or "left"
+        # weapon is a Weapon object
+        if hand == "right":
+            self.right_hand = weapon
+        elif hand == "left":
+            self.left_hand = weapon
+
+    def unequip_weapon(self, hand):
+        # hand is either "right" or "left"
+        if hand == "right":
+            self.right_hand = False
+        elif hand == "left":
+            self.left_hand = False</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 18 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>from abc import ABC, abstractmethod
+
+
+class Car(ABC):
+    def __init__(self, model, colour):
+        self.model = model
+        self.colour = colour
+
+    @abstractmethod
+    def get_fuel_type(self):
+        pass
+
+    @abstractmethod
+    def get_num_gears(self):
+        pass
+
+class Kia(Car):
+    def __init__(self, model, colour, year):
+        super().__init__(model, colour)
+        self.year = year
+
+    def get_fuel_type(self):
+        return "petrol"
+
+    def get_num_gears(self):
+        return 5
+
+
+class Ford(Car):
+    def __init__(self, model, colour, year):
+        super().__init__(model, colour)
+        self.year = year
+
+    def get_fuel_type(self):
+        return "diesel"
+
+    def get_num_gears(self):
+        return 6
+
+
+sportage = Kia("Sportage", "Red", 2017)
+fiesta = Ford("Fiesta", "Blue", 2018)
+print(sportage.get_num_gears())
+print(fiesta.get_fuel_type())</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
+            5<br>
+            diesel
+        </div>
+    </div>
+
+    <h2>Lesson 19 Assignment</h2>
+    <p>
+        Task 1: Create 10 subclasses of Character. These should be entitled Bosmer, etc. based on ten races
+        that a playable character could be in Skyrim. You can find a list of characters in Skyrim by clicking
+        <a href="https://elderscrolls.fandom.com/wiki/Races_(Skyrim)">here</a>. These subclasses should extend
+        the character class I've written for you above.
+    </p>
+    <p>
+        Task 2: Create a class called Skills. This class needs to return a list of length 18.
+        Each number in the list needs to represent the level of the skill. The skills can be found
+        <a href="https://elderscrolls.fandom.com/wiki/Races_(Skyrim)#Starting_skills_by_race">here</a>. You
+        can create once instance of each skill like
+        altmerSkills = Skills([15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 25, 20, 20, 20, 20, 20]). Do
+        this nine more times for each race.
+    </p>
+    <p>
+        Task 3: Add the skills you've created for each race into the constructor for its character subclass.
+        For example, the Altmer character subclass should have altmerSkills in its constructor because this
+        is what any player who plays as an Altmer will begin the game with.
+    </p>
+
+</main>
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
 </body>
 </html>
