@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 19 goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson1.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson10.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson11.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson12.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson13.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson14.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson15.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson16.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson17.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson18.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson2.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson20.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson20.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson21.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson21.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson22.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson22.html" afterDir="false" />
@@ -28,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson27.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson27.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson28.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson28.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson29.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson29.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson3.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson30.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson30.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson31.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson31.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson32.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson32.html" afterDir="false" />
@@ -39,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson37.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson37.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson38.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson38.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson39.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson39.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson4.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson40.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson40.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson41.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson41.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson42.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson42.html" afterDir="false" />
@@ -50,14 +36,9 @@
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson47.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson47.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson48.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson48.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson49.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson49.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson5.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson50.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson50.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson51.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson52.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson6.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson7.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson8.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson9.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +193,7 @@
       <workItem from="1678030045334" duration="7821000" />
       <workItem from="1678202629014" duration="3000" />
       <workItem from="1678465003138" duration="2791000" />
-      <workItem from="1678474872727" duration="1847000" />
+      <workItem from="1678474872727" duration="9347000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
