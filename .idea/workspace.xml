@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 19 goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson22.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson22.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson23.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson23.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson24.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson24.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson25.html" afterDir="false" />
@@ -191,7 +190,7 @@
       <workItem from="1678030045334" duration="7821000" />
       <workItem from="1678202629014" duration="3000" />
       <workItem from="1678465003138" duration="2791000" />
-      <workItem from="1678474872727" duration="23294000" />
+      <workItem from="1678474872727" duration="24259000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
