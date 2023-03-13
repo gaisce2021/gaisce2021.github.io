@@ -98,6 +98,69 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>Why are we creating so many classes?</h2>
+    <p>
+        Large games have many more classes than ours does. While these lessons are very repetitive, it
+        gives you a look into the day-to-day work of a game developer. This also shows the importance of
+        planning your classes well. If you create a Character class with many common methods, it makes
+        writing a Breton or an Orsimer much quicker. A quick look at the Skyrim wikipedia page will show
+        you what the two races have in common and what's different about them. You can group these common
+        traits into Character and then fill in the differing information such as skill levels when creating
+        a new character into the subclasses. This allows you to use the same attributes and methods across
+        classes without needing to type the same piece of code numerous times.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 20 Solution</h2>
+    <p>
+        Let's build Weapon and then start looking at its subclasses. We will write two classes called OneHanded
+        and TwoHanded that extend Weapon. We will then create Dagger which extends OneHanded. We will also
+        create Battleaxe which is a subclass of TwoHanded. You are free to create more one-handed and
+        two-handed weapons but if you only want to create one of each then this is perfectly fine.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Weapon:
+    def __init__(self, name, material, weight, value, damage):
+        self.name = name
+        self.material = material
+        self.weight = weight
+        self.value = value
+        self.damage = damage
+
+    def hit(self):
+        return "You attack using %s which has %s damage." % (self.name, self.damage)
+
+    def block(self):
+        return "Attack blocked!"
+
+
+class OneHanded(Weapon):
+    def __init__(self, name, material, weight, value, damage):
+        super().__init__(name, material, weight, value, damage)
+        self.hands = 1
+
+
+class TwoHanded(Weapon):
+    def __init__(self, name, material, weight, value, damage):
+        super().__init__(name, material, weight, value, damage)
+        self.hands = 2
+
+
+class Dagger(OneHanded):
+    def __init__(self, name, material, weight, value, damage):
+        super().__init__(name, material, weight, value, damage)
+
+
+class Battleaxe(TwoHanded):
+    def __init__(self, name, material, weight, value, damage):
+        super().__init__(name, material, weight, value, damage)
+</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
 
     <h2>Lesson 21 Assignment</h2>
     <p>
@@ -124,6 +187,9 @@
             game that the fight is over.
         </li>
     </ol>
+    <p>
+        <b>Note:</b> You may need to adjust some previously written code to make this work.
+    </p>
     <p>
         Next week we will look at a solution to this piece of code. We will also look at some other ideas
         you could implement within code to make your game more interesting. These could involve modifying
