@@ -141,6 +141,67 @@
         You can use Tkinter to make simple or complex GUIs, depending on your needs and skills.
         We will begin by looking at a few small examples and then build up from there into a small game.
     </p>
+
+    <h1>Code Example</h1>
+    <p>
+        We will begin by creating a blank tkinter canvas. We can look at changing the canvas by updating
+        labels, adding shapes and text, changing colours and generally customising the canvas more.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>from tkinter import *
+
+root = Tk()
+canvas = Canvas(root, width=300, height=200)
+canvas.pack()
+
+root.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A blank tkinter canvas on a Windows laptop"
+                 src="../images/blankTkinter.png"
+                 width="300" height="200">
+        </div>
+    </div>
+
+    <p>
+        Now we've seen what a blank canvas looks like. Our next task will be to change the name of the
+        popup window created by the program and change the background colour of the window. I will change the
+        background to a nice shade of pink. I will also update the title of the window to "My First Game".
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>from tkinter import *
+
+root = Tk()
+<b>root.title("My First Game")</b>
+canvas = Canvas(root, width=300, height=200,
+<b>bg="#ffd1dc")</b>
+canvas.pack()
+
+root.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A pale pink canvas entitled My First Game"
+                 src="../images/pinkTkinter.png"
+                 width="300" height="200">
+        </div>
+    </div>
+    <p>
+        The bold text shows the difference between the previous example and the current example.
+    </p>
+
+    <h2>Lesson 23 Assignment</h2>
+    <p>
+        Do the following with the code that we've looked at above. We'll look at a sample solution next week.
+    </p>
+    <ol>
+        <li>Copy the second code snippet into your IDE.</li>
+        <li>Rename the game. Name it after yourself.</li>
+        <li>The game is currently pink. Change it to green.</li>
+        <li>Change the game to a 200x200 window rather than the current 300x200 size.</li>
+    </ol>
 </main>
 <footer>
     <h1>Page created by Orla</h1>
