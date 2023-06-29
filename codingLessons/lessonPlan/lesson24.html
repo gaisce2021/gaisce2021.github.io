@@ -109,7 +109,7 @@
         We will be using <i>time</i>, <i>random</i> and <i>math</i> to make a game. We will first begin with
         the <i>math</i> library. This will help us make some different shapes.
     </p>
-    <h2>I'm not comfortable with maths, should I skip this lesson?</h2>
+    <h2>I have never felt comfortable with maths, should I skip this lesson?</h2>
     <p>
         Don't worry, we won't be doing anything too difficult in this lesson. The maths involved is, for
         example, to create shapes based on the size of a circle's radius. If you're in secondary/high school or
@@ -121,19 +121,132 @@
     <p>
         The first thing we will look at is creating different classes to draw different shapes. We can give
         these classes sensible names such as <i>Circle</i> to make it clear what the class is intended for.
+        We will automatically make all of our circles blue in this example. Now let's talk code.
+    </p>
+    <p>
+        We will create a constructor in this example. This constructor will take in three values. All
+        values are numeric. It will take in x and y values. These are the coordinates of the centre of
+        the circle. The x value tells you how far left/right it is on the canvas. The y value will
+        give it a place high up or low down on the screen. The next value is the radius. This value decides
+        how "big" your circle is. A small radius will draw a small circle. A large radius will draw a circle
+        with a much bigger area. You may add an option to take in a colour name or a hex value but for the
+        sake of example, we will stick with blue.
+    </p>
+    <p>
+        Three numbers on their own won't be enough for our example. Now that we have the values of the shape,
+        we need another function to draw it on the canvas. We need to add the following line <i>def draw(self,
+        canvas):</i> to the <i>Circle</i> class. The <i>self</i> refers to the values of the circle that are
+        added by the user. The <i>canvas</i> is where this circle is drawn. We will create a canvas in a
+        later piece of code. The tkinter canvas has an inbuilt <i>create_oval</i> function which we
+        will use here. A circle can be viewed as a specific type of oval which is why we use this function.
+        The four extreme points are entered: lowest x value by subtracting the radius, lowest y value by
+        subtracting the radius, highest x value by adding the radius, highest y value by adding the radius. We
+        also enter <i>fill="blue"</i> to colour in our circle. We will take a look at all this code
+        before adding the canvas below it.
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre></pre>
+            <pre>import tkinter as tk
+
+class Circle:
+    def __init__(self, x, y, radius):
+        self.x = x
+        self.y = y
+        self.radius = radius
+
+    def draw(self, canvas):
+        canvas.create_oval(self.x - self.radius, self.y - self.radius,
+                           self.x + self.radius, self.y + self.radius,
+                           fill="blue")
+</pre>
         </div>
         <div class="grid-item">
 
         </div>
     </div>
+    <p>
+        The next step is to create and name the canvas we're working on. We'll use <i>Blue Circles</i> as
+        a working title for the canvas. We can set the dimensions and then use the <i>pack</i> function
+        which is a geometry manager that is used to organize and place widgets within a container,
+        such as a window or a frame.
+    </p>
+    <p>
+        The next step involves creating and drawing two circles. The first one is centred around the
+        coordinates (100, 100) and the second circle is centred around (200, 200) which is lower down and
+        further to the right on the canvas. The second circle has a radius of 80 pixels making it larger than
+        the first circle which has a radius of 50 pixels. The last step is to add <i>window.mainloop()</i> to
+        run the code.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>window = tk.Tk()
+window.title("Blue Circles")
+canvas = tk.Canvas(window, width=400, height=400)
+canvas.pack()
+
+circle1 = Circle(100, 100, 50)
+circle1.draw(canvas)
+circle2 = Circle(200, 200, 80)
+circle2.draw(canvas)
+
+window.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A white canvas with two blue circles drawn on it"
+                 src="../images/blueCirclesTkinter.png"
+                 width="400" height="400">
+        </div>
+    </div>
 
     <h1>Exercises</h1>
     <h2>Lesson 23 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>from tkinter import *
+
+root = Tk()
+root.title("Orla")
+canvas = Canvas(root, width=200, height=200,
+bg="#89997F")
+canvas.pack()
+
+root.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A pale green canvas entitled Orla"
+                 src="../images/greenTkinter.png"
+                 width="200" height="200">
+        </div>
+    </div>
+    <p>
+        Here is a sample solution for last week's lesson. We have a green square. You can feel free to
+        use any shade of green in this lesson. Unless we share a name, your game should be called after you
+        rather than after me. Feel free to play around with colours and dimensions of the code provided to
+        learn a little more about how it works.
+    </p>
     <h2>Lesson 24 Assignment</h2>
+    <p>
+        Today's lesson focused on making circles and drawing them on the canvas. Your homework this week
+        is going to involve taking your learning and applying it to draw new shapes on a blank canvas.
+        This assignment will be in a step-by-step guide to help you complete it. Follow the steps below.
+    </p>
+    <ol>
+        <li>Create a <i>Shape</i> class to take in the colour in the constructor.</li>
+        <li>Create a <i>Square</i> class which takes in an x value, y value and a side length. This
+        class extends Shape.</li>
+        <li>Add a <i>draw</i> function to <i>Square</i>. <b>Hint: use the <i>create_rectangle</i> function
+         to do this.</b></li>
+        <li>Create a <i>Triangle</i> class. This class extends Shape. This constructor should take in a colour
+        along with three x coordinates and three corresponding y coordinates for the three points
+        of the triangle.</li>
+        <li>Add a <i>draw</i> function to <i>Triangle</i>. <b>Hint: use the <i>create_polygon</i> function
+        for this part of the code.</b></li>
+        <li>Create a canvas and give it a title.</li>
+        <li>Draw three green triangles and two pink squares.</li>
+    </ol>
+    <p>
+        As always we will look at a solution when we return next week. Good luck!
+    </p>
 </main>
 <footer>
     <h1>Page created by Orla</h1>
