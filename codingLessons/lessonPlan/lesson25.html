@@ -98,7 +98,108 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What can we do with the canvas from last week?</h2>
+    <p>
+        So far we have learned how to create a canvas, change the colour, change the name and draw shapes on
+        it. Our next task involves making the game more interactive. Now that we know how to draw shapes, we
+        need to make them clickable.
+    </p>
+    <h2>How do we make shapes clickable?</h2>
+    <p>
+        That's the topic of today's lesson. We will look at how to add a type of event listener; the event in
+        this instance is the user clicking with a mouse/trackpad or tapping their phone screen with
+        their finger. Once we have added the code to make a shape clickable, we will add a counter which will
+        update once a shape is clicked. We can use this to track the number of shapes clicked.
+    </p>
+    <h2>Will there be an assignment this week?</h2>
+    <p>
+        Yes there will! We will look at using the <i>random</i> library in today's assignment to
+        change where the shapes appear on the screen. This code will contribute to the mini-game that
+        we have been creating over the past few weeks.
+    </p>
 
+    <h1>Exercises</h1>
+    <h2>Lesson 24 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>import tkinter as tk
+
+
+class Shape:
+    def __init__(self, color):
+        self.color = color
+
+    def draw(self, canvas):
+        pass
+
+
+class Square(Shape):
+    def __init__(self, color, x, y, side_length):
+        super().__init__(color)
+        self.x = x
+        self.y = y
+        self.side_length = side_length
+
+    def draw(self, canvas):
+        canvas.create_rectangle(self.x, self.y,
+                                self.x + self.side_length,
+                                self.y + self.side_length,
+                                fill=self.color)
+
+
+class Triangle(Shape):
+    def __init__(self, color, x1, y1, x2, y2, x3, y3):
+        super().__init__(color)
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
+        self.x3 = x3
+        self.y3 = y3
+
+    def draw(self, canvas):
+        canvas.create_polygon(self.x1, self.y1,
+                              self.x2, self.y2,
+                              self.x3, self.y3,
+                              fill=self.color)
+
+
+window = tk.Tk()
+window.title("Shapes")
+canvas = tk.Canvas(window, width=400, height=400)
+canvas.pack()
+
+square1 = Square("#FFD1DC", 50, 50, 100)
+square1.draw(canvas)
+square2 = Square("#FFD1DC", 200, 200, 80)
+square2.draw(canvas)
+
+triangle1 = Triangle("#89997F", 150, 100, 100, 200, 200, 200)
+triangle1.draw(canvas)
+triangle2 = Triangle("#89997F", 250, 250, 300, 350, 350, 250)
+triangle2.draw(canvas)
+triangle3 = Triangle("#89997F", 100, 300, 50, 350, 150, 350)
+triangle3.draw(canvas)
+
+window.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A white canvas with two pink squares and three green triangles"
+                 src="../images/lesson24assignment.png"
+                 width="400" height="400">
+        </div>
+    </div>
+    <p>
+        Here is a solution for last week's lesson. Feel free to place the shapes anywhere you like within the
+        canvas. You can use any shades of pink or green you like here. If you struggled with last week's
+        assignment then you can review any parts you were stuck at and try again.
+    </p>
+    <h2>Lesson 25 Assignment</h2>
+    <p></p>
+    <p>
+        As always we will look at a solution when we return next week. Good luck!
+    </p>
 </main>
 <footer>
     <h1>Page created by Orla</h1>
