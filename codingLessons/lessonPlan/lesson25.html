@@ -127,13 +127,91 @@
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre>
+            <pre>import tkinter as tk
 
-            </pre>
+<b>class Counter:
+    def __init__(self):
+        self.count = 0
+
+    def increment(self):
+        self.count += 1
+
+    def get_count(self):
+        return self.count</b></pre>
         </div>
         <div class="grid-item">
         </div>
     </div>
+    <p>
+        The first thing we did was to create a counter class. This begins at 0 by default and increases by 1
+        for each shape you click. Simple enough? Let's look at amending the code some more from last week
+        to implement a working shape counter.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Circle:
+    def __init__(self, x, y, radius, canvas):
+        self.x = x
+        self.y = y
+        self.radius = radius
+        <b>self.canvas = canvas</b>
+
+    def draw(self):
+        shape_id = self.canvas.create_oval(self.x - self.radius, self.y - self.radius,
+                                           self.x + self.radius, self.y + self.radius,
+                                           fill="blue")
+        <b>self.canvas.tag_bind(shape_id, '&lt;Button-1&gt;', self.on_click)</b>
+
+    <b>def on_click(self, event):
+        counter.increment()
+        self.canvas.delete(tk.CURRENT)
+        counter_label.config(text="Counter: {}".format(counter.get_count()))</b></pre>
+    </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <p>
+        We have now modified the Circle class. The <i>on_click</i> function will increase the counter's
+        value. It then deletes the shape you have clicked on before updating the counter label with the
+        new value. This new value is reflected in a label at the bottom of the screen.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>window = tk.Tk()
+window.title("Clickable Circles")
+
+canvas = tk.Canvas(window, width=400, height=400)
+canvas.pack()
+
+<b>counter = Counter()
+
+counter_label = tk.Label(window, text="Counter: {}".format(counter.get_count()))
+counter_label.pack()</b>
+
+circle1 = Circle(100, 100, 50, canvas)
+circle1.draw()
+circle2 = Circle(200, 200, 80, canvas)
+circle2.draw()
+
+window.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A white canvas with two blue circles and a click counter"
+                 src="../images/clickableCircles.png"
+                 width="400" height="400">
+        </div>
+    </div>
+    <p>
+        We begin by creating a window. We give the window a title. We then create the canvas where the shapes
+        will be drawn. We create an instance of the counter class and add a <i>label</i> section to the bottom
+        of the window. The label function is used to hold text to be displayed in our mini-game. We use the
+        string formatting function which is in built to Python to display the counter which is currently
+        set to 0. We then create and draw two circles from last week. We run the final line of code which
+        launches the window on the screen to create our little game.
+    </p>
 
     <h1>Exercises</h1>
     <h2>Lesson 24 Solution</h2>
@@ -212,7 +290,23 @@ window.mainloop()</pre>
         assignment then you can review any parts you were stuck at and try again.
     </p>
     <h2>Lesson 25 Assignment</h2>
-    <p></p>
+    <p>
+        Take this week's code example and build on it. We want to use the <i>random</i> library which is
+        part of the standard library. Instead of us manually setting coordinates, we can randomly set them
+        to make shapes appear in different places on the window. We can start off by assuming that the
+        canvas will be 400x400. We can set the radius of the circle to ensure that it will fall within the
+        bounds of the canvas.
+    </p>
+    <ol>
+        <li>Create a canvas and give it a name.</li>
+        <li>Create a Circle class or borrow the above one.</li>
+        <li>To make this task easier you can set the radius to a fixed value
+            and use the random library to make the x and y coordinates of the new circle change.</li>
+        <li>Modify the delete/increment function of the circle to redraw a new
+            circle after the old one is cleared. The counter should keep going
+            until the user gets bored and quits.</li>
+        <li>For the sake of ease you can decide to only use one circle.</li>
+    </ol>
     <p>
         As always we will look at a solution when we return next week. Good luck!
     </p>
