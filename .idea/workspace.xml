@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Data structure lesson links fixed" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="OOP lesson links fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson15.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson16.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson17.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson18.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson19.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson20.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson21.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson22.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson23.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson23.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson24.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson24.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson25.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson26.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson26.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,6 +206,7 @@
       <workItem from="1690224596873" duration="152000" />
       <workItem from="1690224792674" duration="420000" />
       <workItem from="1690225246730" duration="569000" />
+      <workItem from="1690225842463" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -363,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690225774674</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Programming basics lesson links fixed">
+      <option name="closed" value="true" />
+      <created>1690226284436</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690226284436</updated>
+    </task>
+    <task id="LOCAL-00025" summary="OOP lesson links fixed">
+      <option name="closed" value="true" />
+      <created>1690226556085</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690226556085</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +436,8 @@
     <MESSAGE value="Lesson 26 questions added" />
     <MESSAGE value="Moved lessons into respective folders" />
     <MESSAGE value="Data structure lesson links fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data structure lesson links fixed" />
+    <MESSAGE value="Programming basics lesson links fixed" />
+    <MESSAGE value="OOP lesson links fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP lesson links fixed" />
   </component>
 </project>
