@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphics Based Game III</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../../index.html">Site Home</a>
+    <a href="../index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../programmingBasics/lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="../programmingBasics/lesson2.html">Lesson 2 - Data Types</a>
+            <a href="../programmingBasics/lesson3.html">Lesson 3 - Strings</a>
+            <a href="../programmingBasics/lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="../programmingBasics/lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="../programmingBasics/lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="../programmingBasics/lesson7.html">Lesson 7 - Loops</a>
+            <a href="../programmingBasics/lesson8.html">Lesson 8 - Print vs Return</a>
+            <a href="../programmingBasics/lesson9.html">Lesson 9 - Errors</a>
+            <a href="../programmingBasics/lesson10.html">Lesson 10 - Dictionaries</a>
+            <a href="../programmingBasics/lesson11.html">Lesson 11 - Recursion</a>
+            <a href="../programmingBasics/lesson12.html">Lesson 12 - List Comprehensions</a>
+            <a href="../programmingBasics/lesson13.html">Lesson 13 - Revision</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Object Oriented Programming
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson14.html">Lesson 14 - Getting Started</a>
+            <a href="lesson15.html">Lesson 15 - Inheritance</a>
+            <a href="lesson16.html">Lesson 16 - Encapsulation</a>
+            <a href="lesson17.html">Lesson 17 - Polymorphism</a>
+            <a href="lesson18.html">Lesson 18 - Abstraction</a>
+            <a href="lesson19.html">Lesson 19 - Text Based Game I</a>
+            <a href="lesson20.html">Lesson 20 - Text Based Game II</a>
+            <a href="lesson21.html">Lesson 21 - Text Based Game III</a>
+            <a href="lesson22.html">Lesson 22 - Text Based Game IV</a>
+            <a href="lesson23.html">Lesson 23 - Graphics Based Game I</a>
+            <a href="lesson24.html">Lesson 24 - Graphics Based Game II</a>
+            <a href="lesson25.html">Lesson 25 - Graphics Based Game III</a>
+            <a href="lesson26.html">Lesson 26 - Graphics Based Game IV</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder A
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../dataStructures/lesson27.html">Lesson 27</a>
+            <a href="../dataStructures/lesson28.html">Lesson 28</a>
+            <a href="../dataStructures/lesson29.html">Lesson 29</a>
+            <a href="../dataStructures/lesson30.html">Lesson 30</a>
+            <a href="../dataStructures/lesson31.html">Lesson 31</a>
+            <a href="../dataStructures/lesson32.html">Lesson 32</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37</a>
+            <a href="../dataStructures/lesson38.html">Lesson 38</a>
+            <a href="../dataStructures/lesson39.html">Lesson 39</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder B
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../lesson40.html">Lesson 40</a>
+            <a href="../lesson41.html">Lesson 41</a>
+            <a href="../lesson42.html">Lesson 42</a>
+            <a href="../lesson43.html">Lesson 43</a>
+            <a href="../lesson44.html">Lesson 44</a>
+            <a href="../lesson45.html">Lesson 45</a>
+            <a href="../lesson46.html">Lesson 46</a>
+            <a href="../lesson47.html">Lesson 47</a>
+            <a href="../lesson48.html">Lesson 48</a>
+            <a href="../lesson49.html">Lesson 49</a>
+            <a href="../lesson50.html">Lesson 50</a>
+            <a href="../lesson51.html">Lesson 51</a>
+            <a href="../lesson52.html">Lesson 52</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>What can we do with the canvas from last week?</h2>
+    <p>
+        So far we have learned how to create a canvas, change the colour, change the name and draw shapes on
+        it. Our next task involves making the game more interactive. Now that we know how to draw shapes, we
+        need to make them clickable.
+    </p>
+    <h2>How do we make shapes clickable?</h2>
+    <p>
+        That's the topic of today's lesson. We will look at how to add a type of event listener; the event in
+        this instance is the user clicking with a mouse/trackpad or tapping their phone screen with
+        their finger. Once we have added the code to make a shape clickable, we will add a counter which will
+        update once a shape is clicked. We can use this to track the number of shapes clicked.
+    </p>
+    <h2>Will there be an assignment this week?</h2>
+    <p>
+        Yes there will! We will look at using the <i>random</i> library in today's assignment to
+        change where the shapes appear on the screen. This code will contribute to the mini-game that
+        we have been creating over the past few weeks.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Now let's make last week's blue circle example interactive. We will add the lines of code necessary
+        to pre-existing code. After looking at the example below we can then talk through the code which has
+        been added. Amendments to code will be in bold text to clarify what has been updated since last week.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>import tkinter as tk
+
+<b>class Counter:
+    def __init__(self):
+        self.count = 0
+
+    def increment(self):
+        self.count += 1
+
+    def get_count(self):
+        return self.count</b></pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+    <p>
+        The first thing we did was to create a counter class. This begins at 0 by default and increases by 1
+        for each shape you click. Simple enough? Let's look at amending the code some more from last week
+        to implement a working shape counter.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Circle:
+    def __init__(self, x, y, radius, canvas):
+        self.x = x
+        self.y = y
+        self.radius = radius
+        <b>self.canvas = canvas</b>
+
+    def draw(self):
+        shape_id = self.canvas.create_oval(self.x - self.radius, self.y - self.radius,
+                                           self.x + self.radius, self.y + self.radius,
+                                           fill="blue")
+        <b>self.canvas.tag_bind(shape_id, '&lt;Button-1&gt;', self.on_click)</b>
+
+    <b>def on_click(self, event):
+        counter.increment()
+        self.canvas.delete(tk.CURRENT)
+        counter_label.config(text="Counter: {}".format(counter.get_count()))</b></pre>
+    </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <p>
+        We have now modified the Circle class. The <i>on_click</i> function will increase the counter's
+        value. It then deletes the shape you have clicked on before updating the counter label with the
+        new value. This new value is reflected in a label at the bottom of the screen.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>window = tk.Tk()
+window.title("Clickable Circles")
+
+canvas = tk.Canvas(window, width=400, height=400)
+canvas.pack()
+
+<b>counter = Counter()
+
+counter_label = tk.Label(window, text="Counter: {}".format(counter.get_count()))
+counter_label.pack()</b>
+
+circle1 = Circle(100, 100, 50, canvas)
+circle1.draw()
+circle2 = Circle(200, 200, 80, canvas)
+circle2.draw()
+
+window.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A white canvas with two blue circles and a click counter"
+                 src="../../images/clickableCircles.png"
+                 width="400" height="400">
+        </div>
+    </div>
+    <p>
+        We begin by creating a window. We give the window a title. We then create the canvas where the shapes
+        will be drawn. We create an instance of the counter class and add a <i>label</i> section to the bottom
+        of the window. The label function is used to hold text to be displayed in our mini-game. We use the
+        string formatting function which is in built to Python to display the counter which is currently
+        set to 0. We then create and draw two circles from last week. We run the final line of code which
+        launches the window on the screen to create our little game.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 24 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>import tkinter as tk
+
+
+class Shape:
+    def __init__(self, color):
+        self.color = color
+
+    def draw(self, canvas):
+        pass
+
+
+class Square(Shape):
+    def __init__(self, color, x, y, side_length):
+        super().__init__(color)
+        self.x = x
+        self.y = y
+        self.side_length = side_length
+
+    def draw(self, canvas):
+        canvas.create_rectangle(self.x, self.y,
+                                self.x + self.side_length,
+                                self.y + self.side_length,
+                                fill=self.color)
+
+
+class Triangle(Shape):
+    def __init__(self, color, x1, y1, x2, y2, x3, y3):
+        super().__init__(color)
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
+        self.x3 = x3
+        self.y3 = y3
+
+    def draw(self, canvas):
+        canvas.create_polygon(self.x1, self.y1,
+                              self.x2, self.y2,
+                              self.x3, self.y3,
+                              fill=self.color)
+
+
+window = tk.Tk()
+window.title("Shapes")
+canvas = tk.Canvas(window, width=400, height=400)
+canvas.pack()
+
+square1 = Square("#FFD1DC", 50, 50, 100)
+square1.draw(canvas)
+square2 = Square("#FFD1DC", 200, 200, 80)
+square2.draw(canvas)
+
+triangle1 = Triangle("#89997F", 150, 100, 100, 200, 200, 200)
+triangle1.draw(canvas)
+triangle2 = Triangle("#89997F", 250, 250, 300, 350, 350, 250)
+triangle2.draw(canvas)
+triangle3 = Triangle("#89997F", 100, 300, 50, 350, 150, 350)
+triangle3.draw(canvas)
+
+window.mainloop()</pre>
+        </div>
+        <div class="grid-item">
+            <img alt="A white canvas with two pink squares and three green triangles"
+                 src="../../images/lesson24assignment.png"
+                 width="400" height="400">
+        </div>
+    </div>
+    <p>
+        Here is a solution for last week's lesson. Feel free to place the shapes anywhere you like within the
+        canvas. You can use any shades of pink or green you like here. If you struggled with last week's
+        assignment then you can review any parts you were stuck at and try again.
+    </p>
+    <h2>Lesson 25 Assignment</h2>
+    <p>
+        Take this week's code example and build on it. We want to use the <i>random</i> library which is
+        part of the standard library. Instead of us manually setting coordinates, we can randomly set them
+        to make shapes appear in different places on the window. We can start off by assuming that the
+        canvas will be 400x400. We can set the radius of the circle to ensure that it will fall within the
+        bounds of the canvas.
+    </p>
+    <ol>
+        <li>Create a canvas and give it a name.</li>
+        <li>Create a Circle class or borrow the above one.</li>
+        <li>To make this task easier you can set the radius to a fixed value
+            and use the random library to make the x and y coordinates of the new circle change.</li>
+        <li>Modify the delete/increment function of the circle to redraw a new
+            circle after the old one is cleared. The counter should keep going
+            until the user gets bored and quits.</li>
+        <li>For the sake of ease you can decide to only use one circle.</li>
+    </ol>
+    <p>
+        As always we will look at a solution when we return next week. Good luck!
+    </p>
+</main>
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+</body>
+</html>

@@ -4,25 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 19 goes live">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 26 questions added">
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson27.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson28.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson29.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson30.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson31.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson33.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson34.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson35.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson36.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson37.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson38.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson39.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson23.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson23.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson24.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson24.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson25.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson26.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson26.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson27.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson27.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson28.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson28.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson29.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson29.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson30.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson30.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson31.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson31.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson32.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson32.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson33.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson33.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson34.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson34.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson35.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson35.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson36.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson36.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson37.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson37.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson38.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson38.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson39.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson39.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson1.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson10.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson11.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson12.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson13.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson14.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson15.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson16.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson17.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson18.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson19.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson2.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson20.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson21.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson22.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson23.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson23.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson24.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson24.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson25.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson25.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson26.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/oop/lesson26.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson3.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson30.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson31.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson34.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson35.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson36.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson37.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson38.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson39.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson4.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson40.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson40.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson41.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson41.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson42.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson42.html" afterDir="false" />
@@ -33,9 +63,14 @@
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson47.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson47.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson48.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson48.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson49.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson49.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson5.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson50.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson50.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson51.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson52.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson6.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson7.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson8.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/lesson9.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/programmingBasics/lesson9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +131,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/orlaf/OneDrive/Documents/GitHub/gaisce2021.github.io/codingLessons/lessonPlan&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/orlaf/OneDrive/Documents/GitHub/gaisce2021.github.io/codingLessons/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -107,16 +142,27 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\images" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\dataStructures" />
+      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\oop" />
+      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\programmingBasics" />
+      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\images" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/codingLessons/images" />
-      <recent name="$PROJECT_DIR$/codingLessons/fonts" />
-      <recent name="$PROJECT_DIR$/codingLessons/css" />
-      <recent name="$PROJECT_DIR$/codingLessons/css/webfontkit-20220715-172621" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lesson1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gaisce2021.github.io/codingLessons/lessonPlan/programmingBasics/lesson1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.lesson1.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -190,7 +236,26 @@
       <workItem from="1678030045334" duration="7821000" />
       <workItem from="1678202629014" duration="3000" />
       <workItem from="1678465003138" duration="2791000" />
-      <workItem from="1678474872727" duration="24259000" />
+      <workItem from="1678474872727" duration="24599000" />
+      <workItem from="1678955666265" duration="15000" />
+      <workItem from="1679444177981" duration="37000" />
+      <workItem from="1679444326239" duration="3000" />
+      <workItem from="1682280217909" duration="602000" />
+      <workItem from="1683490211003" duration="234000" />
+      <workItem from="1683490501261" duration="26000" />
+      <workItem from="1683662469891" duration="40000" />
+      <workItem from="1684601537429" duration="57000" />
+      <workItem from="1684601752289" duration="593000" />
+      <workItem from="1685732004789" duration="7452000" />
+      <workItem from="1685958884422" duration="596000" />
+      <workItem from="1687989788563" duration="219000" />
+      <workItem from="1687990321458" duration="700000" />
+      <workItem from="1687993401580" duration="385000" />
+      <workItem from="1688044352247" duration="8828000" />
+      <workItem from="1689340474767" duration="177000" />
+      <workItem from="1689340764353" duration="3762000" />
+      <workItem from="1689693637936" duration="5564000" />
+      <workItem from="1690224596873" duration="152000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -269,7 +334,84 @@
       <option name="project" value="LOCAL" />
       <updated>1678474918083</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lesson 23 questions added">
+      <created>1685796731777</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685796731777</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Lesson 23 goes live">
+      <created>1685800698124</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685800698124</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Lesson 24 questions">
+      <created>1685831592717</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685831592717</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added tkinter screenshot">
+      <option name="closed" value="true" />
+      <created>1688049251754</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688049251754</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added tkinter screenshot">
+      <option name="closed" value="true" />
+      <created>1688050227337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688050227337</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Lesson 24 goes live">
+      <option name="closed" value="true" />
+      <created>1688050951798</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688050951798</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Lesson 24 assignment solution photo">
+      <option name="closed" value="true" />
+      <created>1688051700649</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1688051700649</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Lesson 25 partial upload">
+      <option name="closed" value="true" />
+      <created>1688161254484</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688161254484</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Lesson 25 goes live">
+      <option name="closed" value="true" />
+      <created>1689720243728</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689720243728</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Lesson 26 questions added">
+      <option name="closed" value="true" />
+      <created>1689893083946</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1689893083946</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +442,15 @@
     <MESSAGE value="Nav bar amended" />
     <MESSAGE value="Lesson 13 goes live" />
     <MESSAGE value="Lesson 19 goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 19 goes live" />
+    <MESSAGE value="Lesson 23 questions added" />
+    <MESSAGE value="Lesson 23 goes live" />
+    <MESSAGE value="Lesson 24 questions" />
+    <MESSAGE value="Added tkinter screenshot" />
+    <MESSAGE value="Lesson 24 goes live" />
+    <MESSAGE value="Lesson 24 assignment solution photo" />
+    <MESSAGE value="Lesson 25 partial upload" />
+    <MESSAGE value="Lesson 25 goes live" />
+    <MESSAGE value="Lesson 26 questions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 26 questions added" />
   </component>
 </project>

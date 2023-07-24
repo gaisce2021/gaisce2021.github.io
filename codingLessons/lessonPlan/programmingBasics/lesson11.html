@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursion</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../../index.html">Site Home</a>
+    <a href="../index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+            <a href="lesson8.html">Lesson 8 - Print vs Return</a>
+            <a href="lesson9.html">Lesson 9 - Errors</a>
+            <a href="lesson10.html">Lesson 10 - Dictionaries</a>
+            <a href="lesson11.html">Lesson 11 - Recursion</a>
+            <a href="lesson12.html">Lesson 12 - List Comprehensions</a>
+            <a href="lesson13.html">Lesson 13 - Revision</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Object Oriented Programming
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../oop/lesson14.html">Lesson 14 - Getting Started</a>
+            <a href="../oop/lesson15.html">Lesson 15 - Inheritance</a>
+            <a href="../oop/lesson16.html">Lesson 16 - Encapsulation</a>
+            <a href="../oop/lesson17.html">Lesson 17 - Polymorphism</a>
+            <a href="../oop/lesson18.html">Lesson 18 - Abstraction</a>
+            <a href="../oop/lesson19.html">Lesson 19 - Text Based Game I</a>
+            <a href="../oop/lesson20.html">Lesson 20 - Text Based Game II</a>
+            <a href="../oop/lesson21.html">Lesson 21 - Text Based Game III</a>
+            <a href="../oop/lesson22.html">Lesson 22 - Text Based Game IV</a>
+            <a href="../oop/lesson23.html">Lesson 23 - Graphics Based Game I</a>
+            <a href="../oop/lesson24.html">Lesson 24 - Graphics Based Game II</a>
+            <a href="../oop/lesson25.html">Lesson 25 - Graphics Based Game III</a>
+            <a href="../oop/lesson26.html">Lesson 26 - Graphics Based Game IV</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder A
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../dataStructures/lesson27.html">Lesson 27</a>
+            <a href="../dataStructures/lesson28.html">Lesson 28</a>
+            <a href="../dataStructures/lesson29.html">Lesson 29</a>
+            <a href="../dataStructures/lesson30.html">Lesson 30</a>
+            <a href="../dataStructures/lesson31.html">Lesson 31</a>
+            <a href="../dataStructures/lesson32.html">Lesson 32</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37</a>
+            <a href="../dataStructures/lesson38.html">Lesson 38</a>
+            <a href="../dataStructures/lesson39.html">Lesson 39</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder B
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../lesson40.html">Lesson 40</a>
+            <a href="../lesson41.html">Lesson 41</a>
+            <a href="../lesson42.html">Lesson 42</a>
+            <a href="../lesson43.html">Lesson 43</a>
+            <a href="../lesson44.html">Lesson 44</a>
+            <a href="../lesson45.html">Lesson 45</a>
+            <a href="../lesson46.html">Lesson 46</a>
+            <a href="../lesson47.html">Lesson 47</a>
+            <a href="../lesson48.html">Lesson 48</a>
+            <a href="../lesson49.html">Lesson 49</a>
+            <a href="../lesson50.html">Lesson 50</a>
+            <a href="../lesson51.html">Lesson 51</a>
+            <a href="../lesson52.html">Lesson 52</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>What is recursion?</h2>
+    <p>
+        Unless you're familiar with programming, you may find the term <i>recursion</i> unfamiliar to you. Recursion
+        involves writing a function that calls itself within itself. Say you want to add all the number from 1 to 10,
+        pretty easy right? You just set up a for loop, loop through each number from 1 to 10 and set up a variable to
+        keep track of the sum. That absolutely works but can we do it a different way? This is where recursion comes
+        in. Writing for/while loops are definitely easier concepts to grasp for beginners, and you will likely find
+        recursion more challenging to learn. It's good to learn this through a few simple examples as you will probably
+        have to use recursion at some point in industry.
+    </p>
+
+    <h2>How do I program recursion?</h2>
+    <p>
+        Recursion requires two things: a base case and a recursive case. The recursive case is the part of the function
+        which calls itself repeatedly. You're trying to approach a particular point by calling the function again and
+        again. The base case is where you reach the point you were trying to reach in the recursive section. Let's take
+        two examples below and leave a third one as homework for this week.
+    </p>
+
+    <h1>Code Examples</h1>
+    <h2>Fibonacci Numbers</h2>
+    <p>
+        The Fibonacci sequence is a series of numbers. You typically begin at 0 and 1 for your first two numbers. You
+        find the next numbers by adding the previous two. The third number in the sequence is 0 + 1 which gives you 1.
+        The fourth number is 1 + 1 which gives you 2. The series of numbers should look something like 0, 1, 1, 2, 3,
+        5, 8, 13... and so on.
+    </p>
+    <p>
+        After reading about how the Fibonacci sequence works, you should be trying to figure out how to write it
+        yourself using recursion. The thing that you keep doing is finding the next number by adding the previous two.
+        This will be in the recursive case of our function. What do you begin with? You begin the sequence with 0 and
+        1. This will go into our base case.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def fibonacci_recursive(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
+
+print(fibonacci_recursive(0))
+print(fibonacci_recursive(6))
+</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br>0
+            <br>8
+        </div>
+    </div>
+
+    <p>
+        You may be looking at the code and thinking "what have you done here?" That's fair, lots of people feel
+        that way when seeing recursion for the first time. Let's walk through the code line by line and figure out why
+        it does what it does. The first line defines our function, we call it <i>fibonacci_recursive</i>. We take in
+        one parameter called <i>n</i>. If you're stuck at this part then you should revisit <a href="lesson5.html">
+        our lesson on functions</a>. We then intend and jump into the actual code of the function. We start with an if
+        statement. This is where our base case is. This allows us deal with numbers that are less than or equal to 1.
+        The next part is the recursive case in the else loop. See that we've called the function <i>fibonacci_recursive
+        </i> twice here? Ask yourself this: <i>how do I get the next Fibonacci number?</i> If you scroll up above then
+        you'll see that the next number in the series is found by adding the previous two numbers. In our recursive case
+        we're adding the n-1 and n-2 terms which are the two terms before n. However, in the second case when we run 6,
+        we're adding terms 5 and 4. What's the problem here? Well we don't know these terms so have to call our function
+        again so add terms 4 and 3. This repeats until we hit our base case. We can calculate that fibonacci_recursive(0)
+        is 0 and fibonacci_recursive(1) is 1. We can then add these to get fibonacci_recursive(2) and work our way back
+        up to get fibonacci_recursive(6). The recursive case works backwards to the base case. Once it hits the base
+        case, and we have numbers to go off, we can then move back up through the newer recursive cases and back to the
+        earlier ones until we hit fibonacci_recursive(n-1) and then fibonacci_recursive(n).
+    </p>
+
+    <h2>Adding Sequential Numbers</h2>
+    <p>
+        Let's say someone asks you to add all the numbers from 1 to 4. Well that's not so hard, is it? 1 + 2 + 3 + 4 =
+        10. That didn't take that long. Great, now add all the numbers from 1 to 5. Maybe you'll go 1 + 2 + 3 + 4 + 5 =
+        15 which is easy enough to do. Maybe you'll take our addition of 1 to 4 and add 5 on top of it to get 15. Now
+        how about all the numbers from 1 to 100. Well I doubt you want to do this in your head. How about through
+        recursion? Let's look through an example.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def recursive_addition(n):
+    if n <= 1:
+        return n
+    else:
+        return n + recursive_addition(n - 1)
+
+print(recursive_addition(5))
+print(recursive_addition(100))
+</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br>15
+            <br>5050
+        </div>
+    </div>
+
+    <p>
+        Hopefully this example is a little more intuitive than the Fibonacci one above. Our base case is when the input
+        is 1 or less. When we have used recursion to work backwards to this base case, we can then move forward and work
+        our way up to n. The first example, recursive_addition(5), will confirm what we already knew - adding all the
+        numbers from 1 to 5 will give you 15. The second example, recursive_addition(100), will answer the question
+        we asked before the code example. Python can tell you that adding 1 to 100 is 5050 much quicker than you can
+        add it up.
+    </p>
+
+
+    <h1>Exercises</h1>
+    <h2>Lesson 10 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>dictionary = {"one": 1, "two": 2, "three": 3}
+
+keys = list(dictionary.keys())
+keys.sort()
+
+sorted_dictionary = {}
+for key in keys:
+    sorted_dictionary[key] = dictionary[key]
+
+keys2 = keys[::-1]
+reversed_dictionary = {}
+for key in keys2:
+    reversed_dictionary[key] = sorted_dictionary[key]
+
+reversed_dictionary.pop(keys2[0])
+print(reversed_dictionary)
+
+reversed_dictionary["four"] = 4
+reversed_dictionary["five"] = 5
+
+print(len(reversed_dictionary))
+</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>{'three': 3, 'one': 1}
+            <br><br><br><br><br>4
+        </div>
+    </div>
+
+    <h2>Lesson 11 Assignment</h2>
+    <p>
+        Today's assignment will focus on recursion. You've seen two examples: how to find a Fibonacci number at a
+        particular point and how to add up consecutive numbers from 1 to n. This week you'll have to find the factorial
+        of a particular number n. The factorial of a number multiplies all numbers from 1 to n. So 2 factorial will be
+        2 * 1 = 2. Then 3 factorial is 3 * 2 * 1 = 6 which builds on 2 factorial. Remember you must have a base case
+        and a recursive case. Try it this week, and return next week and see how you get on with it. Make sure to test
+        your code with a few parameters you can work out in your head such as 2 and 3 from above.
+    </p>
+
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+
+</body>
+</html>

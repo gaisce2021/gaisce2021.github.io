@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Comprehensions</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../../index.html">Site Home</a>
+    <a href="../index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+            <a href="lesson8.html">Lesson 8 - Print vs Return</a>
+            <a href="lesson9.html">Lesson 9 - Errors</a>
+            <a href="lesson10.html">Lesson 10 - Dictionaries</a>
+            <a href="lesson11.html">Lesson 11 - Recursion</a>
+            <a href="lesson12.html">Lesson 12 - List Comprehensions</a>
+            <a href="lesson13.html">Lesson 13 - Revision</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Object Oriented Programming
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../oop/lesson14.html">Lesson 14 - Getting Started</a>
+            <a href="../oop/lesson15.html">Lesson 15 - Inheritance</a>
+            <a href="../oop/lesson16.html">Lesson 16 - Encapsulation</a>
+            <a href="../oop/lesson17.html">Lesson 17 - Polymorphism</a>
+            <a href="../oop/lesson18.html">Lesson 18 - Abstraction</a>
+            <a href="../oop/lesson19.html">Lesson 19 - Text Based Game I</a>
+            <a href="../oop/lesson20.html">Lesson 20 - Text Based Game II</a>
+            <a href="../oop/lesson21.html">Lesson 21 - Text Based Game III</a>
+            <a href="../oop/lesson22.html">Lesson 22 - Text Based Game IV</a>
+            <a href="../oop/lesson23.html">Lesson 23 - Graphics Based Game I</a>
+            <a href="../oop/lesson24.html">Lesson 24 - Graphics Based Game II</a>
+            <a href="../oop/lesson25.html">Lesson 25 - Graphics Based Game III</a>
+            <a href="../oop/lesson26.html">Lesson 26 - Graphics Based Game IV</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder A
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../dataStructures/lesson27.html">Lesson 27</a>
+            <a href="../dataStructures/lesson28.html">Lesson 28</a>
+            <a href="../dataStructures/lesson29.html">Lesson 29</a>
+            <a href="../dataStructures/lesson30.html">Lesson 30</a>
+            <a href="../dataStructures/lesson31.html">Lesson 31</a>
+            <a href="../dataStructures/lesson32.html">Lesson 32</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37</a>
+            <a href="../dataStructures/lesson38.html">Lesson 38</a>
+            <a href="../dataStructures/lesson39.html">Lesson 39</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder B
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../lesson40.html">Lesson 40</a>
+            <a href="../lesson41.html">Lesson 41</a>
+            <a href="../lesson42.html">Lesson 42</a>
+            <a href="../lesson43.html">Lesson 43</a>
+            <a href="../lesson44.html">Lesson 44</a>
+            <a href="../lesson45.html">Lesson 45</a>
+            <a href="../lesson46.html">Lesson 46</a>
+            <a href="../lesson47.html">Lesson 47</a>
+            <a href="../lesson48.html">Lesson 48</a>
+            <a href="../lesson49.html">Lesson 49</a>
+            <a href="../lesson50.html">Lesson 50</a>
+            <a href="../lesson51.html">Lesson 51</a>
+            <a href="../lesson52.html">Lesson 52</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>What is a list comprehension?</h2>
+    <p>
+        A list comprehension, as you may have guessed from the name, involves lists. List comprehensions all you write
+        a number of lines of code within one line within a list. If you save this list as a variable and print it, it
+        will show you what you would've previously done in a number of lines. List comprehensions are best explained
+        through some examples which will illustrate what they are more clearly than words likely could.
+    </p>
+
+    <h2>What is the advantage of using list comprehensions?</h2>
+    <p>
+        One major benefit of list comprehensions is readability. Instead of having numerous lines of code, you can put
+        the equivalent into a single line. This is shorter, snappier syntax and once you get used to it then you'll
+        likely make less mistakes. Once you understand how list comprehensions work then you'll find yourself writing
+        Python faster than you have up to this point.
+    </p>
+
+    <h1>Code Examples</h1>
+
+    <p>
+        Let's say I ask you to write a function called <i>add_one</i> which takes in a list of numbers. The function
+        should add one to each number in the list and return the new list. Let's look at two code examples which do the
+        exact same thing. The first example below will contain code that should look familiar to you already. If you're
+        struggling with this code then you should revisit a previous lesson on <a href="lesson7.html">loops</a>.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def add_one(number_list):
+    new_list = []
+    for item in number_list:
+        new_list += [item + 1]
+    return new_list
+
+print(add_one([1, 2, 3]))</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br>[2, 3, 4]
+            <br>
+        </div>
+    </div>
+    <p>
+        Hopefully this example makes sense to you, now let's try the exact same thing using a list comprehension
+        within the body of the code.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def add_one(number_list):
+    return [item + 1 for item in number_list]
+
+print(add_one([1, 2, 3]))</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br>[2, 3, 4]
+            <br>
+        </div>
+    </div>
+
+    <p>
+        Try both pieces of code in your IDE, and you'll get the same result. The second function uses a list
+        comprehension so the body of the function is much shorter. The first function had four lines of code within the
+        function's body whereas the second one only contains one line of code within the function's body. The function
+        returns a list. This is denoted with the square brackets on the same line with the return statement. The for
+        statement in the list comprehension is the same as the for statement in the original function. The next
+        statement in the original function appends the incremented number to the new list. The second function contains
+        that at the start of the list.
+    </p>
+
+    <p>
+        So now we've seen a very simple list comprehension in the example above. Let's try another example. This
+        example will contain an if statement in both the "old" way of writing for loops and using the "new" list
+        comprehension method.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def even_numbers(number_list):
+    new_list = []
+    for item in number_list:
+        if item % 2 == 0:
+            new_list += [item]
+    return new_list
+
+print(even_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>[2, 4, 6, 8, 10]
+            <br>
+        </div>
+    </div>
+
+    <p>
+        This function takes in a list of numbers and only returns the even ones. It finds the even numbers by checking
+        that the number in the list gives a remainder of 0 when you divide it by 2. It appends these to a new list and
+        returns that second list. Now let's see if we can do the same thing with a list comprehension.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def even_numbers(number_list):
+    return [item for item in number_list if item % 2 == 0]
+
+print(even_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br>[2, 4, 6, 8, 10]
+            <br>
+        </div>
+    </div>
+
+    <p>
+        We've managed to do the same thing in one line as we did in five lines above. List comprehensions are
+        extraordinarily handy ways to shorten the amount of code you need to write to complete a task.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 11 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>def recursive_factorial(n):
+    if n < 2:
+        if n == 1:
+            return n
+        if n == 0:
+            return 1
+        return "Error"
+    else:
+        return n * recursive_factorial(n - 1)
+
+print(recursive_factorial(2))
+print(recursive_factorial(3))
+</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br><br><br><br>2
+            <br>6
+        </div>
+    </div>
+
+    <h2>Lesson 12 Assignment</h2>
+    <p>
+        This week's assignment will be a lot nicer than last week's one. I want you to write a function that uses a
+        list comprehension. The function should take in a list of names. If the names begin with the letter "A" then
+        remove them from the list. If the names begin with any other letter in the alphabet then keep them in the list.
+        Return the shortened list of names using this function. Good luck and let's review a sample solution together
+        next week! Hint: you might want to use indexing here.
+    </p>
+
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+
+</body>
+</html>

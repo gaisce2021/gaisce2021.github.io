@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booleans and Conditions</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../../index.html">Site Home</a>
+    <a href="../index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+            <a href="lesson8.html">Lesson 8 - Print vs Return</a>
+            <a href="lesson9.html">Lesson 9 - Errors</a>
+            <a href="lesson10.html">Lesson 10 - Dictionaries</a>
+            <a href="lesson11.html">Lesson 11 - Recursion</a>
+            <a href="lesson12.html">Lesson 12 - List Comprehensions</a>
+            <a href="lesson13.html">Lesson 13 - Revision</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Object Oriented Programming
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../oop/lesson14.html">Lesson 14 - Getting Started</a>
+            <a href="../oop/lesson15.html">Lesson 15 - Inheritance</a>
+            <a href="../oop/lesson16.html">Lesson 16 - Encapsulation</a>
+            <a href="../oop/lesson17.html">Lesson 17 - Polymorphism</a>
+            <a href="../oop/lesson18.html">Lesson 18 - Abstraction</a>
+            <a href="../oop/lesson19.html">Lesson 19 - Text Based Game I</a>
+            <a href="../oop/lesson20.html">Lesson 20 - Text Based Game II</a>
+            <a href="../oop/lesson21.html">Lesson 21 - Text Based Game III</a>
+            <a href="../oop/lesson22.html">Lesson 22 - Text Based Game IV</a>
+            <a href="../oop/lesson23.html">Lesson 23 - Graphics Based Game I</a>
+            <a href="../oop/lesson24.html">Lesson 24 - Graphics Based Game II</a>
+            <a href="../oop/lesson25.html">Lesson 25 - Graphics Based Game III</a>
+            <a href="../oop/lesson26.html">Lesson 26 - Graphics Based Game IV</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder A
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../dataStructures/lesson27.html">Lesson 27</a>
+            <a href="../dataStructures/lesson28.html">Lesson 28</a>
+            <a href="../dataStructures/lesson29.html">Lesson 29</a>
+            <a href="../dataStructures/lesson30.html">Lesson 30</a>
+            <a href="../dataStructures/lesson31.html">Lesson 31</a>
+            <a href="../dataStructures/lesson32.html">Lesson 32</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37</a>
+            <a href="../dataStructures/lesson38.html">Lesson 38</a>
+            <a href="../dataStructures/lesson39.html">Lesson 39</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder B
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../lesson40.html">Lesson 40</a>
+            <a href="../lesson41.html">Lesson 41</a>
+            <a href="../lesson42.html">Lesson 42</a>
+            <a href="../lesson43.html">Lesson 43</a>
+            <a href="../lesson44.html">Lesson 44</a>
+            <a href="../lesson45.html">Lesson 45</a>
+            <a href="../lesson46.html">Lesson 46</a>
+            <a href="../lesson47.html">Lesson 47</a>
+            <a href="../lesson48.html">Lesson 48</a>
+            <a href="../lesson49.html">Lesson 49</a>
+            <a href="../lesson50.html">Lesson 50</a>
+            <a href="../lesson51.html">Lesson 51</a>
+            <a href="../lesson52.html">Lesson 52</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1>Conditions</h1>
+    <p>
+        Conditions are true/false checks. You use them all the time without thinking about it. You look outside and ask
+        yourself <em>is it raining today?</em> If it is then you'll wear a coat, if not then you probably won't. You
+        also may ask yourself if you're tired. If not, you'll probably keep working at your job, pottering around the
+        house, studying for your exams, etc. How about if you are tired? You'll probably do different things depending
+        on the time of day. If it's nearly bedtime, you might go to bed a bit earlier than normal. If it's the middle
+        of the day, you might have a nap or try to revive yourself with some water. How about a local librarian? They
+        may order books by genre. They'll stack all the children's books together, fiction together, biographies together,
+        and so on. But what do you do with hundreds or thousands of books in the same genre? You could sort them by
+        author. All of Barack Obama's books are kept on one shelf with Michelle Obama's books close by. These are all
+        examples of when you use conditions. The weather is a quick true/false check when looking out the window. The
+        library example is more complicated. Maybe an author writes in more than one genre. Bill Clinton has written
+        an autobiography along with some fiction. Do we group by genre or by author in this situation?
+    </p>
+
+    <h2>Conditions - If and Else</h2>
+    <p>
+        You use conditions all the time in your life without thinking about it. Back in <a href="lesson2.html">
+        lesson 2</a> we looked at the example of a cashier selling wine. The condition we're checking for is the
+        customer's age. The 15-year-old and the 50-year-old get two different outcomes when attempting to buy a
+        bottle of wine. The code example below asks one question: is this person's age less than 18? This is checked
+        using the keywords <em>if</em> and <em>else</em>.
+        <br>
+        Lets look at a new example. How about when you're driving? You (hopefully) look at the traffic lights. If the
+        light is red, you slow to a stop. If the light is green, then you can keep driving. That's another example of
+        when you use <em>if</em> in your day-to-day life.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>
+    age = 15
+
+    if age < 18:
+         print("Don't sell wine to this person.")
+    else:
+         print("Sell wine to this person.")
+
+
+    age = 50
+
+    if age < 18:
+        print("Don't sell wine to this person.")
+    else:
+        print("Sell wine to this person.")
+            </pre>
+        </div>
+        <div class="grid-item">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Don't sell wine to this person.
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Sell wine to this person.
+        </div>
+    </div>
+
+    <h2>Conditions - If, Else If and Else</h2>
+    <p>
+        Sometimes life presents a binary choice like the in the cashier example above. However, sometimes things
+        aren't so simple. You may have more than two things to choose between. This is where Python's <em>elif</em>
+        comes into play. Let's say you're a student who wants to choose a language to study. Your options are Spanish,
+        German or Latin. Now you have three options. A simple if/else won't cut it this time. Adding <em>elif</em>
+        into your code allows you to look at three or more options. Let's say the student chooses the language they learn
+        based on where they'd like to go on holidays. The example below gives names of countries that speak the language
+        in question. Seeing as the place you'll mostly likely use Latin would be
+        <a href="https://www.grunge.com/614822/the-vatican-is-home-to-this-one-of-a-kind-atm/">at an ATM in Vatican
+        City</a>, I have left this as the else option.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+<pre>
+country = "Austria"
+
+if country in ["Spain", "Mexico", "Peru"]:
+    print("Learn Spanish")
+elif country in ["Germany", "Austria", "Switzerland"]:
+    print("Learn German")
+else:
+    print("Learn Latin")
+</pre>
+        </div>
+        <div class="grid-item">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Learn German
+        </div>
+    </div>
+
+    <h2>Comparisons</h2>
+    <p>
+        Sometimes when we compare items, we need to use symbols like in maths. Think of the person selling a bottle of
+        wine, they're checking if a customer's age is at least 18. Python has symbols for this too. Don't feel deterred
+        at the mention of maths - this is more logic than hard maths! Think of a game - you can compare your score with
+        your friend's score to see who won the round.
+    </p>
+    <ul>
+        <li>== - this checks two items are equivalent.</li>
+        <li>!= - this checks two items are not equal.</li>
+        <li>< - this checks that one item is less than another.</li>
+        <li>> - this checks that one item is greater than another.</li>
+        <li><= - this checks that one item is less than or equal to another.</li>
+        <li>>= - this checks that one item is greater than or equal to another.</li>
+    </ul>
+
+    <h1>Booleans</h1>
+    <h2>True or False?</h2>
+    <p>
+        Booleans are, in Python, <em>True</em> or <em>False</em>. These are keywords and will appear in a different
+        colour to variables. They should appear in the same colour as <em>if</em>, <em>elif</em>, and <em>else</em> in
+        your IDE. The if/elif/else keywords are essentially checking <em>if true</em> and jumping into a different
+        part of the loop based on that. Here we have a variable called <em>passed_exam</em>. In the example below, we
+        have assigned the value of the variable to <em>True</em>. In college, you do not need to repeat an exam once
+        you have passed it. However, if you have failed an exam, you usually have to resit it in August.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>
+passed_exam = True
+if passed_exam:
+    print("Enjoy time off this summer.")
+else:
+    print("Repeat exam this summer.")</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br>
+            Enjoy time off this summer.
+        </div>
+    </div>
+
+    <h1>Questions</h1>
+    <h2>Are there any other keywords in addition to if, elif, else, True and False?</h2>
+    <p>
+        Here's a list of keywords in Python. They should be marked in a different colour in your IDE to variables. We
+        will revisit a number of these keywords throughout this course.
+    </p>
+    <ul>
+        <li>False</li>
+        <li>None</li>
+        <li>True</li>
+        <li>and</li>
+        <li>as</li>
+        <li>assert</li>
+        <li>async</li>
+        <li>await</li>
+        <li>break</li>
+        <li>class</li>
+        <li>continue</li>
+        <li>def</li>
+        <li>del</li>
+        <li>elif</li>
+        <li>else</li>
+        <li>except</li>
+        <li>finally</li>
+        <li>for</li>
+        <li>from</li>
+        <li>global</li>
+        <li>if</li>
+        <li>import</li>
+        <li>in</li>
+        <li>is</li>
+        <li>lambda</li>
+        <li>nonlocal</li>
+        <li>not</li>
+        <li>or</li>
+        <li>pass</li>
+        <li>raise</li>
+        <li>return</li>
+        <li>try</li>
+        <li>while</li>
+        <li>with</li>
+        <li>yield</li>
+    </ul>
+
+    <h2>Are there any names I am not allowed give to a variable?</h2>
+    <p>
+        You can't use any of the keywords as the name of a variable. If you wanted to name a variable <em>global</em> then
+        Python would give you an error message. You also can't name a variable beginning with a number. This means that
+        <em>7_days_a_week</em> is not allowed but <em>seven_days_a_week</em> is perfectly fine. You can't have spaces
+        between two parts of a variable which rules out a variable called <em>seven days a week</em> or hyphens between
+        parts of a variable name such as <em>seven-days-a-week</em>.
+    </p>
+
+    <h2>Can I make notes in my scripts to explain what I had intended at the time I wrote it?</h2>
+    <p>
+        Absolutely! This is encouraged both for beginners to ensure they understand the underlying logic of their
+        code and for more advanced developers dealing with complicated files with hundreds of lines of code and numerous
+        loops and variables. It's also recommended to give meaningful names to your variables. An example of a good
+        variable name would be something like <em>hourly_wage</em> to represent the money earned by a person per hour.
+        This is much more self-explanatory than using <em>x</em> as a variable name. Using meaningful names in addition
+        to adding comments to your code will make it much easier for other developers and your future self to look at.
+        You can add comments to your code by adding a hashtag (or the pound sign for anyone a little older) <em>#</em>
+        and a comment after. Anything on the same line after this hashtag is your comment and will not show up as an
+        error when running the code. Let's look at the exam example again with comments.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>
+# This is a true/false variable the tells us if we passed the exam.
+passed_exam = True
+
+# Here we enter the if/else loop
+if passed_exam:
+    # This is what we do if we pass an exam
+    print("Enjoy time off this summer.")
+else:
+    # This is what we do if we fail an exam
+    print("Repeat exam this summer.")</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br><br><br>
+            Enjoy time off this summer.
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 3 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>user_name = input("Enter your name: ")
+country = input("Which country do you live in? ")
+print("Hi %s from %s!" % (user_name.capitalize(), country.capitalize()))</pre>
+        </div>
+        <div class="grid-item">
+            <br>Enter your name: Orla<br>
+            Which country do you live in? Ireland<br>
+            Hi Orla from Ireland!
+        </div>
+    </div>
+
+    <h2>Lesson 4 Assignment</h2>
+    <p>
+        Create two variables for player one and player two in a game. Assign scores to both players. Use if/elif/else
+        to see who won/lost/drew. Let's talk through the solution next week.
+    </p>
+
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+
+</body>
+</html>

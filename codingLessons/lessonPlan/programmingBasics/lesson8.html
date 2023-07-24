@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print vs Return</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p>Learn to Code</p>
+</header>
+
+<nav>
+    <a href="../../../index.html">Site Home</a>
+    <a href="../index.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn">Programming Basics
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="lesson1.html">Lesson 1 - Getting Started</a>
+            <a href="lesson2.html">Lesson 2 - Data Types</a>
+            <a href="lesson3.html">Lesson 3 - Strings</a>
+            <a href="lesson4.html">Lesson 4 - Booleans and Conditions</a>
+            <a href="lesson5.html">Lesson 5 - Numerics and Functions</a>
+            <a href="lesson6.html">Lesson 6 - Lists and Tuples</a>
+            <a href="lesson7.html">Lesson 7 - Loops</a>
+            <a href="lesson8.html">Lesson 8 - Print vs Return</a>
+            <a href="lesson9.html">Lesson 9 - Errors</a>
+            <a href="lesson10.html">Lesson 10 - Dictionaries</a>
+            <a href="lesson11.html">Lesson 11 - Recursion</a>
+            <a href="lesson12.html">Lesson 12 - List Comprehensions</a>
+            <a href="lesson13.html">Lesson 13 - Revision</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Object Oriented Programming
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../oop/lesson14.html">Lesson 14 - Getting Started</a>
+            <a href="../oop/lesson15.html">Lesson 15 - Inheritance</a>
+            <a href="../oop/lesson16.html">Lesson 16 - Encapsulation</a>
+            <a href="../oop/lesson17.html">Lesson 17 - Polymorphism</a>
+            <a href="../oop/lesson18.html">Lesson 18 - Abstraction</a>
+            <a href="../oop/lesson19.html">Lesson 19 - Text Based Game I</a>
+            <a href="../oop/lesson20.html">Lesson 20 - Text Based Game II</a>
+            <a href="../oop/lesson21.html">Lesson 21 - Text Based Game III</a>
+            <a href="../oop/lesson22.html">Lesson 22 - Text Based Game IV</a>
+            <a href="../oop/lesson23.html">Lesson 23 - Graphics Based Game I</a>
+            <a href="../oop/lesson24.html">Lesson 24 - Graphics Based Game II</a>
+            <a href="../oop/lesson25.html">Lesson 25 - Graphics Based Game III</a>
+            <a href="../oop/lesson26.html">Lesson 26 - Graphics Based Game IV</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder A
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../dataStructures/lesson27.html">Lesson 27</a>
+            <a href="../dataStructures/lesson28.html">Lesson 28</a>
+            <a href="../dataStructures/lesson29.html">Lesson 29</a>
+            <a href="../dataStructures/lesson30.html">Lesson 30</a>
+            <a href="../dataStructures/lesson31.html">Lesson 31</a>
+            <a href="../dataStructures/lesson32.html">Lesson 32</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37</a>
+            <a href="../dataStructures/lesson38.html">Lesson 38</a>
+            <a href="../dataStructures/lesson39.html">Lesson 39</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Placeholder B
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../lesson40.html">Lesson 40</a>
+            <a href="../lesson41.html">Lesson 41</a>
+            <a href="../lesson42.html">Lesson 42</a>
+            <a href="../lesson43.html">Lesson 43</a>
+            <a href="../lesson44.html">Lesson 44</a>
+            <a href="../lesson45.html">Lesson 45</a>
+            <a href="../lesson46.html">Lesson 46</a>
+            <a href="../lesson47.html">Lesson 47</a>
+            <a href="../lesson48.html">Lesson 48</a>
+            <a href="../lesson49.html">Lesson 49</a>
+            <a href="../lesson50.html">Lesson 50</a>
+            <a href="../lesson51.html">Lesson 51</a>
+            <a href="../lesson52.html">Lesson 52</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <h1>Print vs Return</h1>
+    <p>
+        I will now introduce the return statement. It is typically used in place of the print function in the functions
+        that we have created already. Printing shows a particular value at a particular point in time. Returning assigns a
+        value to your function. If you run two functions, one with a print statement and one with a return statement something
+        interesting happens. Let's look below.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>def print_function(year_of_birth):
+    current_year = 2022
+    print(current_year - year_of_birth)
+
+def return_function(year_of_birth):
+    current_year = 2022
+    return current_year - year_of_birth
+
+print(print_function(1950))
+print(return_function(1950))</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br>72<br>
+            None<br><br><br>
+            72
+        </div>
+    </div>
+
+    <p>
+        Notice that <em>None</em> appears? This is because when a function does not have a return statement, its return
+        value is defaults to None. So the next question is: why do we care what a function returns? After all both
+        functions show the number 72, what's the big deal? Well let's extend the above code example below, and we'll
+        find out why you should care.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>return_example = return_function(1950)
+print(return_example - 20)
+
+print_example = print_function(1950)
+print(print_example - 20)</pre>
+        </div>
+        <div class="grid-item">
+            <br>52<br>
+            72<br>
+            Traceback (most recent call last):<br>
+            File "lesson8.py", line 13, in module<br>
+            print(print_example - 20)<br>
+            TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'<br><br>
+        </div>
+    </div>
+
+    <p>
+        We save both function outputs to variables called <em>return_example</em> and <em>print_example</em>. So here
+        we try take 20 away from 72. We expect that both values should give us an answer of 52. We first take away 20
+        from <em>return_example</em> and get 52. Great! No problems here. Let's try the same thing with <em>print_example
+        </em> now. Oh no, we broke our code. The code prints out 72 from the print function before a red error message
+        pops up. Welcome to the joys of programming - finding an error and figuring out what just happened. Let's walk
+        through the error message line by line to see what went wrong and how we can fix it. So the Traceback line
+        traces back through the line of errors in the stack. In this case only one part of the code is involved in the
+        error, so we'll look at the stack a little later. Next the error message gives you the file path and the specific
+        line that caused the issue. We can see the file on my machine is called <em>lesson8.py</em> and line 13 is the
+        place where the code broke. The following line of the error message is <em>print(print_example - 20)</em>. This
+        is the specific code that Python is telling you it can't run. The final line is telling us the specific details
+        of the error. It was a type error - there was some issue between the data types involved in the code. It tells
+        us that we tried to use subtraction which wasn't allowed. But 72 and 20 are both numbers, why can't we subtract
+        two numbers? The error message tells us that 20 was an integer but that the value of <em>print_example</em> was
+        None which is not an integer. We tried to perform an operation that was incompatible between two types and this
+        caused our code to break.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 7 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>hobbies_list = ['walking', 'programming', 'reading', 'taekwondo']
+def print_while(hobbies):
+    hobby = 0
+    while hobby < len(hobbies):
+        print(hobbies[hobby])
+        hobby += 1
+
+def print_for(hobbies):
+    for index, hobby in enumerate(hobbies):
+        output = (index, hobby)
+        print(output)
+
+print_while(hobbies_list)
+print_for(hobbies_list)</pre>
+        </div>
+        <div class="grid-item">
+            <br><br>walking<br>
+            programming<br>
+            reading<br>
+            taekwondo<br><br><br>
+            (0, 'walking')<br>
+            (1, 'programming')<br>
+            (2, 'reading')<br>
+            (3, 'taekwondo')
+        </div>
+    </div>
+
+    <h2>Lesson 8 Assignment</h2>
+    <p>
+        Look at the error we got in the above example of code. Can you write code and break it? Try finding some more
+        potential errors that you could receive. Look through the error message Python sends you. Could you figure out
+        which line of code was the issue before running it? Can you change your code slightly to fix it? Did your fix
+        work or did you receive a new error? Play around with this by yourself and see if you can fix your own bugs. We
+        will spend a bit of time looking at errors and dealing with bugs soon in the course.
+    </p>
+
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
+
+</body>
+</html>
