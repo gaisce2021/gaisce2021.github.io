@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="&quot;About me&quot; page links fixed (again)">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Workspace commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson27.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson27.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +91,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.lesson27.html">
     <configuration name="lesson1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gaisce2021.github.io/codingLessons/lessonPlan/programmingBasics/lesson1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="lesson27.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gaisce2021.github.io/codingLessons/lessonPlan/dataStructures/lesson27.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.lesson27.html" />
         <item itemvalue="JavaScript Debug.lesson1.html" />
       </list>
     </recent_temporary>
@@ -196,6 +201,9 @@
       <workItem from="1690225246730" duration="569000" />
       <workItem from="1690225842463" duration="2067000" />
       <workItem from="1691767911502" duration="538000" />
+      <workItem from="1691768643209" duration="2190000" />
+      <workItem from="1691795805399" duration="296000" />
+      <workItem from="1691869933048" duration="2405000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -399,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690226969638</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Workspace commit">
+      <option name="closed" value="true" />
+      <created>1691768750400</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1691768750400</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +434,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 10 goes live" />
     <MESSAGE value="Lesson 11 goes live" />
     <MESSAGE value="Lesson 12, added solution to lesson 11 assignment" />
     <MESSAGE value="Adding lessons 11 and 12 to GitHub" />
@@ -443,6 +458,7 @@
     <MESSAGE value="OOP lesson links fixed" />
     <MESSAGE value="&quot;About me&quot; page links fixed" />
     <MESSAGE value="&quot;About me&quot; page links fixed (again)" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;About me&quot; page links fixed (again)" />
+    <MESSAGE value="Workspace commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workspace commit" />
   </component>
 </project>
