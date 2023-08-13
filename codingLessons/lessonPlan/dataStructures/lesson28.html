@@ -145,7 +145,52 @@
     </p>
     <div class="example">
         <div class="grid-item">
-            <pre></pre>
+            <pre>class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def get_info(self):
+        return f"{self.title} by {self.author}"
+</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+    <p>
+        Now that we have a Book class we can begin working on the Stack. We will have five methods as
+        mentioned above. We will also use a Python list/array for the implementation of this. This will be
+        in the constructor. The easiest function will be <i>isEmpty</i> which tells you if the size of
+        the stack is 0. Another easy function is <i>size</i> which returns the length of the array. You
+        may find push, pop and top more tricky. Ask yourself where new items are added? We will add new
+        items to the end of the array. You also need to be mindful of using the <i>pop</i> and <i>top</i>
+        functions on an empty array - how can you check what's at the top of the stack or remove it if
+        there's nothing there? Let's look through an implementation of the stack below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Stack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, item):
+        self.stack.append(item)
+
+    def pop(self):
+        if not self.isEmpty():
+            return self.stack.pop()
+
+    def top(self):
+        if not self.isEmpty():
+            return self.stack[-1]
+
+    def isEmpty(self):
+        return len(self.stack) == 0
+
+    def size(self):
+        return len(self.stack)
+</pre>
         </div>
         <div class="grid-item">
         </div>
@@ -153,9 +198,42 @@
 
     <h1>Exercises</h1>
     <h2>Lesson 28 Assignment</h2>
-    <p>
-        Let's work with the stack we just built.
-    </p>
+    <div class="example" style="padding-bottom: 25px">
+        <div style="padding-right: 25px">
+        <p>
+            Let's work with the stack we just built. Our assignment will be based on a stack of novels by
+            Jane Austen. Look at the photo and read through the steps. The book at the top of the stack is
+            called <i>Pride and Prejudice</i>. This means that it will be the last book you add to the stack.
+            The novel at the bottom of the stack is <i>Emma</i>. This means that you should add it to the
+            stack before adding any of Austen's other works.
+        </p>
+        <ol>
+            <li>
+                Read through the Book and Stack classes. Make sure you understand what's going on before
+                diving into this exercise.
+            </li>
+            <li>
+                Create six Book objects based on Jane Austen's novels.
+            </li>
+            <li>
+                Add the first three novels onto the stack. Check the item on the top of the stack.
+            </li>
+            <li>
+                Add the remaining three books to the stack. Pop first book off the top of the stack.
+            </li>
+            <li>
+                Check if the stack is empty. Check the size of your stack.
+            </li>
+        </ol>
+        <p>
+            As always we can look at this next week and hopefully the sample solution will clarify any
+            questions you may have. <b>Please make sure you add the books in the same order as shown
+            in the photo, or you may have a different solution.</b>
+        </p>
+    </div>
+    <img style="text-align: right" src="../../images/stackJaneAusten.jpg" alt="A stack of Jane Austen's novels."
+         height="400" width="auto"/>
+    </div>
 
 </main>
 
