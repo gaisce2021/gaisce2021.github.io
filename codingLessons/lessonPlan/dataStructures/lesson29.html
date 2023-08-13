@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Queues</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -96,6 +96,159 @@
         </div>
     </div>
 </nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>What data structure will we look at today?</h2>
+    <p>
+        Today we will look at the queue. This data structure is easy to visualise. Think of the times you've
+        done your grocery shopping; when you pay for your food you're standing in a queue.
+    </p>
+    <h2>How are the queue and the stack different?</h2>
+    <p>
+        The main difference between a stack and a queue is the order in which elements are added and removed.
+        In a stack, the last element added is the first element to be removed (Last In First Out - LIFO).
+        In a queue, the first element added is the first element to be removed (First In First Out - FIFO).
+        Items are removed in the order that they are added within the queue.
+    </p>
+    <h2>What methods are in the queue?</h2>
+    <p>
+        We will focus on five methods. Similar to last time, we have a method to see check if the queue is
+        empty and to see what is at the front of the queue. We will use slightly different methods to add and
+        remove items from the queue as the data structure is FIFO as opposed to the LIFO stack. We also have
+        a size method to check the length of a queue.
+    </p>
+    <ul>
+        <li>Enqueue: Add an element to the end of the queue.</li>
+        <li>Dequeue: Remove an element from the front of the queue.</li>
+        <li>IsEmpty: Check if the queue is empty.</li>
+        <li>Peek: Get the value of the front of the queue without removing it.</li>
+        <li>Size: How long is the queue?</li>
+    </ul>
+
+    <h1>Code Examples</h1>
+    <p>
+        Let's assume you own an ice cream shop. Your customers line up. You serve the person closest to
+        the counter. The last person in the queue is the last person to be served until another person
+        joins after them. We can create a Customer class to hold the name and order of the person.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Customer:
+    def __init__(self, name, order):
+        self.name = name
+        self.order = order
+
+    def get_order(self):
+        return f"{self.name} ordered {self.order}"
+</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+    <p>
+        Our next task is to create the queue. This will be array based so make sure that is in the
+        constructor. The <i>IsEmpty</i> and <i>size</i> functions will be the easiest to create. Take
+        your time trying to implement the Queue class and then look at my solution below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Queue:
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    def dequeue(self):
+        if not self.isEmpty():
+            return self.queue.pop(0)
+
+    def isEmpty(self):
+        return len(self.queue) == 0
+
+    def peek(self):
+        if not self.isEmpty():
+            return self.queue[0]
+
+    def size(self):
+        return len(self.queue)</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 28 Solution</h2>
+    <p>
+        As a fun exercise, you can consider amending the stack to print out the objects on it. See a
+        solution to last week's exercise below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>book1 = Book("Emma", "Jane Austen", 350)
+book2 = Book("Mansfield Park", "Jane Austen", 450)
+book3 = Book("Sense and Sensibility", "Jane Austen", 400)
+book4 = Book("Northanger Abbey", "Jane Austen", 300)
+book5 = Book("Persuasion", "Jane Austen", 500)
+book6 = Book("Pride and Prejudice", "Jane Austen", 550)
+
+stack = Stack()
+
+stack.push(book1)
+stack.push(book2)
+stack.push(book3)
+
+print(stack.top().get_info())
+
+stack.push(book4)
+stack.push(book5)
+stack.push(book6)
+
+stack.pop()
+
+print(stack.isEmpty())
+print(stack.size())</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            Sense and Sensibility by Jane Austen<br>
+            <br><br><br><br><br><br><br>
+            False<br>
+            5
+        </div>
+    </div>
+    <h2>Lesson 29 Assignment</h2>
+    <p>
+        Today's lesson focused on create two classes: Customer and Queue. Now let's use them in conjunction
+        with a real world example. We will create fictional customers who will order ice cream from our
+        fictional shop. One of these customers may or may not be Joe Biden...
+    </p>
+    <ol>
+        <li>Read through the classes we made today and make sure you understand why each function is
+        there. You shouldn't continue until you're reasonably confident in your understanding.</li>
+        <li>Mary joins the queue and orders strawberry ice cream.</li>
+        <li>John joins the queue and orders mint ice cream.</li>
+        <li>Mary and John are served. Use the function to check if the queue is empty.</li>
+        <li>Anne joins the queue and orders vanilla ice cream.</li>
+        <li>Tommy joins the queue and orders cookie dough ice cream.</li>
+        <li>Anne is served.</li>
+        <li>Joe Biden joins the queue and orders chocolate chip ice cream.</li>
+        <li>Secret Service Agent 1 joins the queue and orders REDACTED ice cream.</li>
+        <li>Tommy is served. Joe Biden is served. Check the size of the queue.</li>
+        <li>Secret Service Agent 2 joins the queue and orders REDACTED ice cream.</li>
+        <li>Secret Service Agent 3 joins the queue and orders REDACTED ice cream.</li>
+        <li>Secret Service Agent 4 joins the queue and orders REDACTED ice cream.</li>
+        <li>The secret service agents are all served.</li>
+    </ol>
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
 
 </body>
 </html>
