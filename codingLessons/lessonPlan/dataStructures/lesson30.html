@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Linked Lists I</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -96,6 +96,84 @@
         </div>
     </div>
 </nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>What will we cover after the stack and the queue?</h2>
+    <p>
+        This week and next week will focus on linked lists. We will look at the singly linked list (SLL) this
+        week and the doubly linked list (DLL) next week. You can think of these as alternatives to the
+        standard Python array in built to the programming language.
+    </p>
+    <h2>What does the SLL need?</h2>
+    <p>
+        A singly linked list needs a Node class that stores the data and a reference to the next node. Once
+        you have built the node class, you need a List class. This class needs a head pointer which denotes
+        where the list starts. Each node has a next pointer which tells the code where the next item in the
+        list is stored. We will need some methods to insert, delete, search, and traverse the list.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 29 Solution</h2>
+    <p>
+        As a fun exercise, you can consider amending the queue to print out the customers yet to be served.
+        See a solution to last week's exercise below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>mary = Customer("Mary", "strawberry ice cream")
+john = Customer("John", "mint ice cream")
+anne = Customer("Anne", "vanilla ice cream")
+tommy = Customer("Tommy", "cookie dough ice cream")
+joe_biden = Customer("Joe Biden", "chocolate chip ice cream")
+secret_service_agent_1 = Customer("Secret Service Agent 1", "REDACTED ice cream")
+secret_service_agent_2 = Customer("Secret Service Agent 2", "REDACTED ice cream")
+secret_service_agent_3 = Customer("Secret Service Agent 3", "REDACTED ice cream")
+secret_service_agent_4 = Customer("Secret Service Agent 4", "REDACTED ice cream")
+
+queue = Queue()
+
+queue.enqueue(mary)
+queue.enqueue(john)
+
+print(queue.peek().get_order())
+
+queue.dequeue()
+queue.dequeue()
+
+queue.enqueue(anne)
+queue.enqueue(tommy)
+
+queue.dequeue()
+
+queue.enqueue(joe_biden)
+queue.enqueue(secret_service_agent_1)
+
+queue.dequeue()
+queue.dequeue()
+print(queue.size())
+
+queue.enqueue(secret_service_agent_2)
+queue.enqueue(secret_service_agent_3)
+queue.enqueue(secret_service_agent_4)
+
+while not queue.isEmpty():
+    queue.dequeue().get_order()</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            Mary ordered strawberry ice cream<br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            1
+        </div>
+    </div>
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
 
 </body>
 </html>
