@@ -113,6 +113,87 @@
         list is stored. We will need some methods to insert, delete, search, and traverse the list.
     </p>
 
+    <h1>Code Examples</h1>
+    <p>
+        We will first create a Node class to hold each piece of data in our list.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+
+    <p>
+        Now let's look at a complete SLL class which takes in a Node item. We will have a head pointer and,
+        as we have seen from the above code, each Node item has a <i>next</i> pointer. The <i>insert</i>
+        function will convert any new data into a node and place it at the end. The <i>delete</i> function
+        will delete the first instance of the node in the list if it is there. It will then "bridge" the
+        missing link in the list by amending the pointer of the data before the deleted node to point at the
+        data after the deleted node. <i>Search</i> returns True if a node is in the list and False if not.
+        <i>Traverse</i> goes through the list and shows you each item one by one.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class SLL:
+    def __init__(self):
+        self.head = None
+
+    def insert(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
+
+    def delete(self, key):
+        cur_node = self.head
+        if cur_node and cur_node.data == key:
+            self.head = cur_node.next
+            cur_node = None
+            return
+        prev = None
+        while cur_node and cur_node.data != key:
+            prev = cur_node
+            cur_node = cur_node.next
+        if cur_node is None:
+            return
+        prev.next = cur_node.next
+        cur_node = None
+
+    def search(self, key):
+        cur_node = self.head
+        while cur_node:
+            if cur_node.data == key:
+                return True
+            cur_node = cur_node.next
+        return False
+
+    def traverse(self):
+        if self.head is None:
+            print("List is empty")
+            return
+
+        cur_node = self.head
+        while cur_node:
+            print(cur_node.data, end="")
+            if cur_node.next:
+                print(" -> ", end="")
+            cur_node = cur_node.next</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+
     <h1>Exercises</h1>
     <h2>Lesson 29 Solution</h2>
     <p>
