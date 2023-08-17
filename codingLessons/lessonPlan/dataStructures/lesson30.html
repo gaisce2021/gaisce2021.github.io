@@ -112,6 +112,48 @@
         where the list starts. Each node has a next pointer which tells the code where the next item in the
         list is stored. We will need some methods to insert, delete, search, and traverse the list.
     </p>
+    <h2>Tell me the space/time complexity of the methods in the SLL.</h2>
+    <p>
+        The time complexity of the <i>insert</i> method is O(n) in the worst case because it needs to
+        traverse the entire list to find the last node. The space complexity of this method is O(1)
+        because it only creates a new node.
+        <br>
+        The time complexity of the <i>delete</i> method is O(n) in the worst case because it needs
+        to traverse the entire list to find the node to delete. The space complexity of this method
+        is O(1) because it only deletes a node.
+        <br>
+        The time complexity of the <i>search</i> method is O(n) in the worst case because it needs
+        to traverse the entire list to find the node. The space complexity of this method is O(1)
+        because it only searches for a node.
+        <br>
+        The time complexity of the <i>traverse</i> method is O(n) because it needs to traverse
+        the entire list. The space complexity of this method is O(1) because it only prints out
+        data from each node.
+    </p>
+
+    <h2>Why build the SLL when you can use a Python array?</h2>
+    <p>
+        There are several reasons why you might choose to use the SLL over an array in Python. One reason
+        is that linked lists can be more efficient than arrays when it comes to inserting or
+        deleting elements in the middle of the list. This is because linked lists don't require
+        shifting elements around like arrays do. Another reason is that linked lists can be more
+        memory-efficient than arrays when you don't know how many elements you'll need ahead of
+        time. This is because linked lists can grow dynamically as you add elements, whereas arrays
+        have a fixed size. Python arrays require a fixed block of memory, SLLs can store elements in smaller
+        free spaces due to their use of pointers. Put it this way: is it easier to stuff an entire PS4 into
+        a drawer or a collection of smaller objects like socks or cutlery?
+    </p>
+
+    <h2>Does the SLL have any downsides?</h2>
+    <p>
+        However, there are also some downsides to using linked lists. For example, accessing an element
+        in a linked list takes O(n) time in the worst case, whereas accessing an element in an array
+        takes O(1) time. Additionally, linked lists use more memory than arrays because each node
+        has a pointer to the next node. This may sound like a contradiction of the above but the array,
+        because it takes a fixed block of memory, can store each element side by side. The SLL on the other
+        hand has the additional problem of needing pointers as, in the example above, you may store your
+        socks in two separate drawers but the PS4 is an inseparable block.
+    </p>
 
     <h1>Code Examples</h1>
     <p>
@@ -250,6 +292,32 @@ while not queue.isEmpty():
             1
         </div>
     </div>
+
+    <h2>Lesson 30 Assignment</h2>
+    <p>
+        This assignment will involve creating and using all the functions of the SLL. It shouldn't be too
+        difficult. We will create a small list and use the add/delete/search/traverse functions. This list
+        will be based on the US presidents. We will purposely add one of them in at the wrong point and
+        remove them. Please note that we can only remove the first instance of an item in the list. You may
+        want to update the code to specify "please remove the 7th occurrence of node X" but this will not
+        be a requirement.
+    </p>
+    <ol>
+        <li>Add George Washington, John Adams and James Madison.</li>
+        <li>Traverse the list.</li>
+        <li>Delete James Madison and add Thomas Jefferson (we purposely made a mistake here).</li>
+        <li>Add "..." to the list (unless you're comfortable adding over 40 more names in the middle).</li>
+        <li>Add Bill Clinton, Hillary Clinton and George W Bush.</li>
+        <li>Remove Hillary Clinton as she was not elected.</li>
+        <li>Search for Barack Obama. If False then use the insert function, so he will be at
+            the end of the list</li>
+        <li>Insert Donald Trump and Joe Biden.</li>
+        <li>Use the traverse function and confirm your list is correctly ordered.</li>
+    </ol>
+    <p>
+        This shouldn't be the most difficult assignment but check in next week to confirm you
+        have the right answer. Good luck!
+    </p>
 </main>
 
 <footer>

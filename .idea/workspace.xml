@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 30 update">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 30 update 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson30.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson30.html" afterDir="false" />
     </list>
@@ -206,7 +206,7 @@
       <workItem from="1691795805399" duration="296000" />
       <workItem from="1691869933048" duration="7626000" />
       <workItem from="1691941476257" duration="9583000" />
-      <workItem from="1692202790104" duration="1511000" />
+      <workItem from="1692202790104" duration="3761000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -450,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692053586024</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Lesson 30 update 2">
+      <option name="closed" value="true" />
+      <created>1692225170353</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1692225170353</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 12 goes live" />
     <MESSAGE value="iCloud photo issue" />
     <MESSAGE value="Nav bar amended" />
     <MESSAGE value="Lesson 13 goes live" />
@@ -494,6 +501,7 @@
     <MESSAGE value="Lesson 28 goes live" />
     <MESSAGE value="Lesson 29 goes live" />
     <MESSAGE value="Lesson 30 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 30 update" />
+    <MESSAGE value="Lesson 30 update 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 30 update 2" />
   </component>
 </project>
