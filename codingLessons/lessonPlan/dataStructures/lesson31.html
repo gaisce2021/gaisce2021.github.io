@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Linked Lists II</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -96,6 +96,168 @@
         </div>
     </div>
 </nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>Can you explain the difference between this linked list and the one from last week?</h2>
+    <p>
+        We will look at a doubly linked list (DLL) today. he main difference between the SLL and the DLL
+        is that the SLL contains only one pointer to traverse through the list while a DLL contains
+        two pointers to traverse through the list. In SLLs, the traversal can be done using the next node
+        link only. This means traversal is possible in one direction only (only from start to end). In a DLL,
+        the traversal can be done using the previous node link or the next node link. This means you can
+        traverse in both directions (forward and backward). The SLL occupies less memory than DLL on account
+        of having less pointers.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        We will take the code from the SLL from last week and highlight the amendments in bold.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        <b>self.prev = None</b>
+
+class DLL:
+    def __init__(self):
+        self.head = None
+
+    def insert(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        cur_node = self.head
+        while cur_node.next:
+            cur_node = cur_node.next
+        cur_node.next = new_node
+        <b>new_node.prev = cur_node</b>
+
+    def delete(self, key):
+        cur_node = self.head
+        if cur_node and cur_node.data == key:
+            self.head = cur_node.next
+            <b>self.head.prev = None</b>
+            cur_node = None
+            return
+        while cur_node and cur_node.data != key:
+            cur_node = cur_node.next
+            if cur_node is None:
+                return
+            <b>if cur_node.next is None:
+                cur_node.prev.next = None
+                return
+            cur_node.prev.next = cur_node.next
+            cur_node.next.prev = cur_node.prev</b>
+
+    def search(self, key):
+        cur_node = self.head
+        while cur_node:
+            if cur_node.data == key:
+                return True
+            cur_node = cur_node.next
+        return False
+
+    def traverse(self):
+        if self.head is None:
+            print("List is empty")
+            return
+
+        cur_node = self.head
+        while cur_node:
+            print(cur_node.data, end="")
+            if cur_node.next:
+                print(" -> ", end="")
+            last = cur_node
+            cur_node = cur_node.next
+
+        <b>print("\nTraversal in reverse direction")
+        while last:
+            print(last.data, end="")
+            if last.prev:
+                print(" -> ", end="")
+            last = last.prev</b>
+</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+    <p>
+        Now let's discuss the amended code. The Node class has an additional <i>previous</i> pointer. This
+        is where the D in <i>doubly</i> linked list comes from. The remaining changes are in the DLL class.
+    </p>
+    <p>
+        <i>Search</i> is the easiest method to write. Why? Because it's unchanged. <i>Traverse</i> keeps its
+        initial method to traverse the tree going forward but then adds code to start at the tail of the list
+        and work backwards, traversing the list from the end. <i>Delete</i> makes amendments to the
+        <i>previous</i> pointers so something deleted in the middle of the list can no longer be pointed to
+        by the item before or after it. It is important to reassign pointers of neighbouring items as they
+        may cause issues if you call the <i>traverse</i> method at a later point.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 30 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre># Create a new linked list
+sll = SLL()
+
+# Add George Washington, John Adams and James Madison
+sll.insert("George Washington")
+sll.insert("John Adams")
+sll.insert("James Madison")
+
+# Traverse the list
+sll.traverse()
+
+# Delete James Madison and add Thomas Jefferson
+sll.delete("James Madison")
+sll.insert("Thomas Jefferson")
+
+# Add "..." to the list
+sll.insert("...")
+
+# Add Bill Clinton, Hillary Clinton and George W Bush
+sll.insert("Bill Clinton")
+sll.insert("Hillary Clinton")
+sll.insert("George W Bush")
+
+# Remove Hillary Clinton as she was not elected
+sll.delete("Hillary Clinton")
+
+# Search for Barack Obama. Insert Barack Obama
+if sll.search("Barack Obama"):
+    print("Barack Obama is already in the list.")
+sll.insert("Barack Obama")
+
+# Insert Donald Trump and Joe Biden.
+sll.insert("Donald Trump")
+sll.insert("Joe Biden")
+
+# Use the traverse function.
+sll.traverse()</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br><br><br>
+            George Washington -> John Adams -> James Madison
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
+            George Washington -> John Adams -> Thomas Jefferson -> ... ->
+            Bill Clinton -> George W Bush -> Barack Obama -> Donald Trump -> Joe Biden
+        </div>
+    </div>
+    <h2>Lesson 31 Assignment</h2>
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
 
 </body>
 </html>

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 30 update 2">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 30 goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson30.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson30.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson31.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson31.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +206,7 @@
       <workItem from="1691795805399" duration="296000" />
       <workItem from="1691869933048" duration="7626000" />
       <workItem from="1691941476257" duration="9583000" />
-      <workItem from="1692202790104" duration="3761000" />
+      <workItem from="1692202790104" duration="9344000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -458,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692225170353</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Lesson 30 goes live">
+      <option name="closed" value="true" />
+      <created>1692274319867</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1692274319867</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +485,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="iCloud photo issue" />
     <MESSAGE value="Nav bar amended" />
     <MESSAGE value="Lesson 13 goes live" />
     <MESSAGE value="Lesson 19 goes live" />
@@ -502,6 +509,7 @@
     <MESSAGE value="Lesson 29 goes live" />
     <MESSAGE value="Lesson 30 update" />
     <MESSAGE value="Lesson 30 update 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 30 update 2" />
+    <MESSAGE value="Lesson 30 goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 30 goes live" />
   </component>
 </project>
