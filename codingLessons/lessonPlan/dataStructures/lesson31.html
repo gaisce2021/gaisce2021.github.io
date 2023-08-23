@@ -110,6 +110,32 @@
         of having less pointers.
     </p>
 
+    <h2>Tell me the space and time complexity of the DLL.</h2>
+    <p>
+        We will take a look at the time complexity of each method first.
+        Insertion: O(1) if you know the index you need to insert at. If you do not,
+        you have to iterate over all elements until you find the one you want.
+        Deletion: O(1) if you know the index of the element you want to remove. If you do not,
+        you have to iterate over all elements until you find the one you want.
+        Search: O(n) as it requires iterating over all elements in the list. Your desired item may be at
+        the back of the list.
+        Traversal: O(n) as it requires iterating over all elements in the list. This requires you to look at
+        each element of the list as there are n-many items in the list.
+    </p>
+    <p>
+        The space complexity of each method is easier to understand. It is O(n) as it requires storing
+        n elements in memory.
+    </p>
+
+    <h2>Why should I go to the effort of making a DLL instead of sticking with the SLL?</h2>
+    <p>
+        Doubly linked lists allow for bidirectional traversal, which is not possible with singly linked
+        lists. DLLs make it easier to reverse the list because you can traverse it in both directions.
+        <br>
+        Doubly linked lists make it easier to delete elements from the list because you do not need to
+        know the element before the one you want to delete.
+    </p>
+
     <h1>Code Examples</h1>
     <p>
         We will take the code from the SLL from last week and highlight the amendments in bold.
@@ -253,6 +279,25 @@ sll.traverse()</pre>
         </div>
     </div>
     <h2>Lesson 31 Assignment</h2>
+    <p>
+        This week's assignment will take the DLL and build on it to mimic a real life example. We will
+        build a music player class based on our existing DLL code. This will have methods such as play,
+        pause, skip, and add to playlist. You can implement some more methods if you like but this assignment
+        will only use the specified ones. You may also implement a Song class to hold the song title and
+        artist if it makes it this assignment easier.
+    </p>
+    <ol>
+        <li>Create your music player class and give it an appropriate name.</li>
+        <li>Implement your methods as specified above.</li>
+        <li>Add five songs to your playlist.</li>
+        <li>Play the first song and skip the second one.</li>
+        <li>Pause the third song and add two more to the end of your playlist.</li>
+        <li>Play each song until the playlist is empty.</li>
+    </ol>
+    <p>
+        This assignment might be a little tougher than recent assignments but give it a go,
+        and we'll check in next lesson for a solution.
+    </p>
 </main>
 
 <footer>
