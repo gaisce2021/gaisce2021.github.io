@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Priority Queues</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -60,12 +60,12 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="../dataStructures/lesson27.html">Lesson 27</a>
-            <a href="../dataStructures/lesson28.html">Lesson 28</a>
-            <a href="../dataStructures/lesson29.html">Lesson 29</a>
-            <a href="../dataStructures/lesson30.html">Lesson 30</a>
-            <a href="../dataStructures/lesson31.html">Lesson 31</a>
-            <a href="../dataStructures/lesson32.html">Lesson 32</a>
+            <a href="../dataStructures/lesson27.html">Lesson 27 - Getting Started</a>
+            <a href="../dataStructures/lesson28.html">Lesson 28 - Stacks</a>
+            <a href="../dataStructures/lesson29.html">Lesson 29 - Queues</a>
+            <a href="../dataStructures/lesson30.html">Lesson 30 - Linked Lists I</a>
+            <a href="../dataStructures/lesson31.html">Lesson 31 - Linked Lists II</a>
+            <a href="../dataStructures/lesson32.html">Lesson 32 - Priority Queues</a>
             <a href="../dataStructures/lesson33.html">Lesson 33</a>
             <a href="../dataStructures/lesson34.html">Lesson 34</a>
             <a href="../dataStructures/lesson35.html">Lesson 35</a>
@@ -96,6 +96,258 @@
         </div>
     </div>
 </nav>
+
+<main>
+    <h1>Questions</h1>
+    <h2>What data structure will we build this week?</h2>
+    <p>
+        This week we will take at the priority queue. If you can recall <a href="lesson29.html">lesson 29</a>
+        about queues then we will build something similar today. It may help you to revisit this data
+        structure before looking at the slight difference between a standard FIFO and a priority queue (PQ).
+    </p>
+
+    <h2>How are queues and priority queues different?</h2>
+    <p>
+        A queue is a linear data structure that follows the FIFO principle as mentioned above. In a queue,
+        the first item that is added to the queue is the first item that is removed from the queue. A
+        priority queue is a type of queue where each item has a priority value associated with it. The
+        items in the priority queue are ordered based on their priority values, and the item with the
+        highest priority value is always at the front of the queue. When an item is removed from the
+        priority queue, it is always the item with the highest priority value that is removed. We will
+        use the same methods in the PQ as in the FIFO queue. The same methods are used in both queues.
+    </p>
+
+    <h2>Tell me the space & time complexity of each method.</h2>
+    <p>
+        We will begin by taking look at the time complexity before looking at the space complexity.
+        <br>
+        The time complexity of the enqueue method is O(n) in the worst case because it has to traverse
+        the entire list to find the correct position to insert the new item. The dequeue method has a
+        time complexity of O(1) because it removes and returns the first item in the list. The peek method
+        also has a time complexity of O(1) because it returns the first item in the list without
+        removing it. The isEmpty method has a time complexity of O(1) because it checks if the length
+        of the list is zero. The size method also has a time complexity of O(1) because it returns the
+        length of the list.
+        <br>
+        The space complexity of this implementation is O(n) because it uses a list to store the elements.
+    </p>
+
+    <h2>Where would a priority queue be used in real life?</h2>
+    <p>
+        We will look at three real world examples where a priority queue would be used. The general idea
+        is to identify a reason why someone or something should be prioritised and order that queue
+        accordingly. This can be quantified by time, distance, exam grades to receive a college place, etc.
+    </p>
+    <ol>
+        <li>
+            Hospital emergency queue: In this queue of patients, the patient with the most critical
+            situation is the first in a queue, and the patient who doesn't need immediate medical
+            attention will be the last. The hospital staff will treat the person who has been in
+            a serious car accident before treating a child with a sprained wrist.
+        </li>
+        <li>
+            Another example of a priority queue is the air traffic control system. In this system,
+            the planes are assigned priorities based on their urgency and importance. The planes with
+            higher priority are given clearance to land or take off first. A plane that is low on fuel
+            may be given a higher priority than other planes which have enough fuel to remain in the
+            air for another 60 minutes.
+        </li>
+        <li>
+            Finding the closest restaurants/hotels/bathrooms to a given location. Would a jogger in New
+            York City be more interested in the nearest toilet in Manhattan or in Los Angeles?
+        </li>
+    </ol>
+
+    <h1>Code Examples</h1>
+    <p>
+        We will begin the code examples by looking at our previous queue code from <a href="lesson29.html">
+        lesson 29</a>. The methods are enqueue to add an item to the back of the queue, dequeue to remove
+        an item from the front of the queue, isEmpty to check if the queue is empty, peek to look at the
+        item at the top of the queue, and size to see what the length of the queue is. Read through the
+        code below and make sure you understand it before continuing.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Queue:
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    def dequeue(self):
+        if not self.isEmpty():
+            return self.queue.pop(0)
+
+    def isEmpty(self):
+        return len(self.queue) == 0
+
+    def peek(self):
+        if not self.isEmpty():
+            return self.queue[0]
+
+    def size(self):
+        return len(self.queue)</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+
+    <p>
+        Now that we have revised the standard FIFO queue, we can take a look at today's priority queue.
+        The main difference you will see is in the <i>enqueue</i> method. It prioritises new elements and
+        can move them to the front of the list if they are deemed more important.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class PriorityQueue:
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, item, priority):
+        inserted = False
+        for i in range(len(self.queue)):
+            if priority < self.queue[i][1]:
+                self.queue.insert(i, (item, priority))
+                inserted = True
+                break
+        if not inserted:
+            self.queue.append((item, priority))
+
+    def dequeue(self):
+        return self.queue.pop(0)[0]
+
+    def isEmpty(self):
+        return len(self.queue) == 0
+
+    def peek(self):
+        return self.queue[0][0]
+
+    def size(self):
+        return len(self.queue)
+</pre>
+        </div>
+        <div class="grid-item">
+
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 31 Solution</h2>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Song:
+    def __init__(self, title, artist):
+        self.title = title
+        self.artist = artist
+
+
+class MusicPlayer:
+    def __init__(self):
+        self.dll = DLL()
+
+    def add_song(self, song):
+        self.dll.insert(song)
+
+    def play(self):
+        if self.dll.head is None:
+            print("Playlist is empty.")
+            return
+        print("Playing:", self.dll.head.data.title,
+                "by", self.dll.head.data.artist)
+        self.dll.head = self.dll.head.next
+
+    def skip(self):
+        if self.dll.head is None:
+            print("Playlist is empty.")
+            return
+        if self.dll.head.next is None:
+            print("End of playlist.")
+            return
+        if self.dll.head.next is not None:
+            print("Skipping:", self.dll.head.data.title,
+                "by", self.dll.head.data.artist)
+            self.dll.head = self.dll.head.next
+            self.dll.head.next.prev = self.dll.head
+
+    def traverse(self):
+        self.dll.traverse()
+
+
+player = MusicPlayer()
+song1 = Song("One", "U2")
+song2 = Song("Song 2", "Blur")
+song3 = Song("Three", "The Cure")
+song4 = Song("Four", "Brave Giant")
+song5 = Song("505", "Arctic Monkeys")
+song6 = Song("Six Degrees of Separation", "The Script")
+song7 = Song("Seven Nation Army", "The White Stripes")
+player.add_song(song1)
+player.add_song(song2)
+player.add_song(song3)
+player.add_song(song4)
+player.add_song(song5)
+
+player.play()
+player.skip()
+player.play()
+player.add_song(song6)
+player.add_song(song7)
+player.play()
+player.play()
+player.play()
+player.play()
+player.play()
+</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
+            Playing: One by U2<br>
+            Skipping: Song 2 by Blur<br>
+            Playing: Three by The Cure<br><br><br>
+            Playing: Four by Brave Giant<br>
+            Playing: 505 by Arctic Monkeys<br>
+            Playing: Six Degrees of Separation by The Script<br>
+            Playing: Seven Nation Army by The White Stripes<br>
+            Playlist is empty.<br>
+        </div>
+    </div>
+
+    <h2>Lesson 32 Assignment</h2>
+    <p>
+        This week's assignment should be a little bit easier than last week's assignment. We will take the
+        above example of the closest restaurant. Let's assume that you are in your nearest town/city, and you
+        are starving. Because you are feeling weak with hunger, you decide to find the nearest restaurant.
+        You open your phone and look at restaurants in your local area.
+    </p>
+    <ol>
+        <li>Create a priority queue and give it a sensible name.</li>
+        <li>Add McDonald's to your queue, it is 1.5km away.</li>
+        <li>Add Taco Bell to your PQ, it is 0.5km away.</li>
+        <li>Add Burger King to your PQ, it is 2km away.</li>
+        <li>Add Panda Express to your PQ, it is 1km away.</li>
+        <li>You look at the restaurant at the front of the queue and walk there.</li>
+        <li>How awful! It is closed for renovations! Delete it from your list.</li>
+        <li>Look at the new item at the front of your queue and walk there. Enjoy your meal!</li>
+    </ol>
+    <p>
+        This assignment will only require using methods given in the above section, you shouldn't need
+        to create a new class or new methods to finish this assignment. If you're struggling with this
+        homework then we'll take a check in at the end of <a href="lesson33.html">lesson 33</a> as per
+        our usual arrangement.
+    </p>
+</main>
+
+<footer>
+    <h1>Page created by Orla</h1>
+</footer>
 
 </body>
 </html>
