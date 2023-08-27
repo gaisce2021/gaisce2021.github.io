@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Binary Trees</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -66,7 +66,7 @@
             <a href="../dataStructures/lesson30.html">Lesson 30 - Linked Lists I</a>
             <a href="../dataStructures/lesson31.html">Lesson 31 - Linked Lists II</a>
             <a href="../dataStructures/lesson32.html">Lesson 32 - Priority Queues</a>
-            <a href="../dataStructures/lesson33.html">Lesson 33</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33 - Binary Trees</a>
             <a href="../dataStructures/lesson34.html">Lesson 34</a>
             <a href="../dataStructures/lesson35.html">Lesson 35</a>
             <a href="../dataStructures/lesson36.html">Lesson 36</a>
@@ -98,7 +98,249 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What will we look at now?</h2>
+    <p>
+        Today's lesson will focus on binary trees. We will have a root node on the tree. Each node will have
+        a left and right pointer. Each node can have a left child and a right child. Once a node has two
+        children, you will need to add children to the nodes below. This data structure can hold twice as
+        much data as the previous level as you move down a level. There can only be one root node which
+        holds two children a level below it. Those two children hold two children each. This means the third
+        level can hold a grand total of four children. Please note that the <i>bi</i> in binary means two.
+        This means that each node can hold 0, 1, or 2 children. There are other types of trees such as
+        ternary trees which can hold up to three children per node, but we will not look at these types of
+        data structures here as a binary tree is simpler to learn about.
+    </p>
 
+    <h2>What methods will we use in this data structure?</h2>
+    <p>
+        We will have three main methods and some auxiliary (helper) methods in the data structure.
+    </p>
+    <ul>
+        <li><b>add_node</b>: Adds a new node to the tree.</li>
+        <li><b>delete_node</b>: Removes a specified value from the tree.</li>
+        <li><b>traverse</b>: Returns a list of all the values in the tree in order.</li>
+    </ul>
+    <p>
+        The tree will have a root pointer which is initialised to None. Once you add the first node to the
+        tree it will become the root. The smaller values will be added to the left of the tree. For example
+        if the root is 5 then 3 will be the left child and 7 will be the right child. If you add more nodes
+        to the tree then 2 will be the left child of 3 and 4 with me the right child of 3. The same logic
+        applies to 6 and 8 with respect to 7.
+    </p>
+
+    <h2>Give me the space and time complexity of this data structure.</h2>
+    <p>
+        The space complexity of a binary tree is O(n), where n is the number of nodes in the tree. This is
+        because each node requires a certain amount of memory to store its value and pointers to its
+        children. This is linear complexity.
+        <br>
+        The time complexity of the <i>add_node</i> method is O(log n) in the average case and O(n) in
+        the worst case. This is because the tree is balanced in the average case, so we only need to
+        traverse a small portion of the tree to add a new node. However, if the tree is unbalanced
+        (e.g., if all nodes are added in increasing or decreasing order), then the tree becomes a linked
+        list, and we need to traverse all nodes to add a new one.
+        <br>
+        The time complexity of the <i>delete_node</i> method is also O(log n) in the average case
+        and O(n) in the worst case. This is because we need to traverse the tree to find the node
+        to delete, and then we need to rearrange the tree to maintain its properties.
+        <br>
+        The time complexity of the <i>traverse</i> method is O(n), where n is the number of nodes in the
+        tree. This is because we need to visit each node exactly once to traverse the entire tree.
+        <br>
+        As you can see, the order in which items are added and deleted from the tree can change the
+        efficiency of the tree. This means you will have to ask yourself if a binary tree or a linked
+        list is the better option for your application. We will explore this more in today's assignment.
+    </p>
+
+    <h2>Can you show me what a binary tree looks like?</h2>
+    <p>
+        Nodes are added to the tree and once a layer is full, new nodes have no choice but to occupy the
+        layer below. A tree may look different depending on the order that nodes are added in.
+    </p>
+    <img alt="A binary tree with 45 as the root and two layers below it"
+    src="https://storage.googleapis.com/algodailyrandomassets/curriculum/cheatsheet/binary-search-tree.png"/>
+
+    <h1>Code Examples</h1>
+    <p>
+        We will begin by creating a Node class to hold our data to place in the binary tree. Remember this
+        node will store data such as a number or a word and two pointers; these are left and right. This is
+        a different type of node to the ones in linked lists with next and previous pointers.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+    <p>
+        Now that we have created nodes, we need to create the class which holds the methods for the binary
+        tree. This is the point where I should mention that recursion will be used in this data structure,
+        if you do not feel comfortable with recursion then please refer back to
+        <a href="../programmingBasics/lesson11.html">lesson 11</a> before reading through this code to
+        understand it. Add and delete both convert the data inputted to a node before amending the tree.
+        They recursively search through the tree to find a free space to add the node or to see if the
+        node is in the tree to delete it. The traverse method will add the root node to a standard Python
+        array. It will check to see if there are any children and add those on the left or right hand
+        side of the list. It will recursively traverse from the root of the tree to the leaves (nodes
+        without children)
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class BinaryTree:
+    def __init__(self):
+        self.root = None
+
+    def add_node(self, value):
+        if not self.root:
+            self.root = Node(value)
+        else:
+            self._add_node(value, self.root)
+
+    def _add_node(self, value, node):
+        if value < node.data:
+            if node.left is None:
+                node.left = Node(value)
+            else:
+                self._add_node(value, node.left)
+        else:
+            if node.right is None:
+                node.right = Node(value)
+            else:
+                self._add_node(value, node.right)
+
+    def delete_node(self, value):
+        if not self.root:
+            return None
+        else:
+            self._delete_node(value, self.root)
+
+    def _delete_node(self, value, node):
+        if value < node.data:
+            node.left = self._delete_node(value, node.left)
+        elif value > node.data:
+            node.right = self._delete_node(value, node.right)
+        else:
+            if not node.left and not node.right:
+                return None
+            elif not node.left:
+                return node.right
+            elif not node.right:
+                return node.left
+            else:
+                temp_node = self._get_min_value(node.right)
+                node.data = temp_node.data
+                node.right = self._delete_node(temp_node.data, node.right)
+        return node
+
+    @staticmethod
+    def _get_min_value(node):
+        while node.left is not None:
+            node = node.left
+        return node
+
+    def traverse(self):
+        if not self.root:
+            return []
+        else:
+            return self._traverse(self.root)
+
+    def _traverse(self, node):
+        if not node:
+            return []
+        left_nodes = self._traverse(node.left)
+        right_nodes = self._traverse(node.right)
+        return left_nodes + [node.data] + right_nodes</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 32 Solution</h2>
+    <p>
+        As promised, lesson 32 was a much quicker and easier assignment than lesson 31. Check below to
+        see if your solution was similar.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>queue = PriorityQueue()
+
+queue.enqueue("McDonald's", 1.5)
+queue.enqueue("Taco Bell", 0.5)
+queue.enqueue("Burger King", 2)
+queue.enqueue("Panda Express", 1)
+
+print(queue.peek())
+
+queue.dequeue()
+
+print(queue.peek())</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>
+            Taco Bell<br><br><br><br>
+            Panda Express
+        </div>
+    </div>
+    <h2>Lesson 33 Assignment</h2>
+    <p>
+        This lesson, as mentioned beforehand, will involve checking efficiency of two binary trees. We will
+        also look at some simple operations to the tree. Next week's lesson will look at binary search trees
+        which will build on the work we have done this week. Be sure to make sure you thoroughly understand
+        the methods and their complexities before moving onto next week's BST.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>tree = BinaryTree()
+tree.add_node(5)
+tree.add_node(4)
+tree.add_node(3)
+tree.add_node(2)
+tree.add_node(1)
+print(tree.traverse())</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br>
+            [1, 2, 3, 4, 5]
+        </div>
+    </div>
+    <br>
+    <div class="example">
+        <div class="grid-item">
+            <pre>tree = BinaryTree()
+tree.add_node(3)
+tree.add_node(5)
+tree.add_node(2)
+tree.add_node(1)
+tree.add_node(4)
+print(tree.traverse())</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br>
+            [1, 2, 3, 4, 5]
+        </div>
+    </div>
+    <p>
+        The example above shows two binary trees with the same nodes. Which ordering is the most efficient
+        if you want to delete node 1 and why? <b>Hint: You may want to get some pen and paper to work
+        this one out if you're struggling.</b>
+    </p>
+    <ol>
+        <li>Add 45, 20 and 54 to the tree in that order.</li>
+        <li>Add 31 and 49 to the tree.</li>
+        <li>Delete 31. Add 20 and 10 to the tree in that order.</li>
+        <li>Add 31 and 77 to the tree.</li>
+        <li>Print a traversal of the tree.</li>
+    </ol>
+    <p>
+        This assignment shouldn't be too challenging, but we will look through a sample solution next week.
+    </p>
 </main>
 
 <footer>
