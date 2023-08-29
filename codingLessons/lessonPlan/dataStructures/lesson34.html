@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Binary Search Trees</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -66,8 +66,8 @@
             <a href="../dataStructures/lesson30.html">Lesson 30 - Linked Lists I</a>
             <a href="../dataStructures/lesson31.html">Lesson 31 - Linked Lists II</a>
             <a href="../dataStructures/lesson32.html">Lesson 32 - Priority Queues</a>
-            <a href="../dataStructures/lesson33.html">Lesson 33</a>
-            <a href="../dataStructures/lesson34.html">Lesson 34</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33 - Binary Trees</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34 - Binary Search Trees</a>
             <a href="../dataStructures/lesson35.html">Lesson 35</a>
             <a href="../dataStructures/lesson36.html">Lesson 36</a>
             <a href="../dataStructures/lesson37.html">Lesson 37</a>
@@ -98,6 +98,202 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What is the difference between a binary tree and a binary search tree.</h2>
+    <p>
+        A binary tree is a tree data structure where each node can have at most two child nodes.
+        Since each element in a binary tree can have only 2 children, we typically name them the
+        left and right children. On the other hand, a binary search tree is a node-based binary
+        tree data structure with some additional properties listed below.
+    </p>
+    <ul>
+        <li>The left subtree of a node contains only nodes with keys lesser than the node’s key.</li>
+        <li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
+        <li>The left and right subtree each must also be a binary search tree.</li>
+        <li>There must be no duplicate nodes.</li>
+    </ul>
+    <p>
+        In Python, we can implement both binary trees and binary search trees using classes. However,
+        the implementation of a binary search tree requires additional methods to ensure that the
+        above properties are satisfied. We will take last week's code example and build on it to turn
+        our binary tree into a BST.
+    </p>
+
+    <h2>Tell me what the space and time complexity of the BST methods are.</h2>
+    <p>
+        The time complexity of the search operation in a binary search tree is O(h), where h is the
+        height of the tree. The space complexity of a binary search tree is O(n), where n is the number
+        of nodes in the tree. The time complexity of insertion and deletion operations in a binary
+        search tree are both also O(h). The worst-case time complexity of these operations is O(n) when
+        the tree is unbalanced.
+        <br>
+        The time complexity of the traverse method is O(n), where n is the number of nodes in the tree.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        We will begin with the Node class from last week. There's nothing new here.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <p>
+        Most of this code will be familiar from last week. We have added <i>search</i> and <i>_search</i>
+        to confirm if a node is in the BST or not. The <i>_add_node</i> method has been changed so that only
+        unique values can be added to the tree.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class BinarySearchTree:
+    def __init__(self):
+        self.root = None
+
+    def add_node(self, value):
+        if not self.root:
+            self.root = Node(value)
+        else:
+            self._add_node(value, self.root)
+
+    <b>def _add_node(self, value, node):
+        if value == node.data:
+            return
+        elif value < node.data:
+            if node.left is None:
+                node.left = Node(value)
+            else:
+                self._add_node(value, node.left)
+        else:
+            if node.right is None:
+                node.right = Node(value)
+            else:
+                self._add_node(value, node.right)</b>
+
+    def delete_node(self, value):
+        if not self.root:
+            return None
+        else:
+            self._delete_node(value, self.root)
+
+    def _delete_node(self, value, node):
+        if value < node.data:
+            node.left = self._delete_node(value, node.left)
+        elif value > node.data:
+            node.right = self._delete_node(value, node.right)
+        else:
+            if not node.left and not node.right:
+                return None
+            elif not node.left:
+                return node.right
+            elif not node.right:
+                return node.left
+            else:
+                temp_node = self._get_min_value(node.right)
+                node.data = temp_node.data
+                node.right = self._delete_node(temp_node.data, node.right)
+        return node
+
+    @staticmethod
+    def _get_min_value(node):
+        while node.left is not None:
+            node = node.left
+        return node
+
+    def traverse(self):
+        if not self.root:
+            return []
+        else:
+            return self._traverse(self.root)
+
+    def _traverse(self, node):
+        if not node:
+            return []
+        left_nodes = self._traverse(node.left)
+        right_nodes = self._traverse(node.right)
+        return left_nodes + [node.data] + right_nodes
+
+    <b>def search(self, value):
+        if not self.root:
+            return False
+        else:
+            return self._search(value, self.root)
+
+    def _search(self, value, node):
+        if not node:
+            return False
+        elif value == node.data:
+            return True
+        elif value < node.data:
+            return self._search(value, node.left)
+        else:
+            return self._search(value, node.right)</b></pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 33 Solution</h2>
+    <p>
+        In order to solve this one, we will show pictures of what the binary trees look like below. If
+        you drew these on pen and paper then you likely will have come to the same answer as me. You can
+        also be environmentally friendly and complete this assignment online through
+        <a href="https://www.cs.usfca.edu/~galles/visualization/BST.html">this website</a>. The first
+        solution shows a long, unbalanced tree which requires you to traverse every single node to find
+        and delete 1. The second solution is a shorter, more balanced tree which means you do not have to
+        search through each node in the tree in order to delete 1. The first solution will give you a run
+        time of O(n) and the second solution will give you a run time of O(log n).
+    </p>
+
+    <div class="example" style="padding-bottom: 25px">
+        <div style="padding-right: 25px">
+            <img src="../../images/lesson33SolutionA.png" alt="Solution to part A of last week's
+            assignment." height="500" width="auto">
+    </div>
+        <img style="text-align: right" src="../../images/lesson33SolutionB.png" alt="Solution to part B
+        of last week's assignment." height="500" width="auto"/>
+    </div>
+
+    <p>
+        Now we will look at the code section of last week's homework.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>tree = BinaryTree()
+tree.add_node(45)
+tree.add_node(20)
+tree.add_node(54)
+tree.add_node(31)
+tree.add_node(49)
+tree.delete_node(31)
+tree.add_node(10)
+tree.add_node(31)
+tree.add_node(77)
+print(tree.traverse())</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>
+            <br><br><br>
+            [10, 20, 31, 45, 49, 54, 77]
+        </div>
+    </div>
+
+    <h2>Lesson 34 Assignment</h2>
+    <p>
+        Spend a little bit of time over the next few days thinking about how you could improve the
+        efficiency of the tree. Some of the methods have worst case complexity of O(n). Can this be
+        improved? If so then how? This week's assignment has no formal code and next week will focus
+        entirely on a solution to this question.
+    </p>
 
 </main>
 
