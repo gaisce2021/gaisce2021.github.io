@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Data structure footer added">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 35 goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson33.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson33.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson34.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson34.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson35.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson35.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson36.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson36.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson37.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson37.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson38.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/dataStructures/lesson38.html" afterDir="false" />
@@ -58,9 +55,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="24Kms1sibEbzP2JkCOlFPljQ4W3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -94,11 +91,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\codingLessons\images" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\dataStructures" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\oop" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\programmingBasics" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\images" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.lesson27.html">
@@ -216,7 +213,8 @@
       <workItem from="1691869933048" duration="7626000" />
       <workItem from="1691941476257" duration="9583000" />
       <workItem from="1692202790104" duration="19974000" />
-      <workItem from="1692969282632" duration="13207000" />
+      <workItem from="1692969282632" duration="23595000" />
+      <workItem from="1693333308498" duration="6714000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -524,7 +522,39 @@
       <option name="project" value="LOCAL" />
       <updated>1693082759174</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Lesson 33 goes live">
+      <option name="closed" value="true" />
+      <created>1693165197149</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1693165197149</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Lesson 33 solutions">
+      <option name="closed" value="true" />
+      <created>1693325291929</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1693325291929</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Lesson 34 goes live">
+      <option name="closed" value="true" />
+      <created>1693326252744</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1693326252744</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Lesson 35 goes live">
+      <option name="closed" value="true" />
+      <created>1693504004642</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1693504004642</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,10 +573,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added tkinter screenshot" />
-    <MESSAGE value="Lesson 24 goes live" />
-    <MESSAGE value="Lesson 24 assignment solution photo" />
-    <MESSAGE value="Lesson 25 partial upload" />
     <MESSAGE value="Lesson 25 goes live" />
     <MESSAGE value="Lesson 26 questions added" />
     <MESSAGE value="Moved lessons into respective folders" />
@@ -568,6 +594,10 @@
     <MESSAGE value="Lesson 32 goes live" />
     <MESSAGE value="Data structure nav bar update" />
     <MESSAGE value="Data structure footer added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data structure footer added" />
+    <MESSAGE value="Lesson 33 goes live" />
+    <MESSAGE value="Lesson 33 solutions" />
+    <MESSAGE value="Lesson 34 goes live" />
+    <MESSAGE value="Lesson 35 goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 35 goes live" />
   </component>
 </project>

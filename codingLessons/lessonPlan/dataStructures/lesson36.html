@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Deques</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -66,10 +66,10 @@
             <a href="../dataStructures/lesson30.html">Lesson 30 - Linked Lists I</a>
             <a href="../dataStructures/lesson31.html">Lesson 31 - Linked Lists II</a>
             <a href="../dataStructures/lesson32.html">Lesson 32 - Priority Queues</a>
-            <a href="../dataStructures/lesson33.html">Lesson 33</a>
-            <a href="../dataStructures/lesson34.html">Lesson 34</a>
-            <a href="../dataStructures/lesson35.html">Lesson 35</a>
-            <a href="../dataStructures/lesson36.html">Lesson 36</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33 - Binary Trees</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34 - Binary Search Trees</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35 - AVL Trees</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36 - Deques</a>
             <a href="../dataStructures/lesson37.html">Lesson 37</a>
             <a href="../dataStructures/lesson38.html">Lesson 38</a>
             <a href="../dataStructures/lesson39.html">Lesson 39</a>
@@ -98,7 +98,149 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What data structure will we look at today?</h2>
+    <p>
+        A deque, pronounced "deck", is a double-ended queue. It is a linear data structure where the
+        insertion and deletion operations are performed from both ends. It does not follow the FIFO rule
+        (First In First Out) like a queue. A deque is a generalised version of the queue.
+    </p>
 
+    <h2>How is a deque implemented? Is it similar to a queue?</h2>
+    <p>
+        A deque has some properties in common with a queue and stack. It is a linear data structure
+        like a queue and stack. However, it is more general than a stack or queue because it has some
+        properties in common with a deck of cards.
+    </p>
+
+    <h2>What are the methods of the deque?</h2>
+    <p>
+        A deque supports element insertion and removal at both ends. It has methods to access the
+        elements at both ends of the deque. Methods are provided to insert, remove, and examine the
+        element. We can also check if the deque is empty and its size.
+    </p>
+
+    <h2>Tell me the space and time complexity of the deque.</h2>
+    <p>
+        The time and space complexity of deque methods depend on the implementation. In Python, the
+        deque class is implemented using a doubly-linked list. The append and pop operations have
+        O(1) time complexity. The append_left and pop_left operations also have O(1) time complexity.
+        The space complexity of a deque is O(n), where n is the number of elements in the deque.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        We will base this implementation on the DLL. We will have a Node class with previous and next
+        pointers. We have two insert methods, two delete methods, a method to print the deque as a list,
+        a method to check the size of the deque and a method to check if the deque is empty.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+
+
+class Deque:
+    def __init__(self):
+        self.front = None
+        self.rear = None
+
+    def insert_front(self, data):
+        new_node = Node(data)
+        if self.front is None:
+            self.front = new_node
+            self.rear = new_node
+        else:
+            new_node.next = self.front
+            self.front.prev = new_node
+            self.front = new_node
+
+    def insert_rear(self, data):
+        new_node = Node(data)
+        if self.rear is None:
+            self.front = new_node
+            self.rear = new_node
+        else:
+            new_node.prev = self.rear
+            self.rear.next = new_node
+            self.rear = new_node
+
+    def delete_front(self):
+        if self.front is None:
+            return None
+        elif self.front == self.rear:
+            temp = self.front
+            self.front = None
+            self.rear = None
+            return temp.data
+        else:
+            temp = self.front
+            self.front = temp.next
+            temp.next.prev = None
+            temp.next = None
+            return temp.data
+
+    def delete_rear(self):
+        if self.rear is None:
+            return None
+        elif self.front == self.rear:
+            temp = self.rear
+            self.front = None
+            self.rear = None
+            return temp.data
+        else:
+            temp = self.rear
+            self.rear = temp.prev
+            temp.prev.next = None
+            temp.prev = None
+            return temp.data
+
+    def is_empty(self):
+        return self.front is None
+
+    def size(self):
+        count = 0
+        cur_node = self.front
+        while cur_node is not None:
+            count += 1
+            cur_node = cur_node.next
+        return count
+
+    def print_deque(self):
+        output = []
+        cur_node = self.front
+        while cur_node is not None:
+            output += [cur_node.data]
+            cur_node = cur_node.next
+        print(output)</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 35 Solution</h2>
+    <p>
+        I hope you enjoyed learning about trees and that the week-long break did you good! We're back to
+        assignments again this week.
+    </p>
+    <h2>Lesson 36 Assignment</h2>
+    <p>
+        Today's lesson will focus on using the deque. You will run a number of commands, and you will
+        see how the deque looks at the end. We can compare answers next week to see if you got the
+        correct answer.
+    </p>
+    <ol>
+        <li>Add 3, 4, 5 to the front of the deque in that order.</li>
+        <li>Add 8 to the back of the deque.</li>
+        <li>Delete 8 from the deque - which <i>delete</i> should you use?</li>
+        <li>Add 6, 7 to the back of the deque in that order.</li>
+        <li>Add 2 then 1 to the front of the deque.</li>
+        <li>Check the size of the deque. Print the deque.</li>
+    </ol>
 </main>
 
 <footer>
