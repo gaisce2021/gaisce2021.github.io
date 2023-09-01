@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Graphs I</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -66,11 +66,11 @@
             <a href="../dataStructures/lesson30.html">Lesson 30 - Linked Lists I</a>
             <a href="../dataStructures/lesson31.html">Lesson 31 - Linked Lists II</a>
             <a href="../dataStructures/lesson32.html">Lesson 32 - Priority Queues</a>
-            <a href="../dataStructures/lesson33.html">Lesson 33</a>
-            <a href="../dataStructures/lesson34.html">Lesson 34</a>
-            <a href="../dataStructures/lesson35.html">Lesson 35</a>
-            <a href="../dataStructures/lesson36.html">Lesson 36</a>
-            <a href="../dataStructures/lesson37.html">Lesson 37</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33 - Binary Trees</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34 - Binary Search Trees</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35 - AVL Trees</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36 - Deques</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37 - Graphs I</a>
             <a href="../dataStructures/lesson38.html">Lesson 38</a>
             <a href="../dataStructures/lesson39.html">Lesson 39</a>
         </div>
@@ -99,8 +99,329 @@
 
 <main>
     <h1>Questions</h1>
+    <h2>What will we look at now?</h2>
+    <p>
+        We will look at a data structure to represent a graph. We will spend the last three lessons focusing
+        on implementing a graph which will be programmed as a group of vertices and edges. This might be
+        a tricky topic. I certainly found that I needed to dedicate more time to this in college, so you
+        shouldn't worry if you need to reread any of it.
+    </p>
+
+    <h2>What real life situations does the graph mirror?</h2>
+    <p>
+        The graph is excellent for modelling maps. Each edge represents a road. Each vertex represents
+        a crossroad or a junction. The graph is a collection of junctions and roads which make up villages,
+        towns and cities.
+    </p>
+
+    <h2>Will the assignments build on each other like the tree lessons?</h2>
+    <p>
+        Yes, the assignment will involve slowly building up a graph with a pathfinding algorithm that will
+        find us the quickest route between two places. Your phone does this every single time you use
+        Google Maps. While Google Maps takes a number of factors into account (such as real time traffic
+        data from phones; methods of transport - walking, cycling, driving, public transport; one way
+        streets) to find the best route, our graph will be more simplified than this.
+        <br>
+        Please note that this assignment came from a second year programming class I had in college so this
+        will be an excellent opportunity to check how far your programming skills have come. This course is
+        relatively condensed so don't worry if you don't get everything 100% correct.
+    </p>
     <h1>Code Examples</h1>
+    <p>
+        Today's code snippets will involve looking at a Vertex class and an Edge class. These will form the
+        basis for the graph. You don't need to modify these two classes when we build the Graph class to
+        form the basis for our map.
+    </p>
+    <p>
+        The easier class is the Vertex. It has an instance variable called <i>_element</i> which is
+        initialised with the value of the parameter element passed to the constructor. The class has a
+        method called <i>__str__</i> which returns the string representation of the element. The class
+        also has a method called <i>__lt__</i> which compares the element of two Vertex objects and
+        returns True if the element of the current object is less than that of the other object.
+        <br>
+        The class also has two methods called getElement and setElement which get and set the value
+        of element, respectively. The class also has a property called element which is used to access
+        element. Our getters and setters are at the bottom of the class we have just defined.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Vertex:
+    def __init__(self, element):
+        self._element = element
+
+    def __str__(self):
+        return str(self._element)
+
+    def __lt__(self, v):
+        return self.element < v.element
+
+    def getElement(self):
+        return self._element
+
+    def setElement(self, element):
+        self._element = element
+
+    element = property(getElement, setElement)</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
+    <p>
+        This is another Python class called Edge, it has a little bit more going on, and you need to
+        understand the Vertex code first. It has three instance variables called <i>_vertices</i>,
+        <i>_element</i>, and <i>_rep</i>. The vertices variable is a tuple containing two Vertex objects.
+        The element variable is initialized with the value of the parameter element passed to the constructor.
+        <br>
+        The class has a method called <i>__str__</i> which returns a string representation of the
+        Edge object. The class also has a method called vertices which returns the tuple of vertices.
+        The class has methods called start and end which return the first and second vertices in the
+        tuple, respectively.
+        <br>
+        The class also has a method called <i>opposite</i> which takes a vertex object as an argument
+        and returns the opposite vertex in the tuple if the argument vertex is one of the vertices in
+        the tuple, otherwise it returns None.
+        <br>
+        At the end of the class we also have getters and setters for the element parameter.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Edge:
+    def __init__(self, v, w, element):
+        self._vertices = (v, w)
+        self._element = element
+
+    def __str__(self):
+        return ('(' + str(self._vertices[0]) + '--'
+                + str(self._vertices[1]) + ' : '
+                + str(self._element) + ')')
+
+    __repr__ = __str__
+
+    def vertices(self):
+        return self._vertices
+
+    def start(self):
+        return self._vertices[0]
+
+    def end(self):
+        return self._vertices[1]
+
+    def opposite(self, v):
+        if self._vertices[0] == v:
+            return self._vertices[1]
+        elif self._vertices[1] == v:
+            return self._vertices[0]
+        else:
+            return None
+
+    def getElement(self):
+        return self._element
+
+    def setElement(self, newElement):
+        self._element = newElement
+
+    element = property(getElement, setElement)</pre>
+    </div>
+        <div class="grid-item">
+        </div>
+    </div>
+
     <h1>Exercises</h1>
+    <h2>Lesson 36 Solution</h2>
+    <p>
+        As you have added 8 to the rear of the list, you must also delete it from there.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>d = Deque()
+d.insert_front(3)
+d.insert_front(4)
+d.insert_front(5)
+d.insert_rear(8)
+d.delete_rear()
+d.insert_rear(6)
+d.insert_rear(7)
+d.insert_front(2)
+d.insert_front(1)
+print(d.size())
+d.print_deque()</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br><br><br><br>
+            <br><br><br>
+            7<br>
+            [1, 2, 5, 4, 3, 6, 7]
+        </div>
+    </div>
+    <h2>Lesson 37 Assignment</h2>
+    <p>
+        The first thing we will do is to build an APQ. This is short for <i>adaptable priority queue</i>.
+        Our APQ will take in an <i>element</i> and the code for that class is given below. Read through
+        that code and copy it into your IDE before getting started.
+    </p>
+    <p>
+        I will give a brief overview of how the Element class works. It has three instance variables called
+        <i>_key</i>, <i>_value</i>, and <i>_index</i>. The class has a constructor which initializes these
+        variables with the values of the parameters <i>k</i>, <i>v</i>, and <i>i</i>, respectively.
+        <br>
+        The class has a method called <i>__str__</i> which returns a string representation of the
+        Element object. The class also has methods called <i>__eq__</i>, <i>__lt__</i>, and <i>__gt__</i>
+        which compare two Element objects based on their keys.
+        <br>
+        The class contains getters and setters for key, value and index which are our three variables
+        in the constructor. Take a quick moment to look through the code and understand what's going on
+        before I explain this week's assignment.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class Element:
+    def __init__(self, k, v, i):
+        self._key = k
+        self._value = v
+        self._index = i
+
+    def __str__(self):
+        return "k: %i, v: %s, i: %i" % (self._key, self._value, self._index)
+
+    __repr__ = __str__
+
+    def getKey(self):
+        return self._key
+
+    def setKey(self, newKey):
+        self._key = newKey
+
+    key = property(getKey, setKey)
+
+    def getValue(self):
+        return self._value
+
+    def setValue(self, newValue):
+        self._value = newValue
+
+    value = property(getValue, setValue)
+
+    def getIndex(self):
+        return self._index
+
+    def setIndex(self, newIndex):
+        self._index = newIndex
+
+    index = property(getIndex, setIndex)
+
+    def __eq__(self, other):
+        return self._key == other.getKey()
+
+    def __lt__(self, other):
+        return self._key < other.getKey()
+
+    def __gt__(self, other):
+        return self._key > other.getKey()</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+    <p>
+        I will give you a blank template for the APQ below. It is initialised with a list which is used to
+        represent a binary heap. The string method(<i>__str__</i>) is used to print out the key, value and
+        index of the items in our APQ. The easier methods to code are closer to the start, feel free to look
+        back on earlier code and implement those methods. Once you've built up a little more confidence, you
+        can work your way down to the tougher methods. Copy and paste the code into your IDE to work on, and
+        I'll give more details below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class AdaptablePriorityQueue:
+    def __init__(self):
+        self._binaryHeap = []
+
+    def __str__(self):
+        allTheItemsFitToPrint = ""
+        for item in self._binaryHeap:
+            allTheItemsFitToPrint += ("Key: %i, \t Value: %s, \t Index: %i" % (item.key, item.value, item.index)) + "\n"
+        return allTheItemsFitToPrint
+
+    __repr__ = __str__
+
+    def length(self):
+        pass
+
+    def isEmpty(self):
+        pass
+
+    def min(self):
+        pass
+
+    def getKey(self, item):
+        pass
+
+    def updateKey(self, item, updatedKey):
+        pass
+
+    def add(self, key, item):
+        pass
+
+    def swap(self, item1, item2):
+        pass
+
+    @staticmethod
+    def parentIndex(item):
+        pass
+
+    def parent(self, item):
+        pass
+
+    @staticmethod
+    def leftIndex(index):
+        pass
+
+    @staticmethod
+    def rightIndex(index):
+        pass
+
+    def bubbleUp(self, itemUp):
+        pass
+
+    def bubbleDown(self, itemDown):
+        pass
+
+    def removeMin(self):
+        pass
+
+    def remove(self, itemOut):
+        pass</pre>
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+    <h3>What exactly is an APQ?</h3>
+    <p>
+        The Adaptable Priority Queue (APQ) is a data structure that allows you to store a collection of
+        items, each with a priority. The items can be added and removed from the queue, and you can also
+        change the priority of an item that is already in the queue.
+        <br>
+        The APQ is useful when you need to keep track of a collection of items that have different
+        priorities, and you need to be able to quickly find the item with the highest priority.
+        It is often used in algorithms such as Dijkstra's algorithm for finding the shortest path
+        in a graph. We will look at Dijkstra's algorithm in next week's lesson.
+    </p>
+
+    <h3>What is the binary heap within the constructor of the APQ?</h3>
+    <p>
+        A binary heap is a data structure that is used to represent a complete binary tree. In a binary
+        heap, the value of each parent node is less than or equal to the values of its children nodes.
+        This is called the heap property.
+        <br>
+        In the context of the code, the <i>binaryHeap</i> instance variable within the constructor is a
+        list that represents a binary heap. The methods of the APQ class (the skeleton of which I have
+        given you) manipulate this list to implement an adaptable priority queue.
+    </p>
+    <p>
+        Best of luck with this week's assignment. It might be on the longer side but stick with it and
+        do as much as you can. As always, we will look at the implementation of the APQ next week.
+    </p>
+
 </main>
 
 <footer>
