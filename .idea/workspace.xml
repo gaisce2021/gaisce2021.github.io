@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Second block nav bar update">
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson40.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson40.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson41.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson41.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson42.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson42.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson43.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson43.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson44.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson44.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson45.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson45.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson46.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson46.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson47.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson47.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson48.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson48.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson49.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson49.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson50.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson50.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Final block footer added">
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +219,7 @@
       <workItem from="1692969282632" duration="23595000" />
       <workItem from="1693333308498" duration="19365000" />
       <workItem from="1714142698193" duration="11000" />
-      <workItem from="1714142718250" duration="11432000" />
+      <workItem from="1714142718250" duration="11836000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -331,22 +318,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Lesson 24 assignment solution photo">
-      <option name="closed" value="true" />
-      <created>1688051700649</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1688051700649</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Lesson 25 partial upload">
-      <option name="closed" value="true" />
-      <created>1688161254484</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1688161254484</updated>
     </task>
     <task id="LOCAL-00020" summary="Lesson 25 goes live">
       <option name="closed" value="true" />
@@ -612,7 +583,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715353022456</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Index nav bar update">
+      <option name="closed" value="true" />
+      <created>1715353308493</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1715353308493</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Final block footer added">
+      <option name="closed" value="true" />
+      <created>1715353328908</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1715353328908</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,8 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Workspace commit" />
-    <MESSAGE value="Lesson 27 goes live" />
     <MESSAGE value="Lesson 28 goes live" />
     <MESSAGE value="Lesson 29 goes live" />
     <MESSAGE value="Lesson 30 update" />
@@ -656,6 +641,8 @@
     <MESSAGE value="Final block nav bar update" />
     <MESSAGE value="First block nav bar update" />
     <MESSAGE value="Second block nav bar update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second block nav bar update" />
+    <MESSAGE value="Index nav bar update" />
+    <MESSAGE value="Final block footer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final block footer added" />
   </component>
 </project>
