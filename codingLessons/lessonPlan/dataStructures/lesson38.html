@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Graphs II</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -66,13 +66,13 @@
             <a href="../dataStructures/lesson30.html">Lesson 30 - Linked Lists I</a>
             <a href="../dataStructures/lesson31.html">Lesson 31 - Linked Lists II</a>
             <a href="../dataStructures/lesson32.html">Lesson 32 - Priority Queues</a>
-            <a href="../dataStructures/lesson33.html">Lesson 33</a>
-            <a href="../dataStructures/lesson34.html">Lesson 34</a>
-            <a href="../dataStructures/lesson35.html">Lesson 35</a>
-            <a href="../dataStructures/lesson36.html">Lesson 36</a>
-            <a href="../dataStructures/lesson37.html">Lesson 37</a>
-            <a href="../dataStructures/lesson38.html">Lesson 38</a>
-            <a href="../dataStructures/lesson39.html">Lesson 39</a>
+            <a href="../dataStructures/lesson33.html">Lesson 33 - Binary Trees</a>
+            <a href="../dataStructures/lesson34.html">Lesson 34 - Binary Search Trees</a>
+            <a href="../dataStructures/lesson35.html">Lesson 35 - AVL Trees</a>
+            <a href="../dataStructures/lesson36.html">Lesson 36 - Deques</a>
+            <a href="../dataStructures/lesson37.html">Lesson 37 - Graphs I</a>
+            <a href="../dataStructures/lesson38.html">Lesson 38 - Graphs II</a>
+            <a href="../dataStructures/lesson39.html">Lesson 39 - Graphs III</a>
         </div>
     </div>
     <div class="dropdown">
@@ -80,27 +80,512 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="../lesson40.html">Lesson 40</a>
-            <a href="../lesson41.html">Lesson 41</a>
-            <a href="../lesson42.html">Lesson 42</a>
-            <a href="../lesson43.html">Lesson 43</a>
-            <a href="../lesson44.html">Lesson 44</a>
-            <a href="../lesson45.html">Lesson 45</a>
-            <a href="../lesson46.html">Lesson 46</a>
-            <a href="../lesson47.html">Lesson 47</a>
-            <a href="../lesson48.html">Lesson 48</a>
-            <a href="../lesson49.html">Lesson 49</a>
-            <a href="../lesson50.html">Lesson 50</a>
-            <a href="../lesson51.html">Lesson 51</a>
-            <a href="../lesson52.html">Lesson 52</a>
+            <a href="../apis/lesson40.html">Lesson 40</a>
+            <a href="../apis/lesson41.html">Lesson 41</a>
+            <a href="../apis/lesson42.html">Lesson 42</a>
+            <a href="../apis/lesson43.html">Lesson 43</a>
+            <a href="../apis/lesson44.html">Lesson 44</a>
+            <a href="../apis/lesson45.html">Lesson 45</a>
+            <a href="../apis/lesson46.html">Lesson 46</a>
+            <a href="../apis/lesson47.html">Lesson 47</a>
+            <a href="../apis/lesson48.html">Lesson 48</a>
+            <a href="../apis/lesson49.html">Lesson 49</a>
+            <a href="../apis/lesson50.html">Lesson 50</a>
+            <a href="../apis/lesson51.html">Lesson 51</a>
+            <a href="../apis/lesson52.html">Lesson 52</a>
         </div>
     </div>
 </nav>
 
 <main>
     <h1>Questions</h1>
+    <h2>Is it unusual that I found the assignment last week difficult?</h2>
+    <p>
+        Not at all! I would expect you to be able to successfully write code that successfully
+        tells you whether the <i>binaryHeap</i> variable is empty or not. I intentionally left
+        the more difficult methods towards the end of the template for you. It gives you the
+        option to use functions which you have already defined earlier on in the code to
+        complete the APQ.
+    </p>
+
+    <h2>Can you give me a real life example of an APQ?</h2>
+    <p>
+        I can give you two examples which may help you understand why we're doing what we're
+        doing.
+    </p>
+    <p>
+        Let's say that you've been injured. You decide to visit the local emergency department
+        in your nearest hospital. They will assess your injury when you arrive and decide to
+        treat you, and any other patients, by severity rather than time spent waiting. If
+        your injury is seen as more severe than a child with a sprained ankle who was queuing
+        three hours before you, you will be moved up in the list of priorities for the hospital
+        staff. If you are the next person they plan to treat but there is a major car accident
+        in the area, the occupant of a vehicle who may be at risk of losing a limb will likely
+        skip the queue based on their more serious injury. Patients are bumped up or down a list
+        depending on their medical needs.
+    </p>
+    <p>
+        Now let's look at the APQ in this context of programming. You arrive in a town from the
+        eastern end and plan to drive to the western end of the town to visit your friend. You
+        arrive at the roundabout and have the choice to take the bypass which is usually
+        quicker or drive through the town which tends to be slower. In this instance, your
+        route planning software may advise you to take the bypass. Time is the metric for
+        moving roads up and down in the queue.
+        <br>
+        Whilst driving, you notice a tractor with a heavy load queuing for the roundabout in
+        front of you. The tractor takes the exit for the bypass. If you're meeting your friend
+        at an offpeak time and the tractor is particularly slow, you might view driving through
+        the town as more attractive. The two roads have switched priority in your mind based on
+        road conditions at that specific time. This will lead us onto the material for today's
+        lesson.
+    </p>
+
+    <h2>You said that we would cover an algorithm today. Can you tell me more about it?</h2>
+    <p>
+        Today we will look at Dijkstra's algorithm. We've already completed an APQ. If your
+        adaptable priority queue doesn't work then feel free to take my code which is posted
+        below. The next step is to give a quick overview before you will need to complete
+        the code as homework.
+    </p>
+    <p>
+        Dijkstra's algorithm guarantees finding the shortest path from the source node to
+        all other nodes in the graph. If there is an existing shortest path, this algorithm
+        <i>will</i> find it. The source node is where you will start from. In our case, this
+        is usually our home on software such as Google Maps. The endpoint may be your place of
+        work, your/your child's school/college, a supermarket where you buy groceries, or a
+        friend's house. This algorithm wants to find the shortest path between those two
+        places.
+    </p>
+    <p>
+        Remember our Edge, Vertex, and Element classes within the APQ? The Vertex is a
+        typically a junction. The Edge is a road which connects two junctions. The weights
+        assigned can vary depending on what your priority is. The weights could be time,
+        distance or fuel efficiency. You may wish to take a 10 minute car journey if your
+        time is more valuable as opposed to a 12 minute car journey. A 10 minute car journey
+        might mean you drive 12km using a slightly less direct route rather than a 10km journey
+        which takes 12 minutes through a more congested part of town. A driver taking the more
+        economic route will try to drive on a road where they are unlikely to brake and
+        accelerate often as this wastes more fuel (and money) than driving at a consistent
+        speed where possible throughout the journey.
+    </p>
+
+    <h2>Will we cover anything else today?</h2>
+    <p>
+        Yes, we will cover the <i>shortest path</i> algorithm once we have finished Dijkstra's
+        algorithm.
+    </p>
+
     <h1>Code Examples</h1>
+    <p>
+        We will begin by looking at a piece of <i>pseudocode</i>. This cannot be run in your
+        IDE but will give you a good approximation of what your actual Python code will look
+        like once you write it. This comes from Wikipedia. Review the code below and I'll talk
+        you through it in the paragraph below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>function Dijkstra(Graph, source):
+    create vertex priority queue Q
+
+    dist[source] ← 0
+    Q.add_with_priority(source, 0)
+
+    for each vertex v in Graph.Vertices:
+        if v ≠ source
+        prev[v] ← UNDEFINED
+        dist[v] ← INFINITY
+        Q.add_with_priority(v, INFINITY)
+
+
+    while Q is not empty:
+        u ← Q.extract_min()
+        for each neighbor v of u:
+            alt ← dist[u] + Graph.Edges(u, v)
+            if alt < dist[v]:
+                prev[v] ← u
+                dist[v] ← alt
+                Q.decrease_priority(v, alt)
+
+    return dist, prev</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br>
+            <br>Initialisation
+            <br>associated priority equals dist[·]
+            <br><br><br>
+            <br>Predecessor of v
+            <br>Unknown distance from source to v
+            <br><br><br>
+            <br>The main loop
+            <br>Remove and return best vertex
+            <br>Go through all v neighbors of u
+        </div>
+    </div>
+    <p>
+        The letter Q represents our APQ which you have already created. We use V to represent
+        a vertex. U is also a vertex. We check the distances between V and U. We add each
+        vertex to the APQ and remove the one from the queue with the smallest distance. I
+        will provide the code for the graph below in the assignment section. Don't worry about
+        creating that by yourself.
+    </p>
+
+    <div class="example">
+        <div class="grid-item">
+            <pre>function shortest_path(Graph, v, w):
+    djikstra_results := Dijkstra(Graph, v)
+
+    vertex_current := null
+    out := empty list
+
+    djikstra_value := djikstra_results[w]
+    cost := djikstra_value.cost
+    vertex_predecessor := djikstra_value.predecessor
+    out.append((w, cost))
+
+    while vertex_current is not v:
+        vertex_current := vertex_predecessor
+        djikstra_value := djikstra_results[vertex_predecessor]
+        cost := djikstra_value.cost
+        vertex_predecessor := djikstra_value.predecessor
+        out.append((vertex_current, cost))
+
+    result := reverse(out)
+
+    return result</pre>
+        </div>
+        <div class="grid-item">
+            <br>
+            Run Dijkstra's algorithm to find the shortest path from V to W
+            <br><br>
+            Initialize variables
+            <br><br><br>
+            Retrieve the shortest path from V to W from the APQ
+            <br><br><br><br>
+            Backtrack through predecessors to reconstruct the shortest path
+            <br><br><br><br><br>
+            Reverse the list to get the shortest path in correct order
+            <br><br>
+            Return the shortest path from V to W
+        </div>
+    </div>
+    <p>
+        Hopefully the comments on the side will clarify the pseudocode for you. The first
+        algorithm wants to find the closest vertex to V. The second algorithm runs the first
+        algorithm multiple times until you have found the specified start and end point. An
+        example could be driving from Cork to Dublin. Dijkstra's algorithm will take each
+        junction in isolation and find the shortest stretch of road. The shortest path
+        algorithm will record each junction to build that path between Cork and Dublin for you.
+        Please note that we reverse the path in the <i>shortest path</i> algorithm as the
+        junctions in Cork are added to the list initially and the junctions in Dublin are
+        added at the end. This is reversed, so we travel from Cork to Dublin rather than Dublin
+        to Cork.
+    </p>
+
     <h1>Exercises</h1>
+    <h2>Lesson 37 Solution</h2>
+    <p>
+        Even if you couldn't code every single method within the APQ from last week, hopefully
+        you'll have been able to create some of these. If you couldn't understand how to create
+        any of the more difficult methods then pause at the solution below and work through
+        the logic line by line. If you did manage to get everything right then well done! I
+        hope that you'll find the comments I added to my code helpful if you struggled with
+        last week's assignment.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class APQ:
+    def __init__(self):
+        self._binaryHeap = []  # create your heap
+
+    def __str__(self):
+        allTheItemsFitToPrint = ""  # yes, I'm making a NY Times reference
+        for item in self._binaryHeap:
+            allTheItemsFitToPrint += ("Key: %i, \t Value: %s, \t Index: %i" % (item.key, item.value, item.index)) + "\n"
+        return allTheItemsFitToPrint
+
+    __repr__ = __str__
+
+    def length(self):
+        return self._binaryHeap.__len__()  # predefined method
+
+    def isEmpty(self):
+        if self.length() == 0:
+            return True  # if no stuff in heap
+        return False  # if stuff in heap
+
+    def min(self):
+        minItem = self._binaryHeap[0]  # find the first item
+        return minItem.value  # return its value
+
+    def getKey(self, item):
+        rightItem = self._binaryHeap[item.index]
+        return rightItem.key
+
+    def updateKey(self, item, updatedKey):
+        oldKey = item.key  # keep track of info
+        item.key = updatedKey  # reassignment
+        if oldKey < updatedKey:
+            self.bubbleDown(item)  # if it should be a child
+        self.bubbleUp(item)  # if it should be a parent
+
+    def add(self, key, item):
+        index = self.length()  # values go from 0 to length - 1 so new index is same as the length
+        itemIn = Element(key, item, index)  # we now have enough pieces
+        if self.isEmpty():  # one lonely heap occupant
+            self._binaryHeap += [itemIn]  # only item so no need to sort
+        else:
+            self._binaryHeap += [itemIn]  # adding item onto the end of the list
+            self.bubbleUp(itemIn)  # need to make sure that it gets moved up when it has a low key
+        return itemIn  # spits out an element at the end
+
+    def swap(self, item1, item2):
+        index1, index2 = item1.index, item2.index  # get the indexes of the two relevant items
+        self._binaryHeap[index1], self._binaryHeap[index2] = item2, item1
+        # move the key, value parts of the items into the right place
+        item1.index, item2.index = index2, index1  # now we swap the indexes seeing as the parent/child have swapped
+
+    @staticmethod
+    def parentIndex(item):
+        parentIndex = (item.index - 1) // 2
+        return parentIndex
+
+    def parent(self, item):
+        parentIndex = self.parentIndex(item)
+        parent = self._binaryHeap[parentIndex]
+        return parent
+
+    @staticmethod
+    def leftIndex(index):
+        leftIndex = (2 * index) + 1
+        return leftIndex
+
+    @staticmethod
+    def rightIndex(index):
+        rightIndex = (2 * index) + 2
+        return rightIndex
+
+    def bubbleUp(self, itemUp):
+        parentIndex = self.parentIndex(itemUp)  # find what the parent's index is
+        if 0 <= parentIndex < self.length() - 1:  # is the index within the list
+            parent = self.parent(itemUp)  # get the parent of the current item
+            if parent.key > itemUp.key:  # are the keys in the right place
+                self.swap(itemUp, parent)  # if not the swap them into the correct place
+                self.bubbleUp(itemUp)  # repeat recursively until the item is where it should be
+        return self._binaryHeap  # spits the heap back out
+
+    def bubbleDown(self, itemDown):
+        index = itemDown.index
+        leftIndex, rightIndex = self.leftIndex(index), self.rightIndex(index)
+        if rightIndex < self.length():
+            leftChild, rightChild = self._binaryHeap[leftIndex], self._binaryHeap[rightIndex]
+            if leftChild and rightChild:
+                if leftChild.key < rightChild.key:
+                    if itemDown > self._binaryHeap[leftIndex]:
+                        self.swap(itemDown, leftChild)
+                        self.bubbleDown(itemDown)
+                elif rightChild.key < leftChild.key:
+                    if itemDown.key > rightChild.key:
+                        self.swap(itemDown, rightChild)
+                        self.bubbleDown(itemDown)
+        elif leftIndex < self.length():
+            leftChild = self._binaryHeap[leftIndex]
+            if itemDown.key > leftChild.key:
+                self.swap(itemDown, leftChild)
+                self.bubbleDown(itemDown)
+        return self._binaryHeap
+
+    # Write the code to remove the items from the list and realign the indexes
+
+    def removeMin(self):
+        if not self.isEmpty():  # do we have something to remove
+            itemOut = self._binaryHeap[0]
+            if self.length() == 1:
+                self._binaryHeap.pop(0)
+            else:
+                self.swap(self._binaryHeap[0], self._binaryHeap[-1])  # swap the min item to the back of the list
+                self._binaryHeap.pop(-1)  # more efficient to pop off the end
+                self.bubbleDown(self._binaryHeap[0])  # put the current minimum item to where it belongs
+            return itemOut
+        return None  # can't remove anything if nothing's left there
+
+    def remove(self, itemOut):
+        if not self.isEmpty():  # do we have stuff to remove
+            currentIndex = itemOut.index  # save the index for later
+            self.swap(itemOut, self._binaryHeap[-1])  # move item on the chopping block to the end of the heap
+            self._binaryHeap.pop(-1)  # kick it off the heap
+            self.bubbleDown(self._binaryHeap[currentIndex])
+            # push this item back down the heap seeing as it was at the end anyway
+            return itemOut  # return removed item
+        return None  # return None if empty</pre>
+        </div>
+        <div class="grid-item"></div>
+    </div>
+
+    <h2>Lesson 38 Assignment</h2>
+    <p>
+        Let's get stuck into the algorithm. You have the pseudocode from above. Can you
+        "translate" this into Python code? I will provide a worked solution of this next week.
+        I will also provide some more code which you can use to read in a graph from a text
+        file and then find the shortest route between the start and end points. It's fine if
+        you struggle but please give it a go. You might be surprised by how far you get.
+    </p>
+    <p>
+        You already have the Element, Vertex, Edge and APQ classes. Your task is to complete
+        the two functions marked out in bold.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>class RouteMap:
+    def __init__(self):
+        self._structure = dict()  # {vertex:vertex}
+        self._vertexCoordinates = dict()  # {vertex:coordinates}
+        self._elementVertex = dict()  # {element:vertex}
+
+    def __graphStr(self):
+        heightString = ('|V| = ' + str(self.num_vertices())
+                        + '; |E| = ' + str(self.num_edges()))
+        vertexString = '\nVertices: '
+        for v in self._structure:
+            vertexString += str(v) + '-'
+        edges = self.edges()
+        edgeString = '\nEdges: '
+        for e in edges:
+            edgeString += str(e) + ' '
+        return heightString + vertexString + edgeString
+
+    def num_vertices(self):
+        return self._structure.__len__()
+
+    def num_edges(self):
+        num = 0
+        for v in self._structure:
+            num += len(self._structure[v])
+        return num // 2
+
+    def vertices(self):
+        return [key for key in self._structure]
+
+    def get_vertex_by_label(self, element):
+        if element in self._elementVertex.keys():
+            return self._elementVertex[element]
+        return None
+
+    def edges(self):
+        edgeList = []
+        for v in self._structure:
+            for w in self._structure[v]:
+                if self._structure[v][w].start() == v:
+                    edgeList += [self._structure[v][w]]
+        return edgeList
+
+    def get_edges(self, v):
+        if v in self._structure:
+            edgeList = []
+            for w in self._structure[v]:
+                edgeList += [self._structure[v][w]]
+            return edgeList
+        return None
+
+    def get_edge(self, v, w):
+        if self._structure is not None and v in self._structure and w in self._structure[v]:
+            return self._structure[v][w]
+        return None
+
+    def degree(self, v):
+        return len(self._structure[v])
+
+    def add_edge(self, v, w, element):
+        if v not in self._structure or w not in self._structure:
+            return None
+        e = Edge(v, w, element)
+        self._structure[v][w] = e
+        self._structure[w][v] = e
+        return e
+
+    def add_edge_pairs(self, eList):
+        for (v, w) in eList:
+            self.add_edge(v, w, None)
+
+    def highestdegreevertex(self):
+        highestDegree = -1
+        highestDegreeVertex = None
+        for v in self._structure:
+            if self.degree(v) > highestDegree:
+                highestDegree = self.degree(v)
+                highestDegreeVertex = v
+        return highestDegreeVertex
+
+    def __str__(self):
+        if (self.num_vertices() + self.num_edges()) <= 100:
+            return self.__graphStr()
+
+    def add_vertex(self, element, coords):
+        v = Vertex(element)
+        self._structure[v] = dict()
+        self._elementVertex[element] = v
+        self._vertexCoordinates[v] = coords
+        return v
+
+    def add_vertex_if_new(self, element, coords):
+        for v in self._structure:
+            if v.element() == element:
+                return v
+        return self.add_vertex(element, coords)
+
+    <b>def djikstra(self, s):
+        pass
+
+    def sp(self, v, w):
+        pass</b>
+
+    def printvlist(self, path):
+        pathway = "type, latitude, longitude, element, cost"
+        for item in path:
+            vertexElement, cost = item[0], item[1]
+            latitude, longitude = self._vertexCoordinates[vertexElement][0], self._vertexCoordinates[vertexElement][1]
+            pathway += '\n'
+            pathway += (
+                    "W, %f, %f, %i, %f" %
+                    (
+                        latitude,
+                        longitude,
+                        vertexElement.element,
+                        cost)
+            )
+        return pathway
+
+
+def graphreader(filename):
+    """ Read and return the route map in filename. """
+    route = RouteMap()
+    file = open(filename, 'r')
+    entry = file.readline()  # either 'Node' or 'Edge'
+    num = 0
+    while entry == 'Node\n':
+        num += 1
+        nodeid = int(file.readline().split()[1])
+        line = file.readline().split()  # line with GPS details
+        coords = (float(line[1]), float(line[2]))  # latitude, longitude
+        route.add_vertex(nodeid, coords)
+        entry = file.readline()  # either 'Node' or 'Edge'
+    print('Read', num, 'vertices and added into the graph')
+    num = 0
+    while entry == 'Edge\n':
+        num += 1
+        source = int(file.readline().split()[1])
+        sv = route.get_vertex_by_label(source)
+        target = int(file.readline().split()[1])
+        tv = route.get_vertex_by_label(target)
+        float(file.readline().split()[1])
+        time = float(file.readline().split()[1])
+        # oneway = (file.readline().split()[1])
+        route.add_edge(sv, tv, time)
+        file.readline()  # read the one-way data
+        entry = file.readline()  # either 'Node' or 'Edge'
+    return route</pre>
+        </div>
+        <div class="grid-item"></div>
+    </div>
 </main>
 
 <footer>
