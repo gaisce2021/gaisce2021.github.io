@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Last block refactored into new folder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Second block nav bar update">
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson40.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson40.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson41.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson41.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson42.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson42.html" afterDir="false" />
@@ -19,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson50.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson50.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +232,7 @@
       <workItem from="1692969282632" duration="23595000" />
       <workItem from="1693333308498" duration="19365000" />
       <workItem from="1714142698193" duration="11000" />
-      <workItem from="1714142718250" duration="10964000" />
+      <workItem from="1714142718250" duration="11432000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -331,30 +331,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added tkinter screenshot">
-      <option name="closed" value="true" />
-      <created>1688049251754</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1688049251754</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Added tkinter screenshot">
-      <option name="closed" value="true" />
-      <created>1688050227337</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1688050227337</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Lesson 24 goes live">
-      <option name="closed" value="true" />
-      <created>1688050951798</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1688050951798</updated>
     </task>
     <task id="LOCAL-00018" summary="Lesson 24 assignment solution photo">
       <option name="closed" value="true" />
@@ -612,7 +588,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715351774398</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Final block nav bar update">
+      <option name="closed" value="true" />
+      <created>1715352844383</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1715352844384</updated>
+    </task>
+    <task id="LOCAL-00051" summary="First block nav bar update">
+      <option name="closed" value="true" />
+      <created>1715352941906</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1715352941906</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Second block nav bar update">
+      <option name="closed" value="true" />
+      <created>1715353022456</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1715353022456</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,9 +631,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="OOP lesson links fixed" />
-    <MESSAGE value="&quot;About me&quot; page links fixed" />
-    <MESSAGE value="&quot;About me&quot; page links fixed (again)" />
     <MESSAGE value="Workspace commit" />
     <MESSAGE value="Lesson 27 goes live" />
     <MESSAGE value="Lesson 28 goes live" />
@@ -656,6 +653,9 @@
     <MESSAGE value="Lesson 38 goes live" />
     <MESSAGE value="Lesson 39 goes live" />
     <MESSAGE value="Last block refactored into new folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last block refactored into new folder" />
+    <MESSAGE value="Final block nav bar update" />
+    <MESSAGE value="First block nav bar update" />
+    <MESSAGE value="Second block nav bar update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second block nav bar update" />
   </component>
 </project>
