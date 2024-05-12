@@ -127,11 +127,104 @@
 
     <h1>Code Examples</h1>
     <p>
-        Before we look at some code snippets, let's look at
+        Before we look at some code snippets, let's look at JSON and HTTP requests. This will
+        help you to understand what we are dealing with before we dive into the Python
+        <i>requests</i> library.
+    </p>
+
+    <h2>JSON</h2>
+    <p>
+        JSON stands for <b>JavaScript Object Notation</b>. Along with other formats like GSON
+        and XML, JSON is a popular format that is mainly used for interchanging between servers
+        and clients. It allows both you and the company whose API you want to work with
+        store information in an organized and easy-to-access manner and transmit data using
+        HTTP requests. JSON is formatted similarly to a Python dictionary. Let's take a look
+        at an easy example below.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>import json
+
+abrahamLincoln = {
+  "name": "Abraham Lincoln",
+  "born": "12/02/1809",
+  "died": "15/04/1865",
+  "presidency": {
+    "term_start": "04/03/1861",
+    "term_end": "15/04/1865"
+  },
+  "known_for": ["Emancipation Proclamation",
+                "Leading the US through its Civil War"]
+}
+print(abrahamLincoln["name"])
+
+abrahamLincolnJson = json.dumps(abrahamLincoln)
+print(abrahamLincolnJson)</pre>
+        </div>
+        <div class="grid-item">
+            <br>We use the <i>import</i> statement to use the JSON library<br><br><br><br>
+            <br><br><br><br><br><br><br><br>dictionary[key] retrieves the value
+            <br><br>Use the <i>dumps</i> function to convert a standard Python dictionary to
+            JSON format
+        </div>
+    </div>
+
+    <h2>HTTP Requests</h2>
+    <p>
+        HTTP stands for <b>Hypertext Transfer Protocol</b>. This protocol is used for
+        transferring data over the internet. It tells web servers and browsers what actions
+        should be taken in response to various commands. These commands include GET, POST, PUT
+        and DELETE are four of the most common commands which you can use.
+    </p>
+    <p>
+        When you enter a URL of a particular website in your browser, this sends a command to
+        a web server. It asks the server to fetch and transmit the requested web page. You can
+        receive various codes depending on whether the web server exists or not. You may also
+        receive different codes if there is an issue with connectivity on your end or if
+        their server has an issue.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>import requests
+
+response = requests.get('http://www.google.com')
+response2 = requests.get('http://www.amazon.ie')
+print(response.status_code)
+print(response2.status_code)</pre>
+        </div>
+        <div class="grid-item">
+            <br><br><br><br><br>200
+            <br>503
+        </div>
+    </div>
+    <p>
+        Google gives us a 200 response code. This is because we were able to connect to a
+        website which does exist. Amazon returns a 503 response code as they do not currently
+        have an Irish website. You would have better luck trying the German version of the
+        website if you wanted to receive a 200 code. 200 means "OK" whereas a 503 response is
+        status code is "Service Unavailable".
     </p>
 
     <h1>Exercises</h1>
     <h2>Lesson 40 Assignment</h2>
+    <p>
+        This week's assignment will be more theory heavy than code heavy. It will involve
+        looking up documentation and doing some research to find the answers. This mirrors
+        both college and working in the tech sector. You may not know the answers but you
+        can do some research and find the answers.
+    </p>
+    <ol>
+        <li>How do you convert a JSON object into a Python dictionary?</li>
+        <li>How do you convert a Python dictionary into a JSON object?</li>
+        <li>Why would you want to convert dictionaries to JSON objects and vice versa?</li>
+        <li>What does the 404 status code mean?</li>
+        <li>Can you name any other status codes and tell me what they mean?</li>
+    </ol>
+    <p>
+        This week's assignment shouldn't be too tricky. We will begin to look at the requests
+        library in more detail next week and see how we can use APIs for specific applications.
+        Give it your best shot and we'll check back in next week.
+    </p>
 
 </main>
 
