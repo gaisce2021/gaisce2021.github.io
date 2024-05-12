@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Requests I</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -81,7 +81,7 @@
         </button>
         <div class="dropdown-content">
             <a href="../apis/lesson40.html">Lesson 40 - Getting Started</a>
-            <a href="../apis/lesson41.html">Lesson 41</a>
+            <a href="../apis/lesson41.html">Lesson 41 - Requests I</a>
             <a href="../apis/lesson42.html">Lesson 42</a>
             <a href="../apis/lesson43.html">Lesson 43</a>
             <a href="../apis/lesson44.html">Lesson 44</a>
@@ -98,6 +98,109 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What can I use APIs and requests for?</h2>
+    <p>
+        We generally use them to complete specific applications. We can retrieve data, parse
+        through the data and present the information we are interested in a user-friendly and
+        easy-to-read format.
+    </p>
+
+    <h2>What projects can you work on using APIs?</h2>
+    <p>
+        You can work on a number of different projects using APIs. We'll start with easier ones
+        that have free API keys so you can practise with any financial worries. You can work on
+        projects relating to the weather, news, movies, games and even more complicated projects
+        which use Google Maps API.
+    </p>
+
+    <h2>What happens when a server is down?</h2>
+    <p>
+        Unfortunately when a server is down, we cannot retrieve the data we want to work with.
+        This means that any code that you have written after trying to connect to a server will
+        not work. You will need to build some error checking into your code so that the program
+        won't crash if the server is unavailable when you run the code.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Now that we understand what an API is, how JSON data is formatted and a little bit more
+        about HTTP requests; we can finally start to look at using APIs. We are going to use
+        the <a href="https://pokeapi.co/">Pokémon API</a> in today's example. Read the code below
+        and see if you know what the code is trying to do. The output is on the right and the
+        code which you run in your IDE is on the left.
+    </p>
+    <div class="example">
+        <div class="grid-item">
+            <pre>import requests
+
+url = "https://pokeapi.co/api/v2/pokemon/"
+params = {"limit": "10"}
+res = requests.request("GET", url=url, params=params)
+data = res.json()
+for pokemon in data["results"]:
+    print(pokemon["name"])</pre>
+        </div>
+        <div class="grid-item"><br>bulbasaur<br>
+            ivysaur<br>
+            venusaur<br>
+            charmander<br>
+            charmeleon<br>
+            charizard<br>
+            squirtle<br>
+            wartortle<br>
+            blastoise<br>
+            caterpie<br>
+        </div>
+    </div>
+    <p>
+        Now that you've had a chance to look at the code, let's see what's happening. The first
+        line is a standard import statement which allows us to use the <i>requests</i> library.
+        The URL is our <i>endpoint</i>. This is where we are retrieving our data from. We have
+        a variable called <i>params</i> which is a parameter to limit the number of Pokémon
+        returned to 10 in our example. We run the <i>requests.request</i> function and use
+        <i>"GET"</i> as one of the parameters. This is equivalent to our <i>requests.get</i>
+        function from last week. We convert the output of the command from JSON format to a
+        dictionary so we can work with the data. We use <i>"results"</i> as an index to pluck
+        the specific results section out of the retrieved data. We then index by <i>"name"</i>
+        within our for loop and print the names of each Pokémon one by one.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 40 Solution</h2>
+    <ol>
+        <li><b>How do you convert a JSON object into a Python dictionary?</b></li>
+        <li><b>How do you convert a Python dictionary into a JSON object?</b></li>
+        <li><b>Why would you want to convert dictionaries to JSON objects and vice versa?</b></li>
+        <li><b>What does the 404 status code mean?</b></li>
+        <li><b>Can you name any other status codes and tell me what they mean?</b></li>
+    </ol>
+    <ol>
+        <li>python_dict = json.loads(json_data)</li>
+        <li>json_data = json.loads(python_dict)</li>
+        <li>
+            It can be easier to use code to alter a Python dictionary. You will also need to
+            convert the dictionary into JSON to communicate with a server. This is why you
+            might want to use the two functions.
+        </li>
+        <li>404 is an error code which means Not Found.</li>
+        <li>
+            Some of the most common status codes you will encounter are 400 (Bad Request),
+            401 (Unauthorised), 403 (Forbidden), and 502 (Bad Gateway).
+        </li>
+    </ol>
+
+    <h2>Lesson 41 Assignment</h2>
+    <p>
+        Let's take a look at our Pokémon API in more detail for homework this week. I want you
+        to get more comfortable retrieving data from a server and sending requests. You may not
+        get everything right here but you will learn a lot from this exercise.
+    </p>
+    <ol>
+        <li>Can you find Pikachu's height?</li>
+        <li>How many Pokémon will be returned if you do not have a limit as a parameter?</li>
+        <li>How many green Pokémon are there?</li>
+    </ol>
 
 </main>
 
