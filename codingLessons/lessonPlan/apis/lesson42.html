@@ -115,6 +115,44 @@
     </p>
 
     <h1>Code Examples</h1>
+    <p>
+        Today we will look at a website which aggregates news articles. You will need to sign
+        up for an account with <a href="https://www.thenewsapi.com/">The News API</a> for this
+        week's lesson. You can create a free account and will be able to make 100 free calls a
+        month to their API. You will need to create an account to get your own API key. We will
+        focus on passing parameters within a request. This lesson will also give you a guide to
+        reading documentation. Let's look at example below and talk through the code.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>import requests
+
+url = "https://api.thenewsapi.com/v1/news/all"
+params = {"api_token": "<b>{YOUR API TOKEN}</b>",
+          "language": "en",
+          "published_on": "2021-01-06",
+          "categories": "politics"}
+res = requests.get(url=url, params=params)
+data = res.json()
+data = data["data"]
+for item in data:
+    print(item["source"], "\t", item["title"])</pre></div>
+        <div class="grid-item"><br><br><br><br><br><br>
+            cnbc.com 	 Control of Senate allows Democrats to act on Biden's climate change agenda
+            <br>cnbc.com 	 Control of the Senate gives Democrats chance to act on judges, $2,000 checks, and ambitious Biden agenda
+            <br>cnbc.com 	 Airlines move flight crews to D.C. airport hotels to avoid Trump protest</div>
+    </div>
+    <p>
+        As per usual, we use Python's requests library. The URL is our endpoint. We have four
+        parameters. As per the <a href="https://www.thenewsapi.com/documentation">documentation</a>
+        of The News API, we must include an API token as a parameter with our request. Each
+        unique API token is tied to pricing plans. I have not provided mine here - you will
+        need to sign up and request your own. I have limited the language of the results
+        returned to English; feel free to limit yours to a language you understand. I decided
+        to limit the results returned to January 6th and the category to politics. The free
+        tier returns three results per API call. I looped through the data to return the source
+        and title of each article. The three articles are from CNBC.
+    </p>
+
     <h1>Exercises</h1>
     <h2>Lesson 41 Solution</h2>
     <ol>
@@ -146,8 +184,13 @@ print(data["pokemon_species"].__len__())</pre></div>
     </div>
     <h2>Lesson 42 Assignment</h2>
     <p>
-        Let's build upon today's code snippets from above.
+        Let's build upon today's code snippets from above. I am going to assume you have
+        signed up for the free tier for this assignment. See how many of these you can find.
     </p>
+    <ol>
+        <li>List three food articles in the English language which mention chicken in August 2022.</li>
+        <li>List three travel articles in the English language which mention Spain in June 2023.</li>
+    </ol>
 
 </main>
 
