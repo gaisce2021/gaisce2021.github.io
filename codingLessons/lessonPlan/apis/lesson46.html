@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Analysis III</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -83,22 +83,198 @@
             <a href="../apis/lesson40.html">Lesson 40 - Getting Started</a>
             <a href="../apis/lesson41.html">Lesson 41 - Requests I</a>
             <a href="../apis/lesson42.html">Lesson 42 - Requests II</a>
-            <a href="../apis/lesson43.html">Lesson 43</a>
-            <a href="../apis/lesson44.html">Lesson 44</a>
-            <a href="../apis/lesson45.html">Lesson 45</a>
-            <a href="../apis/lesson46.html">Lesson 46</a>
-            <a href="../apis/lesson47.html">Lesson 47</a>
+            <a href="../apis/lesson43.html">Lesson 43 - Requests III</a>
+            <a href="../apis/lesson44.html">Lesson 44 - Analysis I</a>
+            <a href="../apis/lesson45.html">Lesson 45 - Analysis II</a>
+            <a href="../apis/lesson46.html">Lesson 46 - Analysis III</a>
+            <a href="../apis/lesson47.html">Lesson 47 - Analysis IV</a>
             <a href="../apis/lesson48.html">Lesson 48</a>
             <a href="../apis/lesson49.html">Lesson 49</a>
             <a href="../apis/lesson50.html">Lesson 50</a>
             <a href="../apis/lesson51.html">Lesson 51</a>
-            <a href="../apis/lesson52.html">Lesson 52</a>
+            <a href="../apis/lesson52.html">Lesson 52 - Wrapping Up</a>
         </div>
     </div>
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>Will other lessons be as difficult?</h2>
+    <p>
+        You should find other lessons on here easier. That one was probably the toughest one
+        if you're not mathematically inclined. On the flip side, there may be some students
+        that absolutely loved what we covered. In that case, keep an eye out for the very
+        last lesson when I discuss where you can go next after this course finishes up.
+    </p>
 
+    <h2>Are we starting graphing this week?</h2>
+    <p>
+        We are, we will be looking at a library called Matplotlib this week. This is a fairly
+        popular Python library among data scientists. This will allow you visualise what we
+        have looked at the past fortnight and get a better understanding of what we're working
+        with. Diagrams are incredible for aiding intuition.
+    </p>
+
+    <h2>What graphs can I create with Matplotlib?</h2>
+    <p>
+        We will mainly focus on scatter plots and line plots here. You can also create other
+        graphs like bar charts, stack plots, histograms, pie charts and even 3D graphs. If
+        you can think of data suitable for the other types of graphs then check out the
+        documentation <a href="https://matplotlib.org/stable/plot_types/index">here</a>.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Let's dive right in and look at an example. We will import the library and use
+        some of its functions in conjunction with NumPy to create some easy plots. As always,
+        there will be a paragraph below explaining what each function does.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(2, 8, 3)
+y = 2*x
+
+fig, ax = plt.subplots()
+
+ax.plot(x, y)
+
+ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
+       ylim=(0, 20), yticks=np.arange(1, 20))
+
+plt.show()</pre></div>
+        <div class="grid-item">
+            <img src="../../images/lesson46graph.png"
+                 alt="A blue straight blue line trending upwards on a white graph"
+                 height="360" width="auto"
+            />
+        </div>
+    </div>
+
+    <p>
+        Let's take a good look at this code and see how it produces a graph. The start of the
+        code imports relevant libraries. We have both an x-axis and a y-axis on this graph.
+        The x values we want to plot are 2, 5 and 8. The y values we want to plot are double
+        the x values; these are 4, 10 and 18. The next few lines create the actual plot
+        rather than supplying data. Creating subplots is a more conventional feature when you
+        have more than one plot you wish to show. The next line plots x and y as a line plot.
+        We have two lines together which set the axes. The limits will show us how large/small
+        both axes are. The ticks will display markers on the axes. They show numbers from 1 to
+        8 on the x-axis and 1 up to 20 on the y-axis. The last line will show our plot.
+    </p>
+
+    <p>
+        Let's look at a more complicated graph. I will take x<sup>2</sup>, differentiate it
+        which gives us 2x, and plot the min point. The graph will have a title, the axes will
+        be titled. There will be a legend in the corner and min point will be labelled.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>import numpy as np
+import matplotlib.pyplot as plt
+from sympy import *
+
+x = symbols('x')
+y = x**2
+y_prime = diff(y, x)
+
+f = lambdify(x, y, 'numpy')
+f_prime = lambdify(x, y_prime, 'numpy')
+
+x_values = np.linspace(-10, 10, 400)
+
+y_values = f(x_values)
+y_prime_values = f_prime(x_values)
+
+min_point = (0, f(0))
+
+plt.figure(figsize=(8, 6))
+plt.plot(x_values, y_values,
+            label='f(x) = x^2')
+plt.plot(x_values, y_prime_values,
+            label="f'(x) = 2x")
+plt.plot(*min_point, 'ro')
+plt.text(min_point[0], min_point[1],
+            'Min', fontsize=12, ha='right')
+plt.legend()
+plt.grid(True)
+plt.title('Plot of X squared and its derivative')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+</pre></div>
+        <div class="grid-item">
+            <br>
+            <img src="../../images/lesson46graph2.png"
+                 alt="X squared, 2x and (0, 0) all on one graph"
+                 height="360" width="auto"
+            />
+        </div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 45 Solution</h2>
+    <p>
+        You're probably not alone if you found the maths of this lesson tricky. Here's a
+        review of last week's assignment. Well done to you if you managed to figure out how
+        to get the bonus questions working!
+    </p>
+    <ol>
+        <li><b>Differentiate x<sup>2</sup> + 5.</b></li>
+        <li><b>Print the function returned from differentiating x<sup>2</sup> + 5.</b></li>
+        <li><b>Pass in 3 as a parameter to this function.</b></li>
+        <li><b>Bonus: Pass in 3, 6, 9 as parameters into this function in one line.</b></li>
+        <li><b>Integrate x + 5. Assume there is no constant of integration here (c = 0).</b></li>
+        <li><b>Print the function returned from integrating x + 5.</b></li>
+        <li><b>Pass in 4 as a parameter to this function.</b></li>
+        <li><b>Bonus: Pass in 2, 4, 6 as parameters into this function in one line.</b></li>
+    </ol>
+    <div class="example">
+        <div class="grid-item"><pre>from sympy import *
+import numpy as np
+x = Symbol('x')
+y = x**2 + 5
+yprime = y.diff(x)
+print(yprime)
+f = lambdify(x, yprime, 'numpy')
+print(f(3))
+three_array = np.array([3, 6, 9])
+print(f(three_array))
+
+yprime = x + 5
+c = 0
+y = integrate(yprime, x) + c
+print(y)
+f = lambdify(x, y, 'numpy')
+print(f(4))
+parameter_array = np.array([2, 4, 6])
+print(f(parameter_array))</pre></div>
+        <div class="grid-item"><br><br><br><br><br><br>
+            2*x<br><br>
+            6<br><br>
+            [ 6 12 18]<br><br><br><br><br>
+            x**2/2 + 5*x<br><br>
+            28.0<br><br>
+            [12. 28. 48.]<br></div>
+    </div>
+
+    <h2>Lesson 46 Assignment</h2>
+    <p>
+        We will look at creating graphs as our homework this week. We won't look at anything
+        as complicated as the second example from today. Follow the steps below and see what
+        you can come up with. Remember that you may need to look at documentation to complete
+        the assignment. This is very common in the world of work as well as any college level
+        work you will complete.
+    </p>
+    <ol>
+        <li>Create a number of x values using the linspace function.</li>
+        <li>Create a function y = sin x.</li>
+        <li>Lambdify your function.</li>
+        <li>Plot this in the colour yellow.</li>
+        <li>Find the minimum and maximum points on this graph. (Hint: Differentiate y)</li>
+        <li>Plot these using a purple triangle for each point.</li>
+        <li>Add a title to this graph.</li>
+    </ol>
 </main>
 
 <footer>
