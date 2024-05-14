@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Requests III</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -83,7 +83,7 @@
             <a href="../apis/lesson40.html">Lesson 40 - Getting Started</a>
             <a href="../apis/lesson41.html">Lesson 41 - Requests I</a>
             <a href="../apis/lesson42.html">Lesson 42 - Requests II</a>
-            <a href="../apis/lesson43.html">Lesson 43</a>
+            <a href="../apis/lesson43.html">Lesson 43 - Requests III</a>
             <a href="../apis/lesson44.html">Lesson 44</a>
             <a href="../apis/lesson45.html">Lesson 45</a>
             <a href="../apis/lesson46.html">Lesson 46</a>
@@ -98,7 +98,121 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What would I use news data for?</h2>
+    <p>
+        News articles are very popular in areas like data science and artificial intelligence.
+        People will take thousands of news articles and examine them. They may try to predict
+        which word comes next - an Irish article that mentions "Leo" will often have the word
+        "Varadkar" immediately following it. News data can also be sentiment analysis - do
+        certain outlets often write more positive or negative pieces about particular politicians
+        like Joe Biden or Donald Trump in the US? You can also look at clusters of data.
+        Articles which talk about measles will be clustered together as they are more similar.
+        Articles which talk about polio will be clustered together as they are more similar.
+        You may notice a cluster between the polio and measles cluster which mention vaccines
+        as you can be vaccinated against both conditions.
+    </p>
 
+    <h2>Where can I find other APIs for my own personal projects?</h2>
+    <p>
+        If you follow the link <a href="https://rapidapi.com/collection/list-of-python-apis">
+        here</a> you will find a number of APIs which you can use in Python. You can work on
+        projects related to passions such as sports, games, movies and various fandoms. You
+        can also find APIs relating to news, weather and geospatial data to make informative
+        apps. Using either one can be a great experience when trying to build up a personal
+        portfolio.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Let's take a break from looking and new APIs and talk through other requests we
+        can make with Python's <i>requests</i> library.
+    </p>
+    <ul>
+        <li>
+            <b>GET</b> - You should be very familiar with get requests at this point. This
+            request will allow you to get information from a server when you use the correct
+            endpoint. We have used this to retrieve news headlines and information about
+            different Pokémon.
+        </li>
+        <li>
+            <b>POST</b> - This is probably the next most common request after sending a
+            get request to a server. This type of request is used to send data to the server.
+            The data is included in the body of the request. This might be used when
+            you’re submitting a form on a website. I have personally used this command before
+            when sending messages into a Slack channel using Slack API. You will need to include
+            some type of message within the body which is posted to the server.
+        </li>
+        <li>
+            <b>PUT</b> - This type of request is used to update existing data on the server.
+            Like a post request, the data is included in the body of the request. You will
+            typically need to include the ID of a previous message (or payload as it is
+            sometimes referred to as) in order to update an existing message.
+        </li>
+        <li>
+            <b>DELETE</b> - The name of this request is self-explanatory. You run this command
+            if you wish to delete data on the server. You will likely need to include an ID
+            or a specific URL to specify which message you need to delete. You should be
+            more careful using <i>put</i> and <i>delete</i> requests as you may destroy
+            existing data which your code parses through at a later point. This also highlights
+            the importance of error checking and making sure that you have written code to
+            deal with unexpected results.
+        </li>
+    </ul>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 42 Solution</h2>
+    <p>
+        Hopefully you were able to complete last week's exercises. Here are the answers and the
+        code used below. Make sure to look through the documentation and review the parameters
+        used to filter for the desired results as seen below.
+    </p>
+    <ol>
+        <li><b>List three food articles in the English language which mention chicken in August 2022.</b></li>
+        <li><b>List three travel articles in the English language which mention Spain in June 2023.</b></li>
+    </ol>
+    <div class="example">
+        <div class="grid-item"><pre>url = "https://api.thenewsapi.com/v1/news/all"
+params = {"api_token": "<b>{YOUR API TOKEN}</b>",
+          "language": "en",
+          "published_before": "2022-09-01",
+          "published_after": "2022-07-31",
+          "categories": "food",
+          "search": "chicken"}
+res = requests.get(url=url, params=params)
+data = res.json()
+data = data["data"]
+for item in data:
+    print(item["source"], "\t", item["title"])
+
+url = "https://api.thenewsapi.com/v1/news/all"
+params = {"api_token": "<b>{YOUR API TOKEN}</b>",
+          "language": "en",
+          "published_before": "2023-07-01",
+          "published_after": "2023-05-31",
+          "categories": "travel",
+          "search": "Spain"}
+res = requests.get(url=url, params=params)
+data = res.json()
+data = data["data"]
+for item in data:
+    print(item["source"], "\t", item["title"])</pre></div>
+        <div class="grid-item">
+            <br>foodbusinessnews.net 	 Chicken fueling meat snack innovation
+            <br>italianfoodforever.com 	 Chicken Breasts With Avocado & Tomato Salsa
+            <br>foodbusinessnews.net 	 Turnaround in chicken business boosts Tyson
+            <br><br><br><br><br><br><br>
+            <br>rove.me 	 Festival de Jazz de Vitoria-Gasteiz 2023 in Spain
+            <br>bangkokglutton.com 	 Glutton Onboard: Into the Mediterranean
+            <br>myfrenchlife.org 	 A little place almost no one's heard of</div>
+    </div>
+
+    <h2>Lesson 43 Assignment</h2>
+    <p>
+        We will be moving from requests onto new libraries next week. We will look at other
+        commonly used Python libraries and work on some cool projects there. Take a bit of a
+        break to relax or review the requests library this week.
+    </p>
 </main>
 
 <footer>

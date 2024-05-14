@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 42 draft">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 42 goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson42.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson42.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson43.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson43.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +222,7 @@
       <workItem from="1693333308498" duration="19365000" />
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
-      <workItem from="1715519755577" duration="13176000" />
+      <workItem from="1715519755577" duration="19759000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -320,14 +321,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00026" summary="&quot;About me&quot; page links fixed">
-      <option name="closed" value="true" />
-      <created>1690226660424</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1690226660424</updated>
     </task>
     <task id="LOCAL-00027" summary="&quot;About me&quot; page links fixed (again)">
       <option name="closed" value="true" />
@@ -601,7 +594,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715541816073</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Lesson 42 goes live">
+      <option name="closed" value="true" />
+      <created>1715606172135</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1715606172135</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +632,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 31 draft" />
     <MESSAGE value="Lesson 31 goes live" />
     <MESSAGE value="Lesson 31 amendment" />
     <MESSAGE value="Lesson 32 goes live" />
@@ -656,6 +656,7 @@
     <MESSAGE value="Lesson 41 goes live" />
     <MESSAGE value="Nav bar update" />
     <MESSAGE value="Lesson 42 draft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 42 draft" />
+    <MESSAGE value="Lesson 42 goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 42 goes live" />
   </component>
 </project>
