@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Analysis I</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -83,8 +83,8 @@
             <a href="../apis/lesson40.html">Lesson 40 - Getting Started</a>
             <a href="../apis/lesson41.html">Lesson 41 - Requests I</a>
             <a href="../apis/lesson42.html">Lesson 42 - Requests II</a>
-            <a href="../apis/lesson43.html">Lesson 43</a>
-            <a href="../apis/lesson44.html">Lesson 44</a>
+            <a href="../apis/lesson43.html">Lesson 43 - Requests III</a>
+            <a href="../apis/lesson44.html">Lesson 44 - Analysis I</a>
             <a href="../apis/lesson45.html">Lesson 45</a>
             <a href="../apis/lesson46.html">Lesson 46</a>
             <a href="../apis/lesson47.html">Lesson 47</a>
@@ -98,6 +98,125 @@
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What libraries are we looking at outside of requests?</h2>
+    <p>
+        Today we will look some more mathematical libraries. Don't feel put off if you
+        don't like numbers and calculations. Once you have a general understanding then you
+        shouldn't have any major issues. One of the great things about programming is that
+        you can write code to complete problems for you. Code should be generalised enough
+        to complete many mathematical problems.
+    </p>
+
+    <h2>Where can I look to brush up on my numeric skills before starting the lesson?</h2>
+    <p>
+        Please don't be nervous, we'll go through everything in a step by step manner. We'll
+        start with basic arithmetic before building up to more complicated. If you have a half
+        decent education then you shouldn't struggle with this set of lessons. If you have not
+        worked with any type of numeric values in a while then you could revisit
+        <a href="../programmingBasics/lesson5.html">lesson 5</a> and the assignment solution
+        at the end of <a href="../programmingBasics/lesson6.html">lesson 6</a>. NumPy uses
+        integers and floats at different points.
+    </p>
+
+    <h2>What library are we going to focus on today?</h2>
+    <p>
+        Today we will focus on getting to grips with the NumPy library. NumPy is short for
+        <i>numerical Python</i>. While you can look at complicated calculations involving
+        linear algebra or Fourier transforms; we will not approach this as it would be
+        college level maths and too difficult for the average person. We will use it to do
+        some more basic primary and secondary school level calculations. The average teenager
+        should have a reasonable understanding of the calculations we will complete.
+    </p>
+
+    <h2>Where can I find the documentation of NumPy?</h2>
+    <p>
+        If you prefer to read through the documentation before continuing with this lesson
+        then by all means feel free to click <a href="https://numpy.org/doc/stable/">here</a>.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Before you follow the code below, make sure you have installed NumPy. As we have looked
+        at standard Python arrays before, we will take a look at NumPy's arrays here and talk
+        through what the library is doing.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>import numpy as np
+
+sample_array = [1, 2, 3]
+numpy_array = np.array(sample_array)
+print(sample_array)
+print(numpy_array)
+print(type(sample_array))
+print(type(numpy_array))</pre></div>
+        <div class="grid-item"><br><br><br><br><br>
+            [1, 2, 3]<br>
+            [1 2 3]<br>
+            list<br>
+            numpy.ndarray</div>
+    </div>
+    <p>
+        We need to import the library before using it. We usually import it as np, so it is
+        quicker to write code; this is convention for programmers using NumPy. We create a
+        standard Python array which we worked with in the first block of lessons. We can
+        convert this to a NumPy array. We then print both arrays and look at a comparison. The
+        Python array separates its values with commas; the NumPy array does not. We then
+        confirm that they are different types.
+    </p>
+
+    <p>
+        Now that we know what you can do arrays, let's have some fun. What other in built
+        functions can we use from NumPy that would be quicker than their Python alternative?
+        You will find that it is easier to create certain types of arrays in NumPy and creating
+        a similar type of array in Python will crash your code.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>print([i for i in range(0, 10, 1)])
+print(np.arange(10))
+print(np.arange(0, 1, 0.1))
+print(np.linspace(0, 10, 5))</pre></div>
+        <div class="grid-item"><br>
+            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
+            [0 1 2 3 4 5 6 7 8 9]<br>
+            [0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9]<br>
+            [ 0.   2.5  5.   7.5 10. ]</div>
+    </div>
+    <p>
+        We will look at the first two lines first. The Python array uses a list comprehension.
+        It uses the range function to list all numbers from 0 to 9 inclusive. The second line,
+        a NumPy array produces the same numbers. Now let's look at the output of line 3. We
+        count up in increments of 0.1. If you try to run
+        <i>print([i for i in range(0, 1, 0.1)])</i> which is a standard Python array, this
+        will crash your code. The last line uses the <i>linspace</i> function. It takes a
+        starting number, a stopping number and a third number as a parameter. The third number
+        determines how many equal slices you will cut the two equal numbers into.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 44 Assignment</h2>
+    <p>
+        Now that we have had a brief overview of the NumPy library, you should take a look at
+        documentation and other online resources to complete the tasks below.
+    </p>
+    <ol>
+        <li>
+            Create a list that begins with 2, ends with 8 and includes the number which falls
+            exactly in between both of them.
+        </li>
+        <li>
+            Create a list with the numbers 2, 4, 6, 8 and convert it into a NumPy array.
+        </li>
+        <li>
+            Create a copy of it and save it as a new variable.
+        </li>
+        <li>
+            Increment each element in the second array by two.
+        </li>
+        <li>
+            Print both lists to confirm the difference in the numbers.
+        </li>
+    </ol>
 
 </main>
 
