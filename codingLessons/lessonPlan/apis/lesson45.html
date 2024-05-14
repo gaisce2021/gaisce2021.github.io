@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Analysis II</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -83,22 +83,158 @@
             <a href="../apis/lesson40.html">Lesson 40 - Getting Started</a>
             <a href="../apis/lesson41.html">Lesson 41 - Requests I</a>
             <a href="../apis/lesson42.html">Lesson 42 - Requests II</a>
-            <a href="../apis/lesson43.html">Lesson 43</a>
-            <a href="../apis/lesson44.html">Lesson 44</a>
-            <a href="../apis/lesson45.html">Lesson 45</a>
-            <a href="../apis/lesson46.html">Lesson 46</a>
-            <a href="../apis/lesson47.html">Lesson 47</a>
+            <a href="../apis/lesson43.html">Lesson 43 - Requests III</a>
+            <a href="../apis/lesson44.html">Lesson 44 - Analysis I</a>
+            <a href="../apis/lesson45.html">Lesson 45 - Analysis II</a>
+            <a href="../apis/lesson46.html">Lesson 46 - Analysis III</a>
+            <a href="../apis/lesson47.html">Lesson 47 - Analysis IV</a>
             <a href="../apis/lesson48.html">Lesson 48</a>
             <a href="../apis/lesson49.html">Lesson 49</a>
             <a href="../apis/lesson50.html">Lesson 50</a>
             <a href="../apis/lesson51.html">Lesson 51</a>
-            <a href="../apis/lesson52.html">Lesson 52</a>
+            <a href="../apis/lesson52.html">Lesson 52 - Wrapping Up</a>
         </div>
     </div>
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>When would I use NumPy in practice?</h2>
+    <p>
+        NumPy is an extremely useful library when working in areas like data science or
+        using mathematical software. You can simulate experiments with random number
+        generation. You can also use other libraries to graph your NumPy arrays.
+    </p>
 
+    <h2>Will we look at graphing in this course?</h2>
+    <p>
+        We will spend a little bit of time looking at creating simple graphs. You can use
+        them to show points and lines on a graph. We will more than likely start looking at
+        graphing arrays next week.
+    </p>
+
+    <h2>What are we covering this week?</h2>
+    <p>
+        Today is the difficult lesson! We are going to look at Sympy. This library is used for
+        calculations. We will use both NumPy and Sympy to work with numbers and create
+        mathematical functions. We will touch on calculus within this lesson. If you feel
+        uncomfortable with what we're doing then just try your best. If this section is
+        difficult for you please just remember what you've already learned and what you can
+        accomplish.
+    </p>
+
+    <h2>I am a student who has not studied calculus? What do I do?</h2>
+    <p>
+        You may wish to independently get an overview of the subject and return here. If you
+        are uncomfortable even with basic algebra, you are better off waiting until you have
+        progressed further in school. Then you can return here and attempt this lesson once you
+        understand the theoretical side of what we are covering.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Calculus typically involves differentiation and integration. We will start by looking
+        at an example of differentiation as this is usually taught to students first in school.
+        Read through the example below and the code output. After that I'll provide a little
+        paragraph explaining it for you.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>from sympy import *
+x = Symbol('x')
+y = x**2 + 1
+yprime = y.diff(x)
+print(yprime)
+f = lambdify(x, yprime, 'numpy')
+print(f(2))</pre></div>
+        <div class="grid-item"><br><br><br><br><br>
+            2*x<br><br>
+            4</div>
+    </div>
+    <p>
+        The first line imports everything within the Sympy library. We designate the letter X
+        as a mathematical symbol and save that as a variable. We create a variable called y
+        and assign its value as being a mathematical equation. This equation is x<sup>2</sup>
+        + 1. We create a variable called yprime. This is the result of differentiation the
+        function y. This function is differentiated using a special Sympy function. We print
+        the differentiated function which is 2x. We then use lambdify function which can be
+        used to calculate numerical values quickly. Our variable is x, the function is yprime
+        and the 'numpy' parameter tells the lambdify function that we want to use the NumPy
+        library. We then run <i>print(f(2))</i> which substitutes in x=2 and gives us an output
+        of 2*2 which is 4.
+    </p>
+
+    <p>
+        Let's try integrating 2x and getting x<sup>2</sup> + 1. Remember we need a constant of
+        integration, denoted as C, to get that + 1 at the end of our equation. The code here
+        should be self-explanatory as integration is the reverse process of differentiation.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>from sympy import *
+x = symbols('x')
+yprime = 2*x
+c = 1
+y = integrate(yprime, x) + c
+print(y)
+f = lambdify(x, y, 'numpy')
+print(f(2))</pre></div>
+        <div class="grid-item"><br><br><br><br><br><br>
+            x**2 + 1<br><br>
+            5</div>
+    </div>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 44 Solution</h2>
+    <p>
+        Some of this assignment drew on the code examples from last week. Other questions will
+        have been a little trickier if you hasn't looked at the documentation.
+    </p>
+    <ol>
+        <li><b>
+            Create a list that begins with 2, ends with 8 and includes the number which falls
+            exactly in between both of them.
+        </b></li>
+        <li><b>
+            Create a list with the numbers 2, 4, 6, 8 and convert it into a NumPy array.
+        </b></li>
+        <li><b>
+            Create a copy of it and save it as a new variable.
+        </b></li>
+        <li><b>
+            Increment each element in the second array by two.
+        </b></li>
+        <li><b>
+            Print both lists to confirm the difference in the numbers.
+        </b></li>
+    </ol>
+    <div class="example">
+        <div class="grid-item"><pre>print(np.linspace(2, 8, 3))
+a = [2, 4, 6, 8]
+a = np.array(a)
+b = a.copy()
+b += 2
+print(a)
+print(b)</pre></div>
+        <div class="grid-item"><br>
+            [2. 5. 8.]<br><br><br><br><br>
+            [2 4 6 8]<br>
+            [ 4  6  8 10]</div>
+    </div>
+
+    <h2>Lesson 45 Assignment</h2>
+    <p>
+        We're going to do some work with the new library we've introduced today. Don't worry if
+        you don't understand what to do as there will be a solution provided next week.
+    </p>
+    <ol>
+        <li>Differentiate x<sup>2</sup> + 5.</li>
+        <li>Print the function returned from differentiating x<sup>2</sup> + 5.</li>
+        <li>Pass in 3 as a parameter to this function.</li>
+        <li>Bonus: Pass in 3, 6, 9 as parameters into this function in one line.</li>
+        <li>Integrate x + 5. Assume there is no constant of integration here (c = 0).</li>
+        <li>Print the function returned from integrating x + 5.</li>
+        <li>Pass in 4 as a parameter to this function.</li>
+        <li>Bonus: Pass in 2, 4, 6 as parameters into this function in one line.</li>
+    </ol>
 </main>
 
 <footer>
