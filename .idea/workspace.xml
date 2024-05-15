@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 46 goes live">
-      <change afterPath="$PROJECT_DIR$/codingLessons/images/lesson46solution.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson47.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson47.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
-    </list>
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Block 3 nav bar update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +218,7 @@
       <workItem from="1693333308498" duration="19365000" />
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
-      <workItem from="1715519755577" duration="37075000" />
+      <workItem from="1715519755577" duration="37419000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -322,38 +317,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Lesson 31 draft">
-      <option name="closed" value="true" />
-      <created>1692389588430</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1692389588430</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Lesson 31 goes live">
-      <option name="closed" value="true" />
-      <created>1692829178131</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1692829178131</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Lesson 31 amendment">
-      <option name="closed" value="true" />
-      <created>1693078247426</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1693078247426</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Lesson 32 goes live">
-      <option name="closed" value="true" />
-      <created>1693082348184</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1693082348184</updated>
     </task>
     <task id="LOCAL-00039" summary="Data structure nav bar update">
       <option name="closed" value="true" />
@@ -603,7 +566,39 @@
       <option name="project" value="LOCAL" />
       <updated>1715710737964</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Lesson 47 goes live">
+      <option name="closed" value="true" />
+      <created>1715785347601</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785347602</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Block 1 nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785425752</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785425752</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Block 2 nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785497225</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785497225</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Block 3 nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785571687</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785571687</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,10 +628,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 33 goes live" />
-    <MESSAGE value="Lesson 33 solutions" />
-    <MESSAGE value="Lesson 34 goes live" />
-    <MESSAGE value="Lesson 35 goes live" />
     <MESSAGE value="Lesson 36 goes live" />
     <MESSAGE value="Lesson 38 goes live" />
     <MESSAGE value="Lesson 39 goes live" />
@@ -658,6 +649,10 @@
     <MESSAGE value="Lesson 45 goes live" />
     <MESSAGE value="Lesson 46 graphs uploaded" />
     <MESSAGE value="Lesson 46 goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 46 goes live" />
+    <MESSAGE value="Lesson 47 goes live" />
+    <MESSAGE value="Block 1 nav bar update" />
+    <MESSAGE value="Block 2 nav bar update" />
+    <MESSAGE value="Block 3 nav bar update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Block 3 nav bar update" />
   </component>
 </project>
