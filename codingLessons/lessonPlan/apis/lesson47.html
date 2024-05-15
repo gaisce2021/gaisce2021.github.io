@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Analysis IV</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -83,22 +83,180 @@
             <a href="../apis/lesson40.html">Lesson 40 - Getting Started</a>
             <a href="../apis/lesson41.html">Lesson 41 - Requests I</a>
             <a href="../apis/lesson42.html">Lesson 42 - Requests II</a>
-            <a href="../apis/lesson43.html">Lesson 43</a>
-            <a href="../apis/lesson44.html">Lesson 44</a>
-            <a href="../apis/lesson45.html">Lesson 45</a>
-            <a href="../apis/lesson46.html">Lesson 46</a>
-            <a href="../apis/lesson47.html">Lesson 47</a>
+            <a href="../apis/lesson43.html">Lesson 43 - Requests III</a>
+            <a href="../apis/lesson44.html">Lesson 44 - Analysis I</a>
+            <a href="../apis/lesson45.html">Lesson 45 - Analysis II</a>
+            <a href="../apis/lesson46.html">Lesson 46 - Analysis III</a>
+            <a href="../apis/lesson47.html">Lesson 47 - Analysis IV</a>
             <a href="../apis/lesson48.html">Lesson 48</a>
             <a href="../apis/lesson49.html">Lesson 49</a>
             <a href="../apis/lesson50.html">Lesson 50</a>
             <a href="../apis/lesson51.html">Lesson 51</a>
-            <a href="../apis/lesson52.html">Lesson 52</a>
+            <a href="../apis/lesson52.html">Lesson 52 - Wrapping Up</a>
         </div>
     </div>
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>Is this the last lesson using maths?</h2>
+    <p>
+        We will be finished with the more analytical side of the course today. If you're
+        struggling with this part of the course then you may feel delighted reading that.
+    </p>
+    <h2>What will we look at today?</h2>
+    <p>
+        We are going to look at some more plots today. Hopefully you found last week's
+        assignment manageable; you should breeze through today's content.
+    </p>
 
+    <h1>Code Examples</h1>
+    <p>
+        This will be a more low/no code lesson looking through documentation we can use from
+        the three libraries we have looked at. This will cover some of the main/most popular
+        functions in the three libraries of this section. You may wish to cover these within
+        your own personal projects.
+    </p>
+    <h2>NumPy</h2>
+    <ul>
+        <li>
+            <b>numpy.sum</b> - This function returns the sum of an array of elements.
+        </li>
+        <li>
+            <b>numpy.sqrt</b> - This function returns the square-root of a single number. It
+            also returns the square-root of an array element wise; this will return [2, 3] if
+            the array you use as an input is [4, 9].
+        </li>
+        <li>
+            <b>numpy.dot</b> - This function returns the dot product of two arrays. Finding the
+            dot product of [4, 9] and [1, 2] will give you (4*1) + (9*2) = 4 + 18 = 22 which is
+            a single number. For 2D vectors, it is equivalent to matrix multiplication. The
+            output of this command will give you a matrix. For the sake of those who have not
+            studied linear algebra, I will not go into more detail here.
+        </li>
+        <li>
+            <b>numpy.pi</b> - This is the constant pi. You may wish to use this in calculations
+            relating to the area or a circle or the volume of a cylinder.
+        </li>
+    </ul>
+
+    <h2>Sympy</h2>
+    <ul>
+        <li>
+            <b>sympy.diff</b> - This function should look familiar. It is used to calculate
+            the derivative of an expression. Did you know that we can differentiate more than
+            once in one go? If we have look at x<sup>3</sup> and differentiate it thrice we
+            will end up with 6. This is because x<sup>3</sup> will become 3x<sup>2</sup> when
+            differentiated once, which becomes 6x when differentiated twice and finally plain
+            old 6 when differentiated again. Don't believe me? Try running
+            <i>print(diff(x**3, x, 3))</i> and see the result for yourself.
+        </li>
+        <li>
+            <b>sympy.integrate</b> - We have also looked at integrals before. Did you know we
+            can evaluate an integral from here? We enter our equation, the variable we wish to
+            integrate the equation with respect to, as well as the limits within brackets.
+            Try running <i>print(integrate(cos(x), (x, 0, 1)))</i>. A cosine function will
+            return a sine function when you integrate it. We use 0 and 1 as the limits here
+            and this will return sin(1) when we evaluate it.
+        </li>
+        <li>
+            <b>sympy.simplify</b> - This function is used to simplify an expression as the
+            name might suggest. If you add a line <i>equation = 2*x + 5*x</i> and then run
+            the simplify command, the expression will change from 2x + 5x to 7x which is more
+            readable.
+        </li>
+    </ul>
+    <h2>Matplotlib</h2>
+    <p>
+        <b>Colours</b> make a graph pop and display some information quickly and easily. The
+        Matplotlib library allows you to use more basic inbuilt colours as well as more
+        specific CSS colours. We will look at the basic colours here.
+    </p>
+    <ul>
+        <li><b>b</b> - Blue</li>
+        <li><b>g</b> - Green</li>
+        <li><b>r</b> - Red</li>
+        <li><b>c</b> - Cyan</li>
+        <li><b>m</b> - Magenta</li>
+        <li><b>y</b> - Yellow</li>
+        <li><b>k</b> - Black</li>
+        <li><b>w</b> - White</li>
+    </ul>
+    <p>
+        <b>Shapes</b> are another way of making a scatter plot pop. We've already added
+        triangles to one graph. Let's see what we can add to line and scatter plots to make
+        one point of information stand out. We will look at a subset of shapes but you
+        can find the full list
+        <a href="https://matplotlib.org/stable/api/markers_api.html">here</a>.
+    </p>
+    <ul>
+        <li><b>.</b> - point</li>
+        <li><b>o</b> - circle</li>
+        <li><b>^</b> - triangle</li>
+        <li><b>*</b> - star</li>
+        <li><b>s</b> - square</li>
+    </ul>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 46 Solution</h2>
+    <ol>
+        <li><b>Create a number of x values using the linspace function.</b></li>
+        <li><b>Create a function y = sin x.</b></li>
+        <li><b>Lambdify your function.</b></li>
+        <li><b>Plot this in the colour yellow.</b></li>
+        <li><b>Find the minimum and maximum points on this graph. (Hint: Differentiate y)</b></li>
+        <li><b>Plot these using a purple triangle for each point.</b></li>
+        <li><b>Add a title to this graph.</b></li>
+    </ol>
+    <div class="example">
+        <div class="grid-item"><pre>import numpy as np
+import matplotlib.pyplot as plt
+from sympy import *
+
+x = symbols('x')
+y = sin(x)
+y_prime = diff(y, x)
+
+f = lambdify(x, y, modules='numpy')
+f_prime = lambdify(x, y_prime, modules='numpy')
+
+x_values = np.linspace(-2 * np.pi, 2 * np.pi, 400)
+y_values = f(x_values)
+
+max_points_x = [float(x_val)
+            for x_val in solve(y_prime, x)]
+max_points_y = [f(x_val)
+            for x_val in max_points_x]
+
+plt.plot(x_values, y_values,
+            color='yellow', label='f(x) = sin(x)')
+plt.plot(max_points_x, max_points_y,
+            marker='^', color='purple',
+            linestyle='None', label='Max Points')
+
+plt.title('Plot of f(x) = sin(x) and its maximum points')
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.legend()
+plt.grid(True)
+
+plt.show()
+</pre></div>
+        <div class="grid-item">
+            <img src="../../images/lesson46solution.png"
+                 alt="A blue straight blue line trending upwards on a white graph"
+                 height="360" width="auto"
+            />
+        </div>
+    </div>
+
+    <h2>Lesson 47 Assignment</h2>
+    <p>
+        As we are finished looking at numerical analysis, we are taking a small break from
+        homework. The last few weeks have probably been somewhat intense for you so feel free
+        to relax and come back for more next week.
+    </p>
 </main>
 
 <footer>
