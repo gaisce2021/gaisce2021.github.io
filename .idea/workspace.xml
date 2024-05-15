@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 42 goes live">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 46 goes live">
+      <change afterPath="$PROJECT_DIR$/codingLessons/images/lesson46solution.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson43.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson43.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson47.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson47.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +223,7 @@
       <workItem from="1693333308498" duration="19365000" />
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
-      <workItem from="1715519755577" duration="19759000" />
+      <workItem from="1715519755577" duration="37075000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -321,70 +322,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00027" summary="&quot;About me&quot; page links fixed (again)">
-      <option name="closed" value="true" />
-      <created>1690226969638</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1690226969638</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Workspace commit">
-      <option name="closed" value="true" />
-      <created>1691768750400</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1691768750400</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Lesson 27 goes live">
-      <option name="closed" value="true" />
-      <created>1691872520341</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1691872520341</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Lesson 28 goes live">
-      <option name="closed" value="true" />
-      <created>1691948418800</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1691948418800</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Lesson 29 goes live">
-      <option name="closed" value="true" />
-      <created>1691959884403</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1691959884404</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Lesson 30 update">
-      <option name="closed" value="true" />
-      <created>1692053586024</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1692053586024</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Lesson 30 update 2">
-      <option name="closed" value="true" />
-      <created>1692225170353</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1692225170353</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Lesson 30 goes live">
-      <option name="closed" value="true" />
-      <created>1692274319867</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1692274319867</updated>
     </task>
     <task id="LOCAL-00035" summary="Lesson 31 draft">
       <option name="closed" value="true" />
@@ -602,7 +539,71 @@
       <option name="project" value="LOCAL" />
       <updated>1715606172135</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Lesson 43 goes live">
+      <option name="closed" value="true" />
+      <created>1715690039591</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1715690039591</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Nav bar update">
+      <option name="closed" value="true" />
+      <created>1715690185299</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1715690185300</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Nav bar update">
+      <option name="closed" value="true" />
+      <created>1715690263752</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1715690263752</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Nav bar update">
+      <option name="closed" value="true" />
+      <created>1715690338394</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1715690338394</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Lesson 44 goes live">
+      <option name="closed" value="true" />
+      <created>1715696636692</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1715696636692</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Lesson 45 goes live">
+      <option name="closed" value="true" />
+      <created>1715703064026</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1715703064026</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Lesson 46 graphs uploaded">
+      <option name="closed" value="true" />
+      <created>1715709976957</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1715709976957</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Lesson 46 goes live">
+      <option name="closed" value="true" />
+      <created>1715710737964</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1715710737964</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,11 +633,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 31 goes live" />
-    <MESSAGE value="Lesson 31 amendment" />
-    <MESSAGE value="Lesson 32 goes live" />
-    <MESSAGE value="Data structure nav bar update" />
-    <MESSAGE value="Data structure footer added" />
     <MESSAGE value="Lesson 33 goes live" />
     <MESSAGE value="Lesson 33 solutions" />
     <MESSAGE value="Lesson 34 goes live" />
@@ -654,9 +650,14 @@
     <MESSAGE value="Partial lesson 40 commit" />
     <MESSAGE value="Lesson 40 goes live" />
     <MESSAGE value="Lesson 41 goes live" />
-    <MESSAGE value="Nav bar update" />
     <MESSAGE value="Lesson 42 draft" />
     <MESSAGE value="Lesson 42 goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 42 goes live" />
+    <MESSAGE value="Lesson 43 goes live" />
+    <MESSAGE value="Nav bar update" />
+    <MESSAGE value="Lesson 44 goes live" />
+    <MESSAGE value="Lesson 45 goes live" />
+    <MESSAGE value="Lesson 46 graphs uploaded" />
+    <MESSAGE value="Lesson 46 goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 46 goes live" />
   </component>
 </project>
