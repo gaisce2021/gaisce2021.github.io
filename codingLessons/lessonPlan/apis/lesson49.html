@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraction</title>
+    <title>Visualisation II</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
@@ -88,17 +88,134 @@
             <a href="../apis/lesson45.html">Lesson 45 - Analysis II</a>
             <a href="../apis/lesson46.html">Lesson 46 - Analysis III</a>
             <a href="../apis/lesson47.html">Lesson 47 - Analysis IV</a>
-            <a href="../apis/lesson48.html">Lesson 48</a>
-            <a href="../apis/lesson49.html">Lesson 49</a>
-            <a href="../apis/lesson50.html">Lesson 50</a>
-            <a href="../apis/lesson51.html">Lesson 51</a>
+            <a href="../apis/lesson48.html">Lesson 48 - Visualisation I</a>
+            <a href="../apis/lesson49.html">Lesson 49 - Visualisation II</a>
+            <a href="../apis/lesson50.html">Lesson 50 - Visualisation III</a>
+            <a href="../apis/lesson51.html">Lesson 51 - Visualisation VI</a>
             <a href="../apis/lesson52.html">Lesson 52 - Wrapping Up</a>
         </div>
     </div>
 </nav>
 
 <main>
+    <h1>Questions</h1>
+    <h2>What types of diagrams can I create in Plotly?</h2>
+    <p>
+        Plotly allows you to create bar charts much like Matplotlib does. Plotly also allows
+        you to create pie charts, heatmaps, geographical maps, sunburst diagrams and Sankey
+        graphs. You have greater freedom to create other types of graphs which are not
+        available in Matplotlib.
+    </p>
 
+    <h2>Why did we spend time learning about Matplotlib if Plotly
+        has a greater variety of graphs?</h2>
+    <p>
+        Matplotlib is generally used in conjunction with mathematical software and
+        computing with more scientific libraries in Python. It is generally better for dealing
+        with something like calculus or difficult calculations which make the most sense on
+        a graph. Plotly is useful for less mathematical types of visualisations. It can display
+        data pertaining to covid cases, elections, weather on maps. I prefer using Plotly for
+        use cases when a simpler and less scientific dataset is in use rather than a heavily
+        statistical dataset. Context matters and Python absolutely has the capacity to display
+        rigorous mathematical calculations as well as visualisations about social trends and
+        survey data.
+    </p>
+
+    <h1>Code Examples</h1>
+    <p>
+        Before we can visualise any dataset, we may need to <i>cleanse</i> or <i>alter</i> the
+        data in some way. Let's discuss how and why we may need to this.
+    </p>
+    <ul>
+        <li>
+            <b>Cleansing</b> - From time to time you will need to clean up a file as part of
+            preparing your data for visualisation. It's not unusual for human error to be
+            introduced into a file you're working with. A decimal point in the wrong place or
+            a zero added to the end of an entry can very obviously skew results. A country that
+            is deemed as having 980% literacy rates more than likely should have a 98% entry in
+            that cell. This is an example of human error. <br>
+            You may have a row of user entered data which is mostly/entirely blank. This row
+            will not tell you anything and may need to be deleted from your table. I completed
+            an assignment in my final year of college where the task was to try to predict
+            your salary and determine which factors were most influential. Any entry with a
+            blank or a zero value for salary was removed before I looked more closely at the
+            data; this was because I could use that data to predict something that wasn't there.
+        </li>
+        <li>
+            <b>Altering</b> - Sometimes you may need to add a new column to a table of data. An
+            example of this is covid data. If a country like China reports 400 covid cases in a
+            single day then this is a very different matter to a country like the Vatican
+            reporting 400 covid cases in one day. You may wish to add a new column to your
+            table showing cases per capita. This is because China has a population of over a
+            billion whereas Vatican City has less than 1000 citizens.
+        </li>
+    </ul>
+    <p>
+        Please note that you should not alter the raw file. You should create a copy of the data
+        and keep the unaltered original file as well as the modified new file in the event that
+        someone else needs to use this file in the future.
+    </p>
+
+    <h1>Exercises</h1>
+    <h2>Lesson 48 Solution</h2>
+    <ol>
+        <li>
+            <b>Can you list any sources of data which you would deem as "good" for visualisation?</b>
+        </li>
+        <li>
+            <b>How can you show a trend within data by using visualisation?</b>
+        </li>
+        <li>
+            <b>What makes for a good visualisation?</b>
+        </li>
+        <li>
+            <b>Equally, how can a visualisation not serve its intended purpose?</b>
+        </li>
+        <li>
+            <b>When or why would you need to modify data before attempting to visualise it?</b>
+        </li>
+    </ol>
+    <ol>
+        <li>
+            Election data is widely available and widely reported. In Ireland, the CSO (Central
+            Statistics Office) will compile data, conduct surveys and release data about the
+            country on a regular basis.
+        </li>
+        <li>
+            A line moving upwards/downwards on a scatter plot can display a trend. Equally, a
+            box or a circle over a line graph; such as an unemployment chart during covid
+            lockdowns; can be used to highlight an anomaly. Colour can be used to highlight
+            data such as high/low test scores within a school. Size can also be used
+            effectively to demonstrate data such as litres of milk drank per year per person
+            on a country-by-country basis. This can be displayed with larger milk cartons for
+            some countries than others on a map.
+        </li>
+        <li>
+            Good visualisations are clear and concise. They portray the message they need to
+            at a glance.
+        </li>
+        <li>
+            A bad visualisation may use small and/or non-contrasting text which makes it
+            inaccessible to people with visual impairments. A bad visualisation may use
+            red-green colour combinations rendering it illegible for a colourblind person. A
+            bad visualisation may be too cluttered and obscure the message it is trying to
+            convey.
+        </li>
+        <li>
+            Look to the section above for the answer to this question.
+        </li>
+    </ol>
+
+    <h2>Lesson 49 Assignment</h2>
+    <p>
+        Now it's your turn to look at a file and see if you can improve it before we try to
+        visualise it. This file was data I found on the internet relating to the 2020 US
+        Presidential elections. We can try to clean this up or add any information to a
+        new copy of this file. You can download it from
+        <a href="../../files/usa_election.csv" download>here</a>. If you're happy with this
+        file then you may see no need to change it. If not then make sure to modify what is
+        available in such a way that you can visualise what you want with the data available.
+    </p>
 </main>
 
 <footer>
