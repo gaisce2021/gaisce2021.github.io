@@ -99,8 +99,110 @@
 
 <main>
     <h1>Questions</h1>
+    <h2>What is a CSV file?</h2>
+    <p>
+        CSV stands for <i>comma separated values</i>. Excel files can be downloaded in this
+        format. Each piece of data is separated by a comma.
+    </p>
+
+    <h2>How do I read a CSV file?</h2>
+    <p>
+        You can use the Pandas library to read in the file. I will provide the line of code
+        needed below. We can save this as a variable within our file and work with the data
+        from there.
+    </p>
+
+    <h2>Is it ok to look at a quick visualisation before modifying a file?</h2>
+    <p>
+        This can be a good way to understand what type of data we're working with. It can
+        also help you see which data is missing that you may miss when working on a CSV file.
+    </p>
+
     <h1>Code Examples</h1>
+    <p>
+        You spent last week cleaning up a file and preparing it for visualisation. Perhaps you
+        felt the data provided was sufficient, and you knew straight away what data you wanted
+        to display on a chart. Now let's use code to read the file and save it as a variable.
+    </p>
+    <div class="example">
+        <div class="grid-item"><pre>import pandas as pd
+electionData = pd.read_csv('us_2020_election.csv')
+</pre></div>
+        <div class="grid-item"></div>
+    </div>
+    <p>
+        The Pandas library is popular library for data analysis in Python. It can be used to
+        create graphs similar to Matplotlib, but we will use Plotly instead in this section. I
+        find Plotly a little bit more interactive than Pandas. You can hover over graphs and
+        this will display a label. Pandas can be fantastic for manipulating data, so we can
+        use the two libraries in conjunction.
+    </p>
+
+    <div class="example">
+        <div class="grid-item"><pre>import plotly.express as px
+import plotly.graph_objects as go</pre></div>
+        <div class="grid-item"></div>
+    </div>
+    <p>
+        Plotly offers programmers numerous graphs. Why not click
+        <a href="https://plotly.com/python/">here</a> and look at the graphs you can use? Look
+        for a graph which you think suits the election data we are focusing on and read the
+        documentation. You can copy and paste the code in their examples and rework it to
+        create a visualisation you feel happy with. You may also wish to make more than one
+        visualisation.
+    </p>
+
     <h1>Exercises</h1>
+    <h2>Lesson 49 Solution</h2>
+    <p>
+        It's very possible that you had a different solution to this exercise which might be
+        just as valid as my solution is. You may have wished to focus on one aspect of the
+        2020 election whilst working on the file. Here is my solution to the exercise from
+        last week. Click <a href="../../files/us_2020_election.csv" download>here</a> and
+        compare this to the original file.
+    </p>
+
+    <h2>Lesson 50 Solution</h2>
+    <p>
+        This week we will focus on using Plotly to visualise the CSV file. You may use my
+        version of the file. You can also use your version of the file. Take some time to
+        consider what you want to display and why. Read the tips below and see if you can
+        take some inspiration before we move on to the visualisation next week.
+    </p>
+    <ul>
+        <li>
+            What are you trying to convey?
+        </li>
+        <li>
+            Do you want to show predicted outcomes in the lead up to the 2020 election and
+            compare it to the results when voters went to the polls?
+        </li>
+        <li>
+            Do you want to show a shift from data in the 2016 election to the more recent
+            2020 election?
+        </li>
+        <li>
+            Do you want to focus on popular vote or the electoral college?
+        </li>
+        <li>
+            Can you use size, shape or colour to emphasise any data?
+        </li>
+        <li>
+            What colours make sense in the context of US elections and why?
+        </li>
+        <li>
+            Can this data be best shown using trend lines, bar charts, pie charts or a
+            geographic map?
+        </li>
+        <li>
+            How should or could you label the graph?
+        </li>
+        <li>
+            Would someone who casually follows US politics be able to understand the
+            chart you produce?
+        </li>
+    </ul>
+
 </main>
 
 <footer>
