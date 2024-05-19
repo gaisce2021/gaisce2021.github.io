@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 50 goes live">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 51 partial commit">
+      <change afterPath="$PROJECT_DIR$/codingLessons/images/lesson50solution.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" afterDir="false" />
     </list>
@@ -61,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/orlafoley/WebstormProjects/gaisce2021.github.io/codingLessons/files",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/orlafoley/WebstormProjects/gaisce2021.github.io/codingLessons/files&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/codingLessons/files" />
@@ -89,11 +90,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codingLessons/images" />
       <recent name="$PROJECT_DIR$/codingLessons/files" />
       <recent name="$PROJECT_DIR$/codingLessons/lessonPlan/apis" />
       <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\codingLessons\images" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\dataStructures" />
-      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\oop" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.lesson27.html">
@@ -222,7 +223,8 @@
       <workItem from="1693333308498" duration="19365000" />
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
-      <workItem from="1715519755577" duration="49403000" />
+      <workItem from="1715519755577" duration="49445000" />
+      <workItem from="1716121350861" duration="1593000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -321,14 +323,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Last block refactored into new folder">
-      <option name="closed" value="true" />
-      <created>1715351774398</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1715351774398</updated>
     </task>
     <task id="LOCAL-00050" summary="Final block nav bar update">
       <option name="closed" value="true" />
@@ -602,7 +596,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715962952464</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Lesson 51 partial commit">
+      <option name="closed" value="true" />
+      <created>1716070405876</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1716070405876</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +634,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final block nav bar update" />
     <MESSAGE value="First block nav bar update" />
     <MESSAGE value="Second block nav bar update" />
     <MESSAGE value="Final block footer added" />
@@ -657,6 +658,7 @@
     <MESSAGE value="Block 1 nav bar update" />
     <MESSAGE value="Index nav bar update" />
     <MESSAGE value="Lesson 50 goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 50 goes live" />
+    <MESSAGE value="Lesson 51 partial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 51 partial commit" />
   </component>
 </project>
