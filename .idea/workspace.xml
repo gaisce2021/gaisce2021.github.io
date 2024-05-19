@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 51 partial commit">
-      <change afterPath="$PROJECT_DIR$/codingLessons/images/lesson50solution.png" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 51 assignment solution added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" afterDir="false" />
     </list>
@@ -224,7 +223,7 @@
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
       <workItem from="1715519755577" duration="49445000" />
-      <workItem from="1716121350861" duration="1593000" />
+      <workItem from="1716121350861" duration="5354000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -323,14 +322,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Final block nav bar update">
-      <option name="closed" value="true" />
-      <created>1715352844383</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1715352844384</updated>
     </task>
     <task id="LOCAL-00051" summary="First block nav bar update">
       <option name="closed" value="true" />
@@ -604,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716070405876</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Lesson 51 assignment solution added">
+      <option name="closed" value="true" />
+      <created>1716123782010</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1716123782010</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +633,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="First block nav bar update" />
     <MESSAGE value="Second block nav bar update" />
     <MESSAGE value="Final block footer added" />
     <MESSAGE value="Index nav bar refactored" />
@@ -659,6 +657,7 @@
     <MESSAGE value="Index nav bar update" />
     <MESSAGE value="Lesson 50 goes live" />
     <MESSAGE value="Lesson 51 partial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 51 partial commit" />
+    <MESSAGE value="Lesson 51 assignment solution added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 51 assignment solution added" />
   </component>
 </project>
