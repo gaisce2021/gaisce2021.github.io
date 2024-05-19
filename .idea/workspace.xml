@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 51 assignment solution added">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Alt tags of images corrected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson51.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +223,7 @@
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
       <workItem from="1715519755577" duration="49445000" />
-      <workItem from="1716121350861" duration="5354000" />
+      <workItem from="1716121350861" duration="7951000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -322,22 +322,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00051" summary="First block nav bar update">
-      <option name="closed" value="true" />
-      <created>1715352941906</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1715352941906</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Second block nav bar update">
-      <option name="closed" value="true" />
-      <created>1715353022456</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1715353022456</updated>
     </task>
     <task id="LOCAL-00053" summary="Index nav bar update">
       <option name="closed" value="true" />
@@ -603,7 +587,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716123782010</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Lesson 51 goes live">
+      <option name="closed" value="true" />
+      <created>1716144004033</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1716144004033</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Alt tags of images corrected">
+      <option name="closed" value="true" />
+      <created>1716144183732</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1716144183732</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,8 +633,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Second block nav bar update" />
-    <MESSAGE value="Final block footer added" />
     <MESSAGE value="Index nav bar refactored" />
     <MESSAGE value="Partial lesson 40 commit" />
     <MESSAGE value="Lesson 40 goes live" />
@@ -658,6 +656,8 @@
     <MESSAGE value="Lesson 50 goes live" />
     <MESSAGE value="Lesson 51 partial commit" />
     <MESSAGE value="Lesson 51 assignment solution added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 51 assignment solution added" />
+    <MESSAGE value="Lesson 51 goes live" />
+    <MESSAGE value="Alt tags of images corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alt tags of images corrected" />
   </component>
 </project>
