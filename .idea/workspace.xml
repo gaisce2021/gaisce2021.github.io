@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 52 partial commit">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Lesson 52 goes live">
+      <change afterPath="$PROJECT_DIR$/portfolio/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/fonts/Raleway.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/fonts/dreamavenue.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" beforeDir="false" afterPath="$PROJECT_DIR$/codingLessons/lessonPlan/apis/lesson52.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/gold.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/silver.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,39 +68,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/orlafoley/WebstormProjects/gaisce2021.github.io/codingLessons/files&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/Users/orlafoley/WebstormProjects/gaisce2021.github.io/portfolio/fonts",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio/fonts" />
       <recent name="$PROJECT_DIR$/codingLessons/files" />
       <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\codingLessons\images" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\images" />
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio/css" />
       <recent name="$PROJECT_DIR$/codingLessons/images" />
       <recent name="$PROJECT_DIR$/codingLessons/files" />
       <recent name="$PROJECT_DIR$/codingLessons/lessonPlan/apis" />
       <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\codingLessons\images" />
-      <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\lessonPlan\dataStructures" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.lesson27.html">
@@ -223,7 +230,12 @@
       <workItem from="1714142698193" duration="11000" />
       <workItem from="1714142718250" duration="14670000" />
       <workItem from="1715519755577" duration="49445000" />
-      <workItem from="1716121350861" duration="11125000" />
+      <workItem from="1716121350861" duration="11288000" />
+      <workItem from="1718120946637" duration="954000" />
+      <workItem from="1720445083306" duration="15000" />
+      <workItem from="1720445106695" duration="6000" />
+      <workItem from="1723736120585" duration="413000" />
+      <workItem from="1723736662616" duration="2719000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -322,14 +334,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Final block footer added">
-      <option name="closed" value="true" />
-      <created>1715353328908</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1715353328908</updated>
     </task>
     <task id="LOCAL-00055" summary="Index nav bar refactored">
       <option name="closed" value="true" />
@@ -603,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716147252199</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Lesson 52 goes live">
+      <option name="closed" value="true" />
+      <created>1716225469837</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1716225469838</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Partial lesson 40 commit" />
     <MESSAGE value="Lesson 40 goes live" />
     <MESSAGE value="Lesson 41 goes live" />
     <MESSAGE value="Lesson 42 draft" />
@@ -658,6 +669,7 @@
     <MESSAGE value="Lesson 51 goes live" />
     <MESSAGE value="Alt tags of images corrected" />
     <MESSAGE value="Lesson 52 partial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 52 partial commit" />
+    <MESSAGE value="Lesson 52 goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 52 goes live" />
   </component>
 </project>
