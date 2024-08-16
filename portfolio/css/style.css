@@ -120,10 +120,13 @@ body, html {
 }
 
 .home div {
-    background: #7D132A;
     color: #FFFDFA;
     border: 1px solid #333333;
     padding: 20px;
+}
+
+.home-home {
+    background: #7D132A;
 }
 
 .home h1 {
@@ -200,10 +203,10 @@ main {
 }
 
 .card {
-    width: 5%;
-    height: 5%;
+    width: 20vw;
+    /*height: 5%;*/
     padding: 5%;
-    margin: 5%;
+    margin: 20px;
     box-shadow: 0 4px 8px #333333;
     text-align: center;
     display: flex;
@@ -318,4 +321,26 @@ nav a {
     align-items: end;
     padding-left: 20px;
     padding-right: 10px;
+}
+
+.home-bronze {
+    background: #C28341;
+    color: #333333;
+    border: 1px solid #333333;
+    padding: 20px;
+}
+
+.bronze h1 {
+    background: #C28341;
+    color: #333333;
+}
+
+.bronze h2 {
+    background: #C28341;
+    color: #333333;
+}
+
+.micro-raleway {
+    font-family: Raleway, serif;
+    font-size: 12pt;
 }

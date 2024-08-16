@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Home page gets a refresh">
-      <change afterPath="$PROJECT_DIR$/portfolio/aboutme.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="About me page added">
+      <change afterPath="$PROJECT_DIR$/portfolio/images/skillet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/images/yoga.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/bronze.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/css/style.css" afterDir="false" />
@@ -234,7 +235,7 @@
       <workItem from="1720445083306" duration="15000" />
       <workItem from="1720445106695" duration="6000" />
       <workItem from="1723736120585" duration="413000" />
-      <workItem from="1723736662616" duration="19397000" />
+      <workItem from="1723736662616" duration="20716000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -333,22 +334,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Nav bar update">
-      <option name="closed" value="true" />
-      <created>1715541683071</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1715541683071</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Lesson 42 draft">
-      <option name="closed" value="true" />
-      <created>1715541816073</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1715541816073</updated>
     </task>
     <task id="LOCAL-00061" summary="Lesson 42 goes live">
       <option name="closed" value="true" />
@@ -614,7 +599,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723820593094</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Home page gets a refresh">
+      <option name="closed" value="true" />
+      <created>1723834519943</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1723834519943</updated>
+    </task>
+    <task id="LOCAL-00095" summary="About me page added">
+      <option name="closed" value="true" />
+      <created>1723834533593</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1723834533593</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 43 goes live" />
     <MESSAGE value="Nav bar update" />
     <MESSAGE value="Lesson 44 goes live" />
     <MESSAGE value="Lesson 45 goes live" />
@@ -669,6 +669,7 @@
     <MESSAGE value="Home page icons added" />
     <MESSAGE value="Third new font added" />
     <MESSAGE value="Home page gets a refresh" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home page gets a refresh" />
+    <MESSAGE value="About me page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="About me page added" />
   </component>
 </project>
