@@ -344,3 +344,23 @@ nav a {
     font-family: Raleway, serif;
     font-size: 12pt;
 }
+
+.silver h1 {
+    background: #B2B2B2;
+    color: #333333;
+}
+
+.silver h2 {
+    background: #B2B2B2;
+    color: #333333;
+}
+
+.gold h1 {
+    background: #C69F52;
+    color: #333333;
+}
+
+.gold h2 {
+    background: #C69F52;
+    color: #333333;
+}
