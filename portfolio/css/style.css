@@ -196,7 +196,7 @@ main {
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 20px;
+    /*padding: 40px 20px;*/
     justify-content: center;
     align-items: center;
     background-color: #EBE9DD;
@@ -295,7 +295,7 @@ main {
 .about-first {
     font-family: Raleway, serif;
     margin: 0;
-    padding: 0;
+    padding: 40px 20px;
     text-align: justify;
 }
 
@@ -363,4 +363,20 @@ nav a {
 .gold h2 {
     background: #C69F52;
     color: #333333;
+}
+
+.about-second {
+    font-family: Raleway, serif;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: justify;
+    background: #7D132A;
+    color: #FAB8C6;
+    width: 100%;
+    height: inherit;
+}
+
+.about-second h1 {
+    font-family: "Dream Avenue", serif;
+    font-size: 36pt;
 }
