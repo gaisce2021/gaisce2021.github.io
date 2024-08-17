@@ -380,3 +380,8 @@ nav a {
     font-family: "Dream Avenue", serif;
     font-size: 36pt;
 }
+
+p a {
+    color: #7D132A;
+    text-decoration: none;
+}
