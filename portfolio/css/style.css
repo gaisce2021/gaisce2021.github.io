@@ -230,6 +230,10 @@ main {
     color: #333333;
 }
 
+.pale-text {
+    color: #EBE9DD;
+}
+
 .about {
     background-color: #FAB8C6;
 }
@@ -384,4 +388,23 @@ nav a {
 p a {
     color: #7D132A;
     text-decoration: none;
+}
+
+.two-split {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    min-width: 50%;
+    max-height: inherit;
+    padding: 10px;
+}
+
+.grid-item img {
+    display: block;
+    object-fit: scale-down;
+    max-width: 100%;
+    flex: 1;
+    min-height: 0;
 }
