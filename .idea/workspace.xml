@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Silver personal skill goes live">
-      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldCI.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/silver/silverAJ.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Width of header fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/silver/silverAJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver/silverAJ.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,9 +229,7 @@
       <workItem from="1720445106695" duration="6000" />
       <workItem from="1723736120585" duration="413000" />
       <workItem from="1723736662616" duration="41431000" />
-      <workItem from="1724083071537" duration="6729000" />
-      <workItem from="1724250625716" duration="452000" />
-      <workItem from="1724251148436" duration="21849000" />
+      <workItem from="1724083071537" duration="6329000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -331,6 +328,38 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Block 2 nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785497225</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785497225</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Block 3 nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785571687</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785571687</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Block 4 nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785672012</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785672012</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Index nav bar update">
+      <option name="closed" value="true" />
+      <created>1715785749042</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785749042</updated>
     </task>
     <task id="LOCAL-00076" summary="Lesson 48 goes live">
       <option name="closed" value="true" />
@@ -572,47 +601,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724071309578</updated>
     </task>
-    <task id="LOCAL-00106" summary="Bronze adventure journey page goes live">
+    <task id="LOCAL-00106" summary="Width of header fixed">
       <option name="closed" value="true" />
-      <created>1724153366096</created>
+      <created>1724769682765</created>
       <option name="number" value="00106" />
       <option name="presentableId" value="LOCAL-00106" />
       <option name="project" value="LOCAL" />
-      <updated>1724153366096</updated>
+      <updated>1724769682765</updated>
     </task>
-    <task id="LOCAL-00107" summary="Silver links updated">
-      <option name="closed" value="true" />
-      <created>1724153674322</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1724153674323</updated>
-    </task>
-    <task id="LOCAL-00108" summary="Silver community involvement goes live">
-      <option name="closed" value="true" />
-      <created>1724335395669</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1724335395670</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Silver physical recreation goes live">
-      <option name="closed" value="true" />
-      <created>1724345610855</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1724345610855</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Silver personal skill goes live">
-      <option name="closed" value="true" />
-      <created>1724607617983</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1724607617983</updated>
-    </task>
-    <option name="localTasksCounter" value="111" />
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,6 +639,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Block 1 nav bar update" />
+    <MESSAGE value="Index nav bar update" />
+    <MESSAGE value="Lesson 50 goes live" />
+    <MESSAGE value="Lesson 51 partial commit" />
     <MESSAGE value="Lesson 51 assignment solution added" />
     <MESSAGE value="Lesson 51 goes live" />
     <MESSAGE value="Alt tags of images corrected" />
@@ -662,11 +663,7 @@
     <MESSAGE value="Bronze personal skills page goes live" />
     <MESSAGE value="Bronze community involvement page goes live" />
     <MESSAGE value="Bronze physical recreation page goes live" />
-    <MESSAGE value="Bronze adventure journey page goes live" />
-    <MESSAGE value="Silver links updated" />
-    <MESSAGE value="Silver community involvement goes live" />
-    <MESSAGE value="Silver physical recreation goes live" />
-    <MESSAGE value="Silver personal skill goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Silver personal skill goes live" />
+    <MESSAGE value="Width of header fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Width of header fixed" />
   </component>
 </project>
