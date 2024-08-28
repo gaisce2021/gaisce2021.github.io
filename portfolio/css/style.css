@@ -385,6 +385,10 @@ nav a {
     font-size: 36pt;
 }
 
+.about-second a {
+    color: #EBE9DD;
+}
+
 p a {
     color: #7D132A;
     text-decoration: none;
