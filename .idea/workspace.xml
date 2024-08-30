@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold links updated">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold community involvement goes live">
+      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldPR.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/gold/goldCI.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold/goldCI.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
       </set>
     </attachedChunks>
   </component>
@@ -231,6 +230,7 @@
       <workItem from="1723736120585" duration="413000" />
       <workItem from="1723736662616" duration="41431000" />
       <workItem from="1724083071537" duration="6329000" />
+      <workItem from="1724944411215" duration="3515000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -329,14 +329,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Block 4 nav bar update">
-      <option name="closed" value="true" />
-      <created>1715785672012</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1715785672012</updated>
     </task>
     <task id="LOCAL-00075" summary="Index nav bar update">
       <option name="closed" value="true" />
@@ -610,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724777256463</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Gold community involvement goes live">
+      <option name="closed" value="true" />
+      <created>1724857871689</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1724857871689</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 50 goes live" />
     <MESSAGE value="Lesson 51 partial commit" />
     <MESSAGE value="Lesson 51 assignment solution added" />
     <MESSAGE value="Lesson 51 goes live" />
@@ -665,6 +664,7 @@
     <MESSAGE value="Width of header fixed" />
     <MESSAGE value="Silver adventure journey goes live" />
     <MESSAGE value="Gold links updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gold links updated" />
+    <MESSAGE value="Gold community involvement goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gold community involvement goes live" />
   </component>
 </project>
