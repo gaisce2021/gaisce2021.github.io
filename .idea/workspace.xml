@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold community involvement goes live">
-      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldPR.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold physical recreation goes live">
+      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldPS.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/gaisce2021/gaisce2021.github.io.git&quot;,
-    &quot;accountId&quot;: &quot;a34215a8-07a4-4c65-9507-03c1cfc0165a&quot;
+    &quot;accountId&quot;: &quot;cb2833f7-54bb-4540-901d-06377ec6ad12&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -113,7 +113,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
       </set>
     </attachedChunks>
   </component>
@@ -230,7 +230,11 @@
       <workItem from="1723736120585" duration="413000" />
       <workItem from="1723736662616" duration="41431000" />
       <workItem from="1724083071537" duration="6329000" />
-      <workItem from="1724944411215" duration="3515000" />
+      <workItem from="1724944411215" duration="5174000" />
+      <workItem from="1725034244239" duration="35000" />
+      <workItem from="1725034348568" duration="57000" />
+      <workItem from="1725034412724" duration="2171000" />
+      <workItem from="1725288184848" duration="4475000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -329,14 +333,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Index nav bar update">
-      <option name="closed" value="true" />
-      <created>1715785749042</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1715785749042</updated>
     </task>
     <task id="LOCAL-00076" summary="Lesson 48 goes live">
       <option name="closed" value="true" />
@@ -610,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724857871689</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Gold physical recreation goes live">
+      <option name="closed" value="true" />
+      <created>1725032185407</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1725032185407</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 51 partial commit" />
     <MESSAGE value="Lesson 51 assignment solution added" />
     <MESSAGE value="Lesson 51 goes live" />
     <MESSAGE value="Alt tags of images corrected" />
@@ -665,6 +668,7 @@
     <MESSAGE value="Silver adventure journey goes live" />
     <MESSAGE value="Gold links updated" />
     <MESSAGE value="Gold community involvement goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gold community involvement goes live" />
+    <MESSAGE value="Gold physical recreation goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gold physical recreation goes live" />
   </component>
 </project>
