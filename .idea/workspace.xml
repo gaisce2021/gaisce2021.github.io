@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold physical recreation goes live">
-      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldPS.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold personal skill goes live">
+      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldPortfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_08_2024_15_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_08_2024_15_06__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +236,7 @@
       <workItem from="1725034244239" duration="35000" />
       <workItem from="1725034348568" duration="57000" />
       <workItem from="1725034412724" duration="2171000" />
-      <workItem from="1725288184848" duration="4475000" />
+      <workItem from="1725288184848" duration="12299000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -333,14 +335,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Lesson 48 goes live">
-      <option name="closed" value="true" />
-      <created>1715790689721</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1715790689722</updated>
     </task>
     <task id="LOCAL-00077" summary="Lesson 49 goes live">
       <option name="closed" value="true" />
@@ -614,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725032185407</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Gold personal skill goes live">
+      <option name="closed" value="true" />
+      <created>1725294338496</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1725294338496</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +646,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 51 assignment solution added" />
     <MESSAGE value="Lesson 51 goes live" />
     <MESSAGE value="Alt tags of images corrected" />
     <MESSAGE value="Lesson 52 partial commit" />
@@ -669,6 +670,7 @@
     <MESSAGE value="Gold links updated" />
     <MESSAGE value="Gold community involvement goes live" />
     <MESSAGE value="Gold physical recreation goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gold physical recreation goes live" />
+    <MESSAGE value="Gold personal skill goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gold personal skill goes live" />
   </component>
 </project>
