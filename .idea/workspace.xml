@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold personal skill goes live">
-      <change afterPath="$PROJECT_DIR$/portfolio/gold/goldPortfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_08_2024_15_06_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_08_2024_15_06__Changes_.xml" beforeDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold portfolio page goes live">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/gold/goldPortfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold/goldPortfolio.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +29,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;gaisce2021&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;gaisce2021&quot;
   }
 }</component>
   <component name="GitSEFilterConfiguration">
@@ -72,6 +77,7 @@
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/orlafoley/WebstormProjects/gaisce2021.github.io/portfolio/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -115,7 +121,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
       </set>
     </attachedChunks>
   </component>
@@ -236,7 +242,17 @@
       <workItem from="1725034244239" duration="35000" />
       <workItem from="1725034348568" duration="57000" />
       <workItem from="1725034412724" duration="2171000" />
-      <workItem from="1725288184848" duration="12299000" />
+      <workItem from="1725288184848" duration="14329000" />
+      <workItem from="1725748967714" duration="10000" />
+      <workItem from="1728310760262" duration="578000" />
+      <workItem from="1728311720175" duration="10000" />
+      <workItem from="1729701079180" duration="611000" />
+      <workItem from="1729702098724" duration="12000" />
+      <workItem from="1729778735748" duration="791000" />
+      <workItem from="1729937980563" duration="13000" />
+      <workItem from="1730282925188" duration="19000" />
+      <workItem from="1730282994664" duration="33000" />
+      <workItem from="1731076711107" duration="2935000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -335,14 +351,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Lesson 49 goes live">
-      <option name="closed" value="true" />
-      <created>1715883303621</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883303622</updated>
     </task>
     <task id="LOCAL-00078" summary="Block 4 nav bar update">
       <option name="closed" value="true" />
@@ -616,7 +624,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725294338496</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Gold portfolio page goes live">
+      <option name="closed" value="true" />
+      <created>1725375527010</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1725375527010</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 51 goes live" />
     <MESSAGE value="Alt tags of images corrected" />
     <MESSAGE value="Lesson 52 partial commit" />
     <MESSAGE value="Lesson 52 goes live" />
@@ -671,6 +686,7 @@
     <MESSAGE value="Gold community involvement goes live" />
     <MESSAGE value="Gold physical recreation goes live" />
     <MESSAGE value="Gold personal skill goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gold personal skill goes live" />
+    <MESSAGE value="Gold portfolio page goes live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gold portfolio page goes live" />
   </component>
 </project>
