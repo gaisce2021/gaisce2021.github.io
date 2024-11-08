@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Gold portfolio page goes live">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/gold/goldPortfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold/goldPortfolio.html" afterDir="false" />
-    </list>
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Font test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,11 +94,11 @@
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\portfolio\fonts" />
       <recent name="$PROJECT_DIR$/portfolio/images" />
       <recent name="$PROJECT_DIR$/portfolio/fonts" />
       <recent name="$PROJECT_DIR$/portfolio/css" />
       <recent name="$PROJECT_DIR$/codingLessons/images" />
-      <recent name="$PROJECT_DIR$/codingLessons/files" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.lesson27.html">
@@ -252,7 +249,7 @@
       <workItem from="1729937980563" duration="13000" />
       <workItem from="1730282925188" duration="19000" />
       <workItem from="1730282994664" duration="33000" />
-      <workItem from="1731076711107" duration="2935000" />
+      <workItem from="1731076711107" duration="3305000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -351,30 +348,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Block 4 nav bar update">
-      <option name="closed" value="true" />
-      <created>1715883610404</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883610404</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Block 3 nav bar update">
-      <option name="closed" value="true" />
-      <created>1715883681280</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883681281</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Block 2 nav bar update">
-      <option name="closed" value="true" />
-      <created>1715883739141</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883739141</updated>
     </task>
     <task id="LOCAL-00081" summary="Block 1 nav bar update">
       <option name="closed" value="true" />
@@ -632,7 +605,31 @@
       <option name="project" value="LOCAL" />
       <updated>1725375527010</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Gold portfolio page goes live">
+      <option name="closed" value="true" />
+      <created>1731098285059</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1731098285059</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Font amendment">
+      <option name="closed" value="true" />
+      <created>1731098404602</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1731098404602</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Font test">
+      <option name="closed" value="true" />
+      <created>1731098485501</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1731098485501</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,8 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Alt tags of images corrected" />
-    <MESSAGE value="Lesson 52 partial commit" />
     <MESSAGE value="Lesson 52 goes live" />
     <MESSAGE value="Downloaded two fonts" />
     <MESSAGE value="Home page icons added" />
@@ -687,6 +682,8 @@
     <MESSAGE value="Gold physical recreation goes live" />
     <MESSAGE value="Gold personal skill goes live" />
     <MESSAGE value="Gold portfolio page goes live" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gold portfolio page goes live" />
+    <MESSAGE value="Font amendment" />
+    <MESSAGE value="Font test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Font test" />
   </component>
 </project>
