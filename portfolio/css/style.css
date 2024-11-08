@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Flatlion;
-    src: url("../fonts/flatlion.ttf");
+    src: url("../fonts/flatlion.ttf") format("truetype");
 }
 
 body, html {
