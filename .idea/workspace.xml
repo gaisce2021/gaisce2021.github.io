@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Font test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/gold.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Favicon added to index pages">
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzeAJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzeAJ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzeCI.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzeCI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzePR.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzePR.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzePS.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzePS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +102,11 @@
       <recent name="C:\Users\orlaf\OneDrive\Documents\GitHub\gaisce2021.github.io\codingLessons\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\portfolio" />
       <recent name="C:\Users\orlaf\WebstormProjects\gaisce2021.github.io\portfolio\fonts" />
       <recent name="$PROJECT_DIR$/portfolio/images" />
       <recent name="$PROJECT_DIR$/portfolio/fonts" />
       <recent name="$PROJECT_DIR$/portfolio/css" />
-      <recent name="$PROJECT_DIR$/codingLessons/images" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.lesson27.html">
@@ -255,7 +257,7 @@
       <workItem from="1729937980563" duration="13000" />
       <workItem from="1730282925188" duration="19000" />
       <workItem from="1730282994664" duration="33000" />
-      <workItem from="1731076711107" duration="6036000" />
+      <workItem from="1731076711107" duration="6654000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -354,14 +356,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Index nav bar update">
-      <option name="closed" value="true" />
-      <created>1715883894209</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883894209</updated>
     </task>
     <task id="LOCAL-00083" summary="Lesson 50 goes live">
       <option name="closed" value="true" />
@@ -635,7 +629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731098733895</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Favicon added to index pages">
+      <option name="closed" value="true" />
+      <created>1731105789064</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1731105789064</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 52 goes live" />
     <MESSAGE value="Downloaded two fonts" />
     <MESSAGE value="Home page icons added" />
     <MESSAGE value="Third new font added" />
@@ -690,6 +691,7 @@
     <MESSAGE value="Gold portfolio page goes live" />
     <MESSAGE value="Font amendment" />
     <MESSAGE value="Font test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Font test" />
+    <MESSAGE value="Favicon added to index pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Favicon added to index pages" />
   </component>
 </project>
