@@ -265,6 +265,15 @@ main {
     padding: 0;
 }
 
+@media (max-width: 600px) {
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+/* Custom classes for text colours and fonts set from here */
+
 .little-raleway {
     font-family: Raleway, serif;
     font-size: 16pt;

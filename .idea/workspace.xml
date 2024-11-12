@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Menu footer updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="CSS updated so footer renders correctly on phones">
       <change beforePath="$PROJECT_DIR$/portfolio/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +257,7 @@
       <workItem from="1730282994664" duration="33000" />
       <workItem from="1731076711107" duration="7269000" />
       <workItem from="1731431335749" duration="710000" />
-      <workItem from="1731432120045" duration="1310000" />
+      <workItem from="1731432120045" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -357,14 +356,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Downloaded two fonts">
-      <option name="closed" value="true" />
-      <created>1723742191764</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1723742191765</updated>
     </task>
     <task id="LOCAL-00091" summary="Home page icons added">
       <option name="closed" value="true" />
@@ -638,7 +629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731431799984</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="CSS updated so footer renders correctly on phones">
+      <option name="closed" value="true" />
+      <created>1731442303875</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1731442303875</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="New gold/silver/bronze stylings added" />
     <MESSAGE value="Bronze minor updates" />
     <MESSAGE value="Silver home page refreshed" />
     <MESSAGE value="Gold home page refreshed" />
@@ -693,6 +691,7 @@
     <MESSAGE value="Silver footer updated" />
     <MESSAGE value="Bronze footer updated" />
     <MESSAGE value="Menu footer updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu footer updated" />
+    <MESSAGE value="CSS updated so footer renders correctly on phones" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS updated so footer renders correctly on phones" />
   </component>
 </project>
