@@ -145,6 +145,8 @@ body, html {
     font-size: 16pt;
 }
 
+/* Footer styling/sizing controlled from here */
+
 footer {
     position: relative;
     left: 0;
@@ -153,13 +155,8 @@ footer {
     background-color: #333333;
     color: #FFFDFA;
     font-family: Raleway, serif;
-}
-
-footer {
-    background-color: #333333;
     padding: 20px 0;
     text-align: center;
-    width: 100%;
 }
 
 .footer-content {
@@ -192,6 +189,31 @@ footer {
     color: #FAB8C6;
 }
 
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: left;
+    }
+}
+
 main {
     flex-grow: 1;
     display: flex;
@@ -202,9 +224,10 @@ main {
     background-color: #EBE9DD;
 }
 
+/* Menu page cards sorted from here */
+
 .card {
     width: 20vw;
-    /*height: 5%;*/
     padding: 5%;
     margin: 20px;
     box-shadow: 0 4px 8px #333333;
@@ -217,6 +240,29 @@ main {
     text-decoration: none;
     color: #EBE9DD;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #222222;
+}
+
+.card-icon {
+    width: 10px;
+    height: 10px;
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: contain;
+    display:flex;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    font-size: 48pt;
+    margin: 0;
+    padding: 0;
 }
 
 .little-raleway {
@@ -248,29 +294,6 @@ main {
 
 .gold {
     background-color: #C69F52;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px #222222;
-}
-
-.card-icon {
-    width: 10px;
-    height: 10px;
-    max-width: 10%;
-    max-height: 10%;
-    object-fit: contain;
-    display:flex;
-    margin-bottom: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-text {
-    font-size: 48pt;
-    margin: 0;
-    padding: 0;
 }
 
 .about-me div {
@@ -307,6 +330,8 @@ main {
     font-family: "Dream Avenue", serif;
     font-size: 36pt;
 }
+
+/* Menu at the top of the page styled here */
 
 nav{
     position: relative;

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Favicon added to gold pages" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Menu footer updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,26 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/orlafoley/WebstormProjects/gaisce2021.github.io/portfolio/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/orlafoley/WebstormProjects/gaisce2021.github.io/portfolio/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/portfolio/images" />
@@ -121,7 +125,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -253,6 +257,8 @@
       <workItem from="1730282925188" duration="19000" />
       <workItem from="1730282994664" duration="33000" />
       <workItem from="1731076711107" duration="7269000" />
+      <workItem from="1731431335749" duration="710000" />
+      <workItem from="1731432120045" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -351,38 +357,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Lesson 51 goes live">
-      <option name="closed" value="true" />
-      <created>1716144004033</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1716144004033</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Alt tags of images corrected">
-      <option name="closed" value="true" />
-      <created>1716144183732</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1716144183732</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Lesson 52 partial commit">
-      <option name="closed" value="true" />
-      <created>1716147252198</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1716147252199</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Lesson 52 goes live">
-      <option name="closed" value="true" />
-      <created>1716225469837</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1716225469838</updated>
     </task>
     <task id="LOCAL-00090" summary="Downloaded two fonts">
       <option name="closed" value="true" />
@@ -632,7 +606,39 @@
       <option name="project" value="LOCAL" />
       <updated>1731106243821</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Gold footer updated">
+      <option name="closed" value="true" />
+      <created>1731431441081</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1731431441081</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Silver footer updated">
+      <option name="closed" value="true" />
+      <created>1731431541902</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1731431541902</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Bronze footer updated">
+      <option name="closed" value="true" />
+      <created>1731431789410</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1731431789410</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Menu footer updated">
+      <option name="closed" value="true" />
+      <created>1731431799984</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1731431799984</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,10 +668,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Home page gets a refresh" />
-    <MESSAGE value="About me page added" />
-    <MESSAGE value="Bronze home page update" />
-    <MESSAGE value="New icons added" />
     <MESSAGE value="New gold/silver/bronze stylings added" />
     <MESSAGE value="Bronze minor updates" />
     <MESSAGE value="Silver home page refreshed" />
@@ -687,6 +689,10 @@
     <MESSAGE value="Favicon added to bronze pages" />
     <MESSAGE value="Favicon added to silver pages" />
     <MESSAGE value="Favicon added to gold pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Favicon added to gold pages" />
+    <MESSAGE value="Gold footer updated" />
+    <MESSAGE value="Silver footer updated" />
+    <MESSAGE value="Bronze footer updated" />
+    <MESSAGE value="Menu footer updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu footer updated" />
   </component>
 </project>
