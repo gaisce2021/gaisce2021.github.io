@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Cards stack one on top of the other on smaller screens">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta tag added to index pages">
+      <change beforePath="$PROJECT_DIR$/portfolio/aboutme.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/aboutme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/gold.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/silver.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,6 +262,7 @@
       <workItem from="1731431335749" duration="710000" />
       <workItem from="1731432120045" duration="2968000" />
       <workItem from="1731673019424" duration="274000" />
+      <workItem from="1731673300803" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -358,14 +361,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Third new font added">
-      <option name="closed" value="true" />
-      <created>1723820577409</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1723820577410</updated>
     </task>
     <task id="LOCAL-00093" summary="Home page gets a refresh">
       <option name="closed" value="true" />
@@ -639,7 +634,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731442732726</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Meta tag added to index pages">
+      <option name="closed" value="true" />
+      <created>1731673356252</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1731673356252</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Silver home page refreshed" />
     <MESSAGE value="Gold home page refreshed" />
     <MESSAGE value="Bronze links updated" />
     <MESSAGE value="Bronze personal skills page goes live" />
@@ -694,6 +696,7 @@
     <MESSAGE value="Menu footer updated" />
     <MESSAGE value="CSS updated so footer renders correctly on phones" />
     <MESSAGE value="Cards stack one on top of the other on smaller screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cards stack one on top of the other on smaller screens" />
+    <MESSAGE value="Meta tag added to index pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meta tag added to index pages" />
   </component>
 </project>
