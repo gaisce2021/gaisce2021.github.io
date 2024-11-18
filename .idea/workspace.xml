@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta tag added to gold pages">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta description tag added to menu pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzeAJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzeAJ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzeCI.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzeCI.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +265,7 @@
       <workItem from="1731432120045" duration="2968000" />
       <workItem from="1731673019424" duration="274000" />
       <workItem from="1731673300803" duration="803000" />
-      <workItem from="1731938074842" duration="1255000" />
+      <workItem from="1731938074842" duration="2819000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -363,22 +364,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00097" summary="New icons added">
-      <option name="closed" value="true" />
-      <created>1723843826868</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1723843826868</updated>
-    </task>
-    <task id="LOCAL-00098" summary="New gold/silver/bronze stylings added">
-      <option name="closed" value="true" />
-      <created>1723843853525</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1723843853525</updated>
     </task>
     <task id="LOCAL-00099" summary="Bronze minor updates">
       <option name="closed" value="true" />
@@ -644,7 +629,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731673762272</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Meta description tag added to index page">
+      <option name="closed" value="true" />
+      <created>1731943367485</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1731943367485</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Meta description tag added to menu pages">
+      <option name="closed" value="true" />
+      <created>1731944260889</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1731944260889</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,8 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bronze physical recreation page goes live" />
-    <MESSAGE value="Width of header fixed" />
     <MESSAGE value="Silver adventure journey goes live" />
     <MESSAGE value="Gold links updated" />
     <MESSAGE value="Gold community involvement goes live" />
@@ -699,6 +698,8 @@
     <MESSAGE value="Meta tag added to bronze pages" />
     <MESSAGE value="Meta tag added to silver pages" />
     <MESSAGE value="Meta tag added to gold pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meta tag added to gold pages" />
+    <MESSAGE value="Meta description tag added to index page" />
+    <MESSAGE value="Meta description tag added to menu pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meta description tag added to menu pages" />
   </component>
 </project>
