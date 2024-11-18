@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta tag added to index pages">
-      <change beforePath="$PROJECT_DIR$/portfolio/aboutme.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/aboutme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/bronze.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/gold.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/gold.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/silver.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver.html" afterDir="false" />
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta tag added to gold pages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,9 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -262,7 +263,8 @@
       <workItem from="1731431335749" duration="710000" />
       <workItem from="1731432120045" duration="2968000" />
       <workItem from="1731673019424" duration="274000" />
-      <workItem from="1731673300803" duration="336000" />
+      <workItem from="1731673300803" duration="803000" />
+      <workItem from="1731938074842" duration="1255000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -361,38 +363,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Home page gets a refresh">
-      <option name="closed" value="true" />
-      <created>1723820593094</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1723820593094</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Home page gets a refresh">
-      <option name="closed" value="true" />
-      <created>1723834519943</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1723834519943</updated>
-    </task>
-    <task id="LOCAL-00095" summary="About me page added">
-      <option name="closed" value="true" />
-      <created>1723834533593</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1723834533593</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Bronze home page update">
-      <option name="closed" value="true" />
-      <created>1723836002893</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1723836002893</updated>
     </task>
     <task id="LOCAL-00097" summary="New icons added">
       <option name="closed" value="true" />
@@ -642,7 +612,39 @@
       <option name="project" value="LOCAL" />
       <updated>1731673356252</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Meta tag added to menu pages">
+      <option name="closed" value="true" />
+      <created>1731673645569</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1731673645569</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Meta tag added to bronze pages">
+      <option name="closed" value="true" />
+      <created>1731673692607</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1731673692607</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Meta tag added to silver pages">
+      <option name="closed" value="true" />
+      <created>1731673730274</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1731673730274</updated>
+    </task>
+    <task id="LOCAL-00131" summary="Meta tag added to gold pages">
+      <option name="closed" value="true" />
+      <created>1731673762272</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1731673762272</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,10 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Gold home page refreshed" />
-    <MESSAGE value="Bronze links updated" />
-    <MESSAGE value="Bronze personal skills page goes live" />
-    <MESSAGE value="Bronze community involvement page goes live" />
     <MESSAGE value="Bronze physical recreation page goes live" />
     <MESSAGE value="Width of header fixed" />
     <MESSAGE value="Silver adventure journey goes live" />
@@ -697,6 +695,10 @@
     <MESSAGE value="CSS updated so footer renders correctly on phones" />
     <MESSAGE value="Cards stack one on top of the other on smaller screens" />
     <MESSAGE value="Meta tag added to index pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meta tag added to index pages" />
+    <MESSAGE value="Meta tag added to menu pages" />
+    <MESSAGE value="Meta tag added to bronze pages" />
+    <MESSAGE value="Meta tag added to silver pages" />
+    <MESSAGE value="Meta tag added to gold pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meta tag added to gold pages" />
   </component>
 </project>
