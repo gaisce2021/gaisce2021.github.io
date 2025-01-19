@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta description tag added to bronze pages">
+    <list default="true" id="74345889-1181-41d5-8f0b-86d39ac810ad" name="Changes" comment="Meta description tag added to gold pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/silver/silverAJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver/silverAJ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/silver/silverCI.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver/silverCI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/silver/silverPR.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver/silverPR.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/silver/silverPS.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/silver/silverPS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/bronze/bronzeCI.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bronze/bronzeCI.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +128,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
       </set>
     </attachedChunks>
   </component>
@@ -267,7 +264,20 @@
       <workItem from="1731432120045" duration="2968000" />
       <workItem from="1731673019424" duration="274000" />
       <workItem from="1731673300803" duration="803000" />
-      <workItem from="1731938074842" duration="3560000" />
+      <workItem from="1731938074842" duration="5631000" />
+      <workItem from="1732799562057" duration="6000" />
+      <workItem from="1732799577141" duration="12000" />
+      <workItem from="1733074008563" duration="46000" />
+      <workItem from="1733074123875" duration="599000" />
+      <workItem from="1734104046898" duration="224000" />
+      <workItem from="1734104337352" duration="13000" />
+      <workItem from="1734104402983" duration="12000" />
+      <workItem from="1734105898245" duration="613000" />
+      <workItem from="1734447423878" duration="33000" />
+      <workItem from="1735481120678" duration="583000" />
+      <workItem from="1735911918058" duration="114000" />
+      <workItem from="1736505658608" duration="43000" />
+      <workItem from="1736783840337" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="Added favicon to html pages">
       <created>1643398249730</created>
@@ -366,22 +376,6 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1685831592717</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Silver home page refreshed">
-      <option name="closed" value="true" />
-      <created>1723843877649</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1723843877649</updated>
-    </task>
-    <task id="LOCAL-00101" summary="Gold home page refreshed">
-      <option name="closed" value="true" />
-      <created>1723843882714</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1723843882715</updated>
     </task>
     <task id="LOCAL-00102" summary="Bronze links updated">
       <option name="closed" value="true" />
@@ -647,7 +641,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731945255281</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Meta description tag added to silver pages">
+      <option name="closed" value="true" />
+      <created>1731945864129</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1731945864129</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Meta description tag added to gold pages">
+      <option name="closed" value="true" />
+      <created>1731946220740</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1731946220740</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,8 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Gold links updated" />
-    <MESSAGE value="Gold community involvement goes live" />
     <MESSAGE value="Gold physical recreation goes live" />
     <MESSAGE value="Gold personal skill goes live" />
     <MESSAGE value="Gold portfolio page goes live" />
@@ -702,6 +710,8 @@
     <MESSAGE value="Meta description tag added to index page" />
     <MESSAGE value="Meta description tag added to menu pages" />
     <MESSAGE value="Meta description tag added to bronze pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meta description tag added to bronze pages" />
+    <MESSAGE value="Meta description tag added to silver pages" />
+    <MESSAGE value="Meta description tag added to gold pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meta description tag added to gold pages" />
   </component>
 </project>
